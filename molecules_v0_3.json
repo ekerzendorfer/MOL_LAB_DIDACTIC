@@ -1,0 +1,1310 @@
+{
+  "Polarität und Löslichkeit": [
+    {
+      "name": "Wasser",
+      "smiles": "O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Wasser ein stark polares Lösungsmittel?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Wasser kann Wasserstoffbrücken spenden und aufnehmen.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Wasser kann Wasserstoffbrücken spenden und aufnehmen.",
+      "erklaerung": "Wasser besitzt polare O-H-Bindungen und eine gewinkelte Struktur; dadurch heben sich die Dipole nicht auf.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Methan",
+      "smiles": "C",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Methan unpolar und schlecht wasserlöslich?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Methan ist weitgehend unpolar und kann keine Wasserstoffbrücken bilden.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Methan ist weitgehend unpolar und kann keine Wasserstoffbrücken bilden.",
+      "erklaerung": "Methan ist sehr symmetrisch und besitzt keine stark polare funktionelle Gruppe.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Ammoniak",
+      "smiles": "N",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Ammoniak polar und gut wasserlöslich?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Ammoniak kann Wasserstoffbrücken bilden.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Ammoniak kann Wasserstoffbrücken bilden.",
+      "erklaerung": "Ammoniak besitzt polare N-H-Bindungen und ein freies Elektronenpaar am Stickstoff.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Kohlenstoffdioxid",
+      "smiles": "O=C=O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist CO₂ trotz polarer C=O-Bindungen insgesamt kaum polar?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Die lineare symmetrische Struktur hebt die Bindungsdipole auf.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Die lineare symmetrische Struktur hebt die Bindungsdipole auf.",
+      "erklaerung": "CO₂ besitzt polare Bindungen, aber die lineare Anordnung führt zur Aufhebung der Dipole.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Methanol",
+      "smiles": "CO",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Methanol sehr gut mit Wasser mischbar?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Die OH-Gruppe kann Wasserstoffbrücken bilden und der unpolare Rest ist klein.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Die OH-Gruppe kann Wasserstoffbrücken bilden und der unpolare Rest ist klein.",
+      "erklaerung": "Methanol besitzt eine polare OH-Gruppe und nur eine kleine Methylgruppe.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Ethanol",
+      "smiles": "CCO",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Ethanol mit Wasser mischbar, obwohl es auch einen unpolaren Teil besitzt?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Die OH-Gruppe kann Wasserstoffbrücken mit Wasser bilden.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Die OH-Gruppe kann Wasserstoffbrücken mit Wasser bilden.",
+      "erklaerung": "Ethanol besitzt eine polare OH-Gruppe und einen noch kleinen unpolaren Ethylrest.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "n-Butanol",
+      "smiles": "CCCCO",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist n-Butanol schlechter wasserlöslich als Methanol oder Ethanol?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Der größere unpolare Kohlenwasserstoffrest verringert die Wasserlöslichkeit.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Der größere unpolare Kohlenwasserstoffrest verringert die Wasserlöslichkeit.",
+      "erklaerung": "Die OH-Gruppe bleibt polar, aber mit wachsender Alkylkette nimmt der unpolare Anteil zu.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Methanal",
+      "smiles": "C=O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Methanal polar, obwohl es keine OH-Gruppe besitzt?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Die Carbonylgruppe ist polar und kann H-Brücken aufnehmen, aber nicht spenden.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Die Carbonylgruppe ist polar und kann H-Brücken aufnehmen, aber nicht spenden.",
+      "erklaerung": "Die C=O-Doppelbindung ist polar; der Sauerstoff kann als Akzeptor wirken.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Aceton",
+      "smiles": "CC(=O)C",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Aceton gut mit Wasser mischbar, obwohl es keine OH-Gruppe besitzt?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Die C=O-Gruppe kann H-Brücken von Wasser aufnehmen.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Die C=O-Gruppe kann H-Brücken von Wasser aufnehmen.",
+      "erklaerung": "Aceton besitzt eine polare Carbonylgruppe und zwei kleine unpolare Methylgruppen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Diethylether",
+      "smiles": "CCOCC",
+      "niveau": "Basis",
+      "leitfrage": "Warum unterscheidet sich Diethylether deutlich von Alkoholen?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Ether können H-Brücken aufnehmen, aber nicht spenden.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Ether können H-Brücken aufnehmen, aber nicht spenden.",
+      "erklaerung": "Diethylether enthält ein O-Atom, aber keine O-H-Bindung.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Essigsäure",
+      "smiles": "CC(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Essigsäure stark polar und gut wasserlöslich?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Die Carboxylgruppe ist polar und kann H-Brücken bilden.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Die Carboxylgruppe ist polar und kann H-Brücken bilden.",
+      "erklaerung": "Essigsäure besitzt eine Carboxylgruppe mit C=O und O-H am selben Kohlenstoffatom.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Schwefelwasserstoff",
+      "smiles": "S",
+      "niveau": "Vergleich",
+      "leitfrage": "Warum ist Schwefelwasserstoff bei Raumtemperatur gasförmig, Wasser aber flüssig?",
+      "beobachten": [
+        "Vergleiche die Molekülform mit Wasser.",
+        "Achte darauf, ob starke Wasserstoffbrücken möglich sind.",
+        "Nutze die Modellwerte nur als grobe Orientierung."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Schwefelwasserstoff bildet ähnlich starke Wasserstoffbrücken wie Wasser.",
+        "Schwefelwasserstoff ist linear und deshalb unpolar.",
+        "Schwefelwasserstoff kann deutlich schwächere zwischenmolekulare Wechselwirkungen ausbilden als Wasser.",
+        "Schwefelwasserstoff ist ein Salz."
+      ],
+      "richtig": 2,
+      "feedback": "Richtig: H₂S ist zwar gewinkelt, bildet aber keine so starken Wasserstoffbrücken-Netzwerke wie Wasser.",
+      "erklaerung": "Wasser und Schwefelwasserstoff wirken auf den ersten Blick ähnlich, unterscheiden sich aber stark in ihren zwischenmolekularen Kräften. Wasser bildet ein starkes Wasserstoffbrücken-Netzwerk; bei H₂S sind diese Wechselwirkungen viel schwächer.",
+      "modellgrenze": "Für sehr kleine anorganische Moleküle sind RDKit-Deskriptoren wie logP/TPSA nur eingeschränkt aussagekräftig. Hier ist der experimentelle Bezug besonders wichtig."
+    },
+    {
+      "name": "Hexan",
+      "smiles": "CCCCCC",
+      "niveau": "Vergleich",
+      "leitfrage": "Warum ist Hexan flüssig, Methan aber gasförmig, obwohl beide unpolar sind?",
+      "beobachten": [
+        "Vergleiche die Molekülgröße.",
+        "Betrachte die unpolare Oberfläche.",
+        "Überlege, warum größere unpolare Moleküle stärkere London-Kräfte besitzen."
+      ],
+      "frage": "Welche Aussage erklärt den Unterschied am besten?",
+      "antworten": [
+        "Hexan ist ionisch.",
+        "Hexan ist größer und besitzt stärkere London-Dispersionskräfte.",
+        "Methan besitzt starke Wasserstoffbrücken.",
+        "Die Summenformel allein erklärt den Aggregatzustand."
+      ],
+      "richtig": 1,
+      "feedback": "Richtig: Größere unpolare Moleküle besitzen stärkere London-Dispersionskräfte.",
+      "erklaerung": "Unpolar bedeutet nicht wechselwirkungsfrei. Hexan hat eine deutlich größere Oberfläche als Methan; dadurch wirken stärkere London-Kräfte zwischen den Molekülen.",
+      "modellgrenze": "Die App zeigt London-Kräfte nicht direkt, sondern nur indirekt über Molekülgröße und Oberfläche."
+    },
+    {
+      "name": "1-Hexanol",
+      "smiles": "CCCCCCO",
+      "niveau": "Vergleich",
+      "leitfrage": "Warum ist 1-Hexanol viel schlechter wasserlöslich als Ethanol?",
+      "beobachten": [
+        "Suche die OH-Gruppe.",
+        "Vergleiche den unpolaren Kohlenwasserstoffrest mit Ethanol.",
+        "Achte auf logP, TPSA und die Wasserlöslichkeits-Tendenz."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "1-Hexanol besitzt keine polare Gruppe.",
+        "Die OH-Gruppe ist polar, aber der große unpolare Rest verringert die Wasserlöslichkeit.",
+        "1-Hexanol ist ein Salz.",
+        "Alle Alkohole sind vollständig wasserlöslich."
+      ],
+      "richtig": 1,
+      "feedback": "Richtig: Die OH-Gruppe bleibt polar, aber der unpolare Rest wird mit zunehmender Kettenlänge wichtiger.",
+      "erklaerung": "Bei kurzen Alkoholen dominiert die OH-Gruppe die Wechselwirkung mit Wasser. Bei 1-Hexanol ist der unpolare Kohlenwasserstoffrest so groß, dass die Wasserlöslichkeit deutlich sinkt.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Palmitinsäure",
+      "smiles": "CCCCCCCCCCCCCCCC(=O)O",
+      "niveau": "Vertiefung",
+      "leitfrage": "Warum ist Palmitinsäure trotz Carboxylgruppe kaum wasserlöslich?",
+      "beobachten": [
+        "Suche die Carboxylgruppe.",
+        "Vergleiche die Länge des unpolaren Restes mit Essigsäure.",
+        "Überlege, welcher Molekülteil die Stoffeigenschaft stärker prägt."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Alle Carbonsäuren sind gut wasserlöslich.",
+        "Die lange unpolare Kohlenwasserstoffkette überlagert die Wirkung der polaren Carboxylgruppe.",
+        "Palmitinsäure besitzt keine polare Gruppe.",
+        "Palmitinsäure ist kleiner als Essigsäure."
+      ],
+      "richtig": 1,
+      "feedback": "Richtig: Die große unpolare Kette bestimmt die Wasserlöslichkeit wesentlich mit.",
+      "erklaerung": "Palmitinsäure besitzt zwar eine Carboxylgruppe, aber auch eine sehr lange unpolare Kohlenwasserstoffkette. Dadurch ist sie in Wasser kaum löslich.",
+      "modellgrenze": "Das Modell berücksichtigt keine Kristallpackung, pH-Effekte oder die Bildung von Aggregaten/Mizellen."
+    },
+    {
+      "name": "Diethylenglycol",
+      "smiles": "OCCOCCO",
+      "niveau": "Vergleich",
+      "leitfrage": "Warum ist Diethylenglycol deutlich wasserfreundlicher als Diethylether?",
+      "beobachten": [
+        "Zähle die Sauerstoffatome.",
+        "Suche OH-Gruppen.",
+        "Vergleiche H-Brücken-Donoren und -Akzeptoren."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Diethylenglycol besitzt mehrere Möglichkeiten für Wasserstoffbrücken.",
+        "Diethylenglycol ist völlig unpolar.",
+        "Diethylether kann mehr H-Brücken spenden.",
+        "Beide Stoffe müssen wegen der Ethergruppe identisch löslich sein."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Diethylenglycol besitzt zwei OH-Gruppen und mehrere O-Atome.",
+      "erklaerung": "Diethylether kann H-Brücken nur aufnehmen. Diethylenglycol kann durch seine OH-Gruppen auch H-Brücken spenden und besitzt eine größere polare Oberfläche.",
+      "modellgrenze": "Die Toxizität von Diethylenglycol ist hier nicht Thema; betrachtet wird nur der Struktur–Eigenschaft-Zusammenhang."
+    }
+  ],
+  "Isomerie": [
+    {
+      "name": "Ethanol",
+      "smiles": "CCO",
+      "niveau": "Basis",
+      "leitfrage": "Warum hat Ethanol andere Eigenschaften als Dimethylether, obwohl beide C₂H₆O besitzen?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Ethanol besitzt eine OH-Gruppe und kann H-Brücken spenden.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Ethanol besitzt eine OH-Gruppe und kann H-Brücken spenden.",
+      "erklaerung": "Gleiche Summenformel, aber andere Verknüpfung der Atome führt zu anderen funktionellen Gruppen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Dimethylether",
+      "smiles": "COC",
+      "niveau": "Basis",
+      "leitfrage": "Warum siedet Dimethylether viel niedriger als Ethanol?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Dimethylether kann keine Wasserstoffbrücken spenden.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Dimethylether kann keine Wasserstoffbrücken spenden.",
+      "erklaerung": "Er besitzt eine Ethergruppe statt einer Alkoholgruppe.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Propanal",
+      "smiles": "CCC=O",
+      "niveau": "Basis",
+      "leitfrage": "Wie unterscheidet sich Propanal von Aceton?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Propanal ist ein Aldehyd.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Propanal ist ein Aldehyd.",
+      "erklaerung": "Die Carbonylgruppe liegt am Ende der Kette.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Aceton",
+      "smiles": "CC(=O)C",
+      "niveau": "Basis",
+      "leitfrage": "Wie unterscheidet sich Aceton von Propanal?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Aceton ist ein Keton.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Aceton ist ein Keton.",
+      "erklaerung": "Die Carbonylgruppe liegt zwischen zwei Kohlenstoffatomen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Butan",
+      "smiles": "CCCC",
+      "niveau": "Basis",
+      "leitfrage": "Was unterscheidet Butan von Isobutan?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Butan ist unverzweigt, Isobutan ist verzweigt.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Butan ist unverzweigt, Isobutan ist verzweigt.",
+      "erklaerung": "Beide haben dieselbe Summenformel, aber unterschiedliche Kohlenstoffverknüpfung.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Isobutan",
+      "smiles": "CC(C)C",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Isobutan kompakter als Butan?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Die Kohlenstoffkette ist verzweigt.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Die Kohlenstoffkette ist verzweigt.",
+      "erklaerung": "Verzweigung verändert Molekülform und damit Stoffeigenschaften.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Propansäure",
+      "smiles": "CCC(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Warum unterscheidet sich Propansäure stark von Essigsäuremethylester?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Propansäure enthält eine Carboxylgruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Propansäure enthält eine Carboxylgruppe.",
+      "erklaerung": "Funktionelle Isomerie: Carbonsäure vs. Ester.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Essigsäuremethylester",
+      "smiles": "CC(=O)OC",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Essigsäuremethylester kein Säure-Isomer im Eigenschaftssinn?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Er enthält eine Estergruppe und keine Carboxyl-OH-Gruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Er enthält eine Estergruppe und keine Carboxyl-OH-Gruppe.",
+      "erklaerung": "Gleiche Summenformel kann durch andere funktionelle Gruppe ganz andere Eigenschaften ergeben.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "D-Alanin",
+      "smiles": "C[C@@H](N)C(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Warum sind D- und L-Alanin trotz gleicher Verknüpfung nicht dasselbe Molekül?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Sie sind Enantiomere, also spiegelbildliche Moleküle.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Sie sind Enantiomere, also spiegelbildliche Moleküle.",
+      "erklaerung": "Chiralität zeigt, dass auch die räumliche Anordnung entscheidend ist.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "L-Alanin",
+      "smiles": "C[C@H](N)C(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Chiralität bei Aminosäuren biologisch wichtig?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "L-Alanin ist eine spiegelbildliche Form von D-Alanin.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: L-Alanin ist eine spiegelbildliche Form von D-Alanin.",
+      "erklaerung": "Biologische Systeme unterscheiden Spiegelbilder häufig sehr genau.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Glucose offen",
+      "smiles": "O=CC(O)C(O)C(O)C(O)CO",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Glucose ein komplexeres Isomeriebeispiel?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Offenkettige Glucose ist eine Aldose.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Offenkettige Glucose ist eine Aldose.",
+      "erklaerung": "Glucose und Fructose haben dieselbe Summenformel, unterscheiden sich aber in der Carbonylgruppe.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Fructose offen",
+      "smiles": "OCC(O)C(O)C(O)C(=O)CO",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Fructose trotz gleicher Summenformel anders als Glucose?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Fructose ist eine Ketose.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Fructose ist eine Ketose.",
+      "erklaerung": "In Lösung sind zusätzlich Ringformen wichtig; hier wird bewusst vereinfacht.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Maleinsäure",
+      "smiles": "O=C(O)/C=C\\C(=O)O",
+      "niveau": "Vertiefung",
+      "leitfrage": "Warum kann die cis/trans-Anordnung die Stoffeigenschaften stark verändern?",
+      "beobachten": [
+        "Vergleiche die Lage der beiden Carboxylgruppen.",
+        "Achte auf die räumliche Nähe der Gruppen.",
+        "Vergleiche mit Fumarsäure im Isomerenvergleich."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Maleinsäure und Fumarsäure unterscheiden sich in der räumlichen Anordnung an der Doppelbindung.",
+        "Sie haben unterschiedliche Summenformeln.",
+        "Bei Doppelbindungen ist räumliche Anordnung unmöglich.",
+        "Die Carboxylgruppen spielen keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Es handelt sich um cis/trans-Isomerie an der C=C-Doppelbindung.",
+      "erklaerung": "Maleinsäure ist das cis-Isomer; die Carboxylgruppen liegen räumlich nahe beieinander. Dadurch unterscheiden sich Eigenschaften wie Löslichkeit, Schmelzpunkt und mögliche intramolekulare Wechselwirkungen von Fumarsäure.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Fumarsäure",
+      "smiles": "O=C(O)/C=C/C(=O)O",
+      "niveau": "Vertiefung",
+      "leitfrage": "Warum ist Fumarsäure trotz gleicher Summenformel anders als Maleinsäure?",
+      "beobachten": [
+        "Vergleiche die Lage der Carboxylgruppen.",
+        "Achte auf die trans-Anordnung.",
+        "Überlege, warum das die Wechselwirkungen verändert."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Fumarsäure ist das trans-Isomer von Maleinsäure.",
+        "Fumarsäure hat keine Carboxylgruppen.",
+        "Fumarsäure und Maleinsäure sind identische Moleküle.",
+        "Fumarsäure ist ein Alkan."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Fumarsäure ist das trans-Isomer.",
+      "erklaerung": "Fumarsäure besitzt dieselbe Summenformel wie Maleinsäure, aber eine andere räumliche Anordnung. Diese scheinbar kleine Änderung kann deutliche Stoffeigenschaftsunterschiede bewirken.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    }
+  ],
+  "Funktionelle Gruppen": [
+    {
+      "name": "Methanol",
+      "smiles": "CO",
+      "niveau": "Basis",
+      "leitfrage": "Woran erkennt man einen Alkohol?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Methanol besitzt eine Alkoholgruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Methanol besitzt eine Alkoholgruppe.",
+      "erklaerung": "Eine OH-Gruppe an einem gesättigten Kohlenstoff prägt Polarität und H-Brücken.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Ethanal",
+      "smiles": "CC=O",
+      "niveau": "Basis",
+      "leitfrage": "Woran erkennt man einen Aldehyd?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Ethanal besitzt eine Aldehydgruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Ethanal besitzt eine Aldehydgruppe.",
+      "erklaerung": "Die Carbonylgruppe liegt am Kettenende.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Aceton",
+      "smiles": "CC(=O)C",
+      "niveau": "Basis",
+      "leitfrage": "Woran erkennt man ein Keton?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Aceton besitzt eine Ketogruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Aceton besitzt eine Ketogruppe.",
+      "erklaerung": "Die Carbonylgruppe liegt zwischen zwei Kohlenstoffresten.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Essigsäure",
+      "smiles": "CC(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Woran erkennt man eine Carbonsäure?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Essigsäure besitzt eine Carboxylgruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Essigsäure besitzt eine Carboxylgruppe.",
+      "erklaerung": "C=O und OH am selben Kohlenstoffatom bilden die Carboxylgruppe.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Ethylacetat",
+      "smiles": "CC(=O)OCC",
+      "niveau": "Basis",
+      "leitfrage": "Woran erkennt man einen Ester?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Ethylacetat besitzt eine Estergruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Ethylacetat besitzt eine Estergruppe.",
+      "erklaerung": "Das Strukturmotiv ist C(=O)-O-C.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Diethylether",
+      "smiles": "CCOCC",
+      "niveau": "Basis",
+      "leitfrage": "Woran erkennt man einen Ether?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Diethylether besitzt eine Ethergruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Diethylether besitzt eine Ethergruppe.",
+      "erklaerung": "Ein Sauerstoffatom ist mit zwei Kohlenstoffresten verbunden.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Acetanhydrid",
+      "smiles": "CC(=O)OC(=O)C",
+      "niveau": "Basis",
+      "leitfrage": "Woran erkennt man ein Carbonsäureanhydrid?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Acetanhydrid besitzt eine Anhydridgruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Acetanhydrid besitzt eine Anhydridgruppe.",
+      "erklaerung": "Zwei Acylgruppen sind über ein Sauerstoffatom verbunden.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Ethylamin",
+      "smiles": "CCN",
+      "niveau": "Basis",
+      "leitfrage": "Woran erkennt man ein Amin?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Ethylamin besitzt eine Aminogruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Ethylamin besitzt eine Aminogruppe.",
+      "erklaerung": "Amine enthalten Stickstoff und können basische Eigenschaften zeigen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Acetamid",
+      "smiles": "CC(=O)N",
+      "niveau": "Basis",
+      "leitfrage": "Woran erkennt man ein Amid?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Acetamid besitzt eine Amidgruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Acetamid besitzt eine Amidgruppe.",
+      "erklaerung": "C(=O)-N ist das zentrale Motiv; die Peptidbindung ist ebenfalls ein Amid.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Phenol",
+      "smiles": "c1ccccc1O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Phenol nicht einfach ein normaler Alkohol?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Die OH-Gruppe ist direkt an einen aromatischen Ring gebunden.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Die OH-Gruppe ist direkt an einen aromatischen Ring gebunden.",
+      "erklaerung": "Phenole unterscheiden sich in Eigenschaften und Reaktivität von einfachen Alkoholen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Anilin",
+      "smiles": "c1ccccc1N",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Anilin ein aromatisches Amin?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Anilin besitzt eine Aminogruppe am aromatischen Ring.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Anilin besitzt eine Aminogruppe am aromatischen Ring.",
+      "erklaerung": "Aromat und Aminogruppe beeinflussen sich gegenseitig.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Salicylsäure",
+      "smiles": "O=C(O)c1ccccc1O",
+      "niveau": "Vertiefung",
+      "leitfrage": "Welche funktionellen Gruppen erkennt man in Salicylsäure?",
+      "beobachten": [
+        "Suche die Carboxylgruppe.",
+        "Suche die phenolische OH-Gruppe.",
+        "Achte auf den aromatischen Ring."
+      ],
+      "frage": "Welche Kombination passt am besten?",
+      "antworten": [
+        "Carbonsäure, Phenol und aromatischer Ring.",
+        "Alkan und Keton.",
+        "Ether und Amin.",
+        "Nur eine unpolare Kohlenwasserstoffkette."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Salicylsäure enthält Carbonsäure, Phenol und einen aromatischen Ring.",
+      "erklaerung": "Salicylsäure ist ein gutes Beispiel dafür, dass ein Molekül mehrere funktionelle Gruppen tragen kann. Diese Gruppen bestimmen gemeinsam Polarität, Säureeigenschaften und Wechselwirkungen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Vanillin",
+      "smiles": "COc1cc(C=O)ccc1O",
+      "niveau": "Vertiefung",
+      "leitfrage": "Warum ist Vanillin ein gutes Beispiel für mehrere funktionelle Gruppen in einem Alltagsmolekül?",
+      "beobachten": [
+        "Suche die Aldehydgruppe.",
+        "Suche die Methoxy-/Ethergruppe.",
+        "Suche die phenolische OH-Gruppe und den aromatischen Ring."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Vanillin enthält Aldehyd, Ether/Methoxygruppe, Phenol und Aromat.",
+        "Vanillin ist ein einfaches Alkan.",
+        "Vanillin enthält keine Heteroatome.",
+        "Vanillin ist ein Salz."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Vanillin kombiniert mehrere funktionelle Gruppen in einem bekannten Aromastoff.",
+      "erklaerung": "Vanillin zeigt, wie mehrere funktionelle Gruppen zusammen ein charakteristisches Molekül ergeben. Die Struktur erklärt, warum es polarere Bereiche besitzt, aber auch einen aromatischen, eher unpolaren Bereich.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    }
+  ],
+  "Konformere": [
+    {
+      "name": "Butan",
+      "smiles": "CCCC",
+      "niveau": "Basis",
+      "leitfrage": "Warum gibt es bei Butan mehrere räumliche Formen?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Konformere entstehen durch Rotation um Einfachbindungen.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Konformere entstehen durch Rotation um Einfachbindungen.",
+      "erklaerung": "Butan kann um C-C-Einfachbindungen rotieren; verschiedene Formen haben verschiedene relative Energien.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "1,2-Dichlorethan",
+      "smiles": "ClCCCl",
+      "niveau": "Basis",
+      "leitfrage": "Wie beeinflusst Rotation die Orientierung der Chloratome?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Gruppen können im Raum unterschiedlich nahe kommen.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Gruppen können im Raum unterschiedlich nahe kommen.",
+      "erklaerung": "Rotation verändert Abstände und Wechselwirkungen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Ethylenglykol",
+      "smiles": "OCCO",
+      "niveau": "Basis",
+      "leitfrage": "Warum kann Ethylenglykol mehrere günstige Formen einnehmen?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Mehrere Einfachbindungen können rotieren.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Mehrere Einfachbindungen können rotieren.",
+      "erklaerung": "Die beiden OH-Gruppen und flexible Bindungen ermöglichen mehrere Konformere.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Cyclohexan",
+      "smiles": "C1CCCCC1",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist die Sesselstruktur von Cyclohexan wichtig?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Eine nicht-planare Form verringert ungünstige Spannungen.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Eine nicht-planare Form verringert ungünstige Spannungen.",
+      "erklaerung": "Cyclohexan ist nicht planar; die Sesselstruktur ist energetisch günstig.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Milchsäure",
+      "smiles": "C[C@H](O)C(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Milchsäure ein gutes Beispiel für Flexibilität und Chiralität?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Sie besitzt ein chirales Zentrum und mehrere polare Gruppen.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Sie besitzt ein chirales Zentrum und mehrere polare Gruppen.",
+      "erklaerung": "Milchsäure verbindet funktionelle Gruppen, Chiralität und Beweglichkeit.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    }
+  ],
+  "Wirkstoffe und Biomoleküle": [
+    {
+      "name": "Coffein",
+      "smiles": "Cn1cnc2n(C)c(=O)n(C)c(=O)c12",
+      "niveau": "Basis",
+      "leitfrage": "Warum kann Coffein mit Biomolekülen wechselwirken?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Coffein besitzt mehrere H-Brücken-Akzeptoren, aber keine Donoren.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Coffein besitzt mehrere H-Brücken-Akzeptoren, aber keine Donoren.",
+      "erklaerung": "Das heteroatomreiche Ringsystem erlaubt mehrere schwache Wechselwirkungen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Aspirin",
+      "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Welche funktionellen Gruppen prägen Aspirin?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Aspirin enthält Carboxylgruppe, Estergruppe und Aromat.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Aspirin enthält Carboxylgruppe, Estergruppe und Aromat.",
+      "erklaerung": "Polare und unpolare Bereiche kommen in einem Wirkstoffmolekül zusammen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Paracetamol",
+      "smiles": "CC(=O)Nc1ccc(O)cc1",
+      "niveau": "Basis",
+      "leitfrage": "Welche Strukturmerkmale machen Paracetamol polar?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Paracetamol enthält Phenol und Amid.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Paracetamol enthält Phenol und Amid.",
+      "erklaerung": "Diese Gruppen können H-Brücken bilden; der Aromat ist unpolarer.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Ibuprofen",
+      "smiles": "CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Ibuprofen relativ lipophil?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Es besitzt eine polare Carboxylgruppe und einen großen unpolaren Bereich.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Es besitzt eine polare Carboxylgruppe und einen großen unpolaren Bereich.",
+      "erklaerung": "Wirkstoffe enthalten oft beide Bereiche: polar für Wechselwirkungen, unpolar für Bindungstaschen/Membranen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Acetazolamid",
+      "smiles": "CC(=O)Nc1nnc(s1)S(N)(=O)=O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Acetazolamid ein Brückenbeispiel zum Proteinlabor?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Es besitzt mehrere polare Gruppen und Heteroatome.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Es besitzt mehrere polare Gruppen und Heteroatome.",
+      "erklaerung": "Als Carboanhydrase-Hemmstoff eignet es sich für Struktur-Wirkungs- und Protein-Ligand-Bezüge.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Glycin",
+      "smiles": "NCC(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Glycin die einfachste Aminosäure?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Glycin besitzt Aminogruppe und Carboxylgruppe.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Glycin besitzt Aminogruppe und Carboxylgruppe.",
+      "erklaerung": "Die Seitenkette ist nur ein Wasserstoffatom.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Alanin",
+      "smiles": "C[C@H](N)C(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Alanin chiral?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Das zentrale C-Atom trägt vier verschiedene Gruppen.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Das zentrale C-Atom trägt vier verschiedene Gruppen.",
+      "erklaerung": "Alanin ist ein einfaches Beispiel für Chiralität in Biomolekülen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Phenylalanin",
+      "smiles": "N[C@@H](Cc1ccccc1)C(=O)O",
+      "niveau": "Basis",
+      "leitfrage": "Was unterscheidet Phenylalanin von Glycin und Alanin?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Die Seitenkette enthält einen aromatischen Ring.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Die Seitenkette enthält einen aromatischen Ring.",
+      "erklaerung": "Aromatische hydrophobe Seitenketten sind wichtig für Proteinstruktur und Wechselwirkungen.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Adenin",
+      "smiles": "Nc1ncnc2ncnc12",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Adenin als Nukleobase interessant?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Adenin ist eine stickstoffhaltige Nukleobase.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Adenin ist eine stickstoffhaltige Nukleobase.",
+      "erklaerung": "Das heteroaromatische Ringsystem kann an Basenpaarung beteiligt sein.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Ribose",
+      "smiles": "O=CC(O)C(O)C(O)CO",
+      "niveau": "Basis",
+      "leitfrage": "Warum ist Ribose ein wichtiger RNA-Baustein?",
+      "beobachten": [
+        "Betrachte zuerst die 2D-Struktur.",
+        "Drehe anschließend das 3D-Modell.",
+        "Vergleiche die Deskriptoren mit der Leitfrage."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Ribose besitzt mehrere OH-Gruppen und ist stark polar.",
+        "Die Summenformel allein erklärt alle Stoffeigenschaften.",
+        "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
+        "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Ribose besitzt mehrere OH-Gruppen und ist stark polar.",
+      "erklaerung": "In RNA ist Ribose Teil des Zucker-Phosphat-Rückgrats; hier wird die offenkettige Form vereinfacht gezeigt.",
+      "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden."
+    },
+    {
+      "name": "Citronensäure",
+      "smiles": "O=C(O)CC(O)(CC(=O)O)C(=O)O",
+      "niveau": "Vertiefung",
+      "leitfrage": "Warum ist Citronensäure stark wasserfreundlich und als Stoffwechselprodukt interessant?",
+      "beobachten": [
+        "Suche die drei Carboxylgruppen.",
+        "Suche die OH-Gruppe.",
+        "Vergleiche TPSA und H-Brücken-Möglichkeiten."
+      ],
+      "frage": "Welche Aussage passt am besten?",
+      "antworten": [
+        "Citronensäure besitzt mehrere polare Gruppen und kann stark mit Wasser wechselwirken.",
+        "Citronensäure ist völlig unpolar.",
+        "Citronensäure besitzt nur C-H-Bindungen.",
+        "Citronensäure ist ein Protein."
+      ],
+      "richtig": 0,
+      "feedback": "Richtig: Mehrere Carboxylgruppen und eine OH-Gruppe sorgen für starke Wasserwechselwirkungen.",
+      "erklaerung": "Citronensäure ist noch überschaubar, zeigt aber bereits sehr deutlich, wie mehrere polare funktionelle Gruppen ein Molekül stark wasserfreundlich machen. Gleichzeitig stellt sie eine Brücke zum Stoffwechsel dar.",
+      "modellgrenze": "In biologischen Systemen liegen Carbonsäuren häufig teilweise oder vollständig deprotoniert vor; diese einfache Darstellung bildet pH- und Salzformen nicht vollständig ab."
+    }
+  ]
+}
