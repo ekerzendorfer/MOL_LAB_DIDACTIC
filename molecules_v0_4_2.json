@@ -1228,20 +1228,20 @@
           "experimenteller_bezug": null
         },
         "stoffdaten": {
-          "schmelzpunkt_C": null,
-          "siedepunkt_C": null,
-          "dichte_g_cm3": null,
-          "wasserloeslichkeit": null,
-          "aggregatzustand_raumtemperatur": null,
-          "bedingungen": null,
-          "quelle": null,
-          "hinweis": null
+          "schmelzpunkt_C": "−81",
+          "siedepunkt_C": "48–49",
+          "dichte_g_cm3": "ca. 0,807 (flüssig, 20 °C)",
+          "wasserloeslichkeit": "gut, aber nicht vollständig mit Wasser mischbar (temperatur- und quellenabhängig)",
+          "aggregatzustand_raumtemperatur": "flüssig, sehr flüchtig",
+          "bedingungen": "ca. 20 °C, 1 atm",
+          "quelle": "NIST Chemistry WebBook; PubChem CID 527; EPA Propionaldehyde AEGL",
+          "hinweis": "Im Vergleich zu Aceton: beide C₃H₆O, aber Aldehyd statt Keton; Messwerte können je nach Quelle leicht abweichen."
         },
         "reaktivitaet": {
-          "hinweis": null,
-          "warum": null,
-          "reaktionsidee": null,
-          "modellgrenze": null
+          "hinweis": "reaktiv als Aldehyd",
+          "warum": "Das elektrophile Carbonyl-C ermöglicht Additionsreaktionen. Aldehyde lassen sich unter passenden Bedingungen leichter zu Carbonsäuren oxidieren als Ketone.",
+          "reaktionsidee": "Oxidation zu Propansäure; Reduktion zu 1-Propanol; nukleophile Addition an C=O.",
+          "modellgrenze": "Qualitative Orientierung; tatsächlicher Reaktionsverlauf hängt von Reagenzien und Bedingungen ab."
         }
       },
       {
@@ -3978,6 +3978,18 @@
         "warum": null,
         "reaktionsidee": null,
         "modellgrenze": null
+      },
+      "quiz": {
+        "frage": "Welche Wechselwirkung erklärt den großen Unterschied zwischen Wasser und Schwefelwasserstoff?",
+        "antworten": [
+          "Beide Stoffe bilden gleich starke Wasserstoffbrücken.",
+          "Wasser bildet ein ausgeprägtes Netzwerk aus Wasserstoffbrücken, Schwefelwasserstoff nicht.",
+          "Wasser ist aus Ionen aufgebaut, Schwefelwasserstoff nicht.",
+          "Die Moleküle haben dieselbe molare Masse."
+        ],
+        "richtig": 1,
+        "feedback": "Die starken Wasserstoffbrücken zwischen H₂O-Molekülen erhöhen die Siedetemperatur deutlich.",
+        "erklaerung": "Die starken Wasserstoffbrücken zwischen H₂O-Molekülen erhöhen die Siedetemperatur deutlich."
       }
     },
     "Methan vs. Hexan": {
@@ -4003,6 +4015,18 @@
         "warum": null,
         "reaktionsidee": null,
         "modellgrenze": null
+      },
+      "quiz": {
+        "frage": "Warum hat Hexan bei Normaldruck einen viel höheren Siedepunkt als Methan?",
+        "antworten": [
+          "Weil Hexan ionisch und Methan kovalent ist.",
+          "Weil Hexan Wasserstoffbrücken ausbildet.",
+          "Weil bei den größeren Hexanmolekülen die London-Dispersionskräfte stärker sind.",
+          "Weil Methan nicht zwischenmolekular wechselwirkt."
+        ],
+        "richtig": 2,
+        "feedback": "Auch unpolare Moleküle wechselwirken über London-Kräfte; die Stärke nimmt bei größeren, leichter polarisierbaren Molekülen zu.",
+        "erklaerung": "Auch unpolare Moleküle wechselwirken über London-Kräfte; die Stärke nimmt bei größeren, leichter polarisierbaren Molekülen zu."
       }
     },
     "Ethanol vs. 1-Hexanol": {
@@ -4028,6 +4052,18 @@
         "warum": null,
         "reaktionsidee": null,
         "modellgrenze": null
+      },
+      "quiz": {
+        "frage": "Warum ist 1-Hexanol in Wasser deutlich schlechter löslich als Ethanol?",
+        "antworten": [
+          "Der längere unpolare Kohlenwasserstoffrest gewinnt bei 1-Hexanol stärker an Bedeutung.",
+          "1-Hexanol besitzt keine OH-Gruppe mehr.",
+          "Ethanol ist ionisch, 1-Hexanol kovalent.",
+          "Die C–C-Bindungen von Ethanol bilden Wasserstoffbrücken."
+        ],
+        "richtig": 0,
+        "feedback": "Beide Alkohole besitzen eine OH-Gruppe, aber der größere hydrophobe Molekülteil verringert die Wasserlöslichkeit.",
+        "erklaerung": "Beide Alkohole besitzen eine OH-Gruppe, aber der größere hydrophobe Molekülteil verringert die Wasserlöslichkeit."
       }
     },
     "Essigsäure vs. Palmitinsäure": {
@@ -4053,6 +4089,18 @@
         "warum": null,
         "reaktionsidee": null,
         "modellgrenze": null
+      },
+      "quiz": {
+        "frage": "Warum löst sich Palmitinsäure trotz Carboxylgruppe nur sehr schlecht in Wasser?",
+        "antworten": [
+          "Carboxylgruppen sind grundsätzlich unpolar.",
+          "Essigsäure hat keine Kohlenstoffatome.",
+          "Palmitinsäure kann keine Säure-Base-Reaktionen eingehen.",
+          "Die lange unpolare Kette dominiert die Eigenschaften des Moleküls."
+        ],
+        "richtig": 3,
+        "feedback": "Die lange Alkylkette begrenzt die Wasserlöslichkeit, obwohl die Carboxylgruppe polar und ionisierbar ist.",
+        "erklaerung": "Die lange Alkylkette begrenzt die Wasserlöslichkeit, obwohl die Carboxylgruppe polar und ionisierbar ist."
       }
     },
     "Diethylether vs. Diethylenglycol": {
@@ -4078,6 +4126,18 @@
         "warum": null,
         "reaktionsidee": null,
         "modellgrenze": null
+      },
+      "quiz": {
+        "frage": "Welche Strukturänderung erklärt die größere Wasserfreundlichkeit des Diethylenglycols?",
+        "antworten": [
+          "Diethylenglycol ist ein Salz.",
+          "Diethylenglycol besitzt zwei OH-Gruppen und kann H-Brücken spenden und aufnehmen.",
+          "Diethylether enthält gar keinen Sauerstoff.",
+          "Diethylenglycol kann keine Wasserstoffbrücken ausbilden."
+        ],
+        "richtig": 1,
+        "feedback": "Die zusätzlichen Hydroxygruppen erhöhen die Möglichkeiten für Wasserstoffbrücken mit Wasser.",
+        "erklaerung": "Die zusätzlichen Hydroxygruppen erhöhen die Möglichkeiten für Wasserstoffbrücken mit Wasser."
       }
     },
     "Methanol vs. Methanal": {
@@ -4103,6 +4163,18 @@
         "warum": null,
         "reaktionsidee": null,
         "modellgrenze": null
+      },
+      "quiz": {
+        "frage": "Welche Aussage über die Wasserstoffbrücken-Fähigkeit der beiden Moleküle ist korrekt?",
+        "antworten": [
+          "Beide besitzen eine OH-Gruppe.",
+          "Methanal spendet stärkere H-Brücken als Methanol.",
+          "Methanol kann H-Brücken spenden und aufnehmen; Methanal besitzt einen Carbonylsauerstoff als Akzeptor.",
+          "Methanol enthält keinen Sauerstoff."
+        ],
+        "richtig": 2,
+        "feedback": "Die OH-Gruppe ist Donor und Akzeptor, während die Carbonylgruppe vor allem als Akzeptor wirkt.",
+        "erklaerung": "Die OH-Gruppe ist Donor und Akzeptor, während die Carbonylgruppe vor allem als Akzeptor wirkt."
       }
     },
     "Aceton vs. Essigsäure": {
@@ -4128,6 +4200,18 @@
         "warum": null,
         "reaktionsidee": null,
         "modellgrenze": null
+      },
+      "quiz": {
+        "frage": "Warum ist Essigsäure eine schwache Säure, Aceton dagegen nicht in vergleichbarer Weise?",
+        "antworten": [
+          "Aceton enthält keine polare Bindung.",
+          "Essigsäure besitzt eine Carboxylgruppe mit abspaltbarem Proton; Aceton ist ein Keton.",
+          "Essigsäure ist ionisch und Aceton ein Alkan.",
+          "Beide haben dieselbe funktionelle Gruppe."
+        ],
+        "richtig": 1,
+        "feedback": "Die Carboxylgruppe enthält ein saures O–H, dessen konjugierte Base mesomeriestabilisiert ist.",
+        "erklaerung": "Die Carboxylgruppe enthält ein saures O–H, dessen konjugierte Base mesomeriestabilisiert ist."
       }
     }
   },
