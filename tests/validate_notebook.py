@@ -25,4 +25,6 @@ for name, pair in data["polarity_pairs"].items():
     assert isinstance(quiz.get("richtig"), int) and 0 <= quiz["richtig"] < 4, name
 assert any(c["id"] == "propanal" and c["stoffdaten"]["siedepunkt_C"] for c in data["modules"]["Isomerie"])
 assert "48–49" in source and "Propanal" in source
+assert any(c["id"] == "adenin" and c["smiles"] == "Nc1ncnc2[nH]cnc12" for c in data["modules"]["Wirkstoffe und Biomoleküle"]), "Adenine SMILES was reverted"
+assert "'name': 'Adenin', 'smiles': 'Nc1ncnc2[nH]cnc12'" in source, "Adenine notebook fallback differs from JSON"
 print("DIDACTIC: notebook Python syntax, 61 molecule MCs, 7 comparison MCs, Propanal data – OK")
