@@ -3746,7 +3746,7 @@
       },
       {
         "name": "Adenin",
-        "smiles": "Nc1ncnc2ncnc12",
+        "smiles": "Nc1ncnc2[nH]cnc12",
         "niveau": "Basis",
         "leitfrage": "Warum ist Adenin als Nukleobase interessant?",
         "beobachten": [
