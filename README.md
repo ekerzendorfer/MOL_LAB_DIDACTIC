@@ -16,7 +16,7 @@ Didaktisch reduzierte Colab-App zur Untersuchung von Struktur, räumlicher Gesta
 ## Dateien
 
 ```text
-MOL_LAB_DIDACTIC_v0_4_1.ipynb
+MOL_LAB_DIDACTIC_v0_4_2.ipynb
 molecules_v0_4_2.json
 README.md
 ```
@@ -26,7 +26,7 @@ Alle Dateien sollten im Root-Verzeichnis des Repos liegen.
 ## Start in Google Colab
 
 ```text
-https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/main/MOL_LAB_DIDACTIC_v0_4_1.ipynb
+https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/main/MOL_LAB_DIDACTIC_v0_4_2.ipynb
 ```
 
 In Colab anschließend: **Laufzeit → Alle ausführen**.
@@ -60,3 +60,9 @@ Die angezeigten Werte sind Modellwerte oder kuratierte Unterrichtsdaten. Reaktiv
 - JSON-Metadaten für spätere einklappbare Bereiche vorbereitet, ohne die Oberfläche zu verändern.
 - Plus-Beispiele bleiben bewusst noch zurückgestellt.
 
+
+## Datenkorrektur 23.11.2026 – Isomerie-Vergleich Ethanol/Dimethylether
+
+Die bislang leeren Stoffdaten- und Reaktivitätsfelder für Dimethylether sind ergänzt. Die Dichte ist ausdrücklich als **Flüssigkeitsdichte unter Druck** gekennzeichnet. Datenquellen: PubChem CID 8254, NIST Chemistry WebBook, FSANZ A1062.
+
+Nach einem GitHub-Update in einer bereits laufenden Colab-Sitzung die Zelle **„MOL_LAB DIDACTIC starten“ erneut ausführen**, um die aktuelle JSON einzulesen; sofern nötig „Laufzeit → Neu starten“ und die Zellen erneut ausführen. Die Vergleichsroutine wurde nicht verändert.
