@@ -1164,20 +1164,20 @@
           "experimenteller_bezug": null
         },
         "stoffdaten": {
-          "schmelzpunkt_C": null,
-          "siedepunkt_C": null,
-          "dichte_g_cm3": null,
-          "wasserloeslichkeit": null,
-          "aggregatzustand_raumtemperatur": null,
-          "bedingungen": null,
-          "quelle": null,
-          "hinweis": null
+          "schmelzpunkt_C": "−141,5",
+          "siedepunkt_C": "−24,8",
+          "dichte_g_cm3": "0,665 (verflüssigt bei 25 °C; unter Druck)",
+          "wasserloeslichkeit": "begrenzt (ca. 2,4 g/100 mL; temperaturabhängig)",
+          "aggregatzustand_raumtemperatur": "gasförmig",
+          "bedingungen": "ca. 20–25 °C, 1 atm; Dichte als Flüssigkeit unter Druck",
+          "quelle": "PubChem CID 8254; NIST Chemistry WebBook; FSANZ A1062 (Dichte der Flüssigkeit)",
+          "hinweis": "Dichtewert gilt für verflüssigten Dimethylether, nicht für das Gas bei Normaldruck."
         },
         "reaktivitaet": {
-          "hinweis": null,
-          "warum": null,
-          "reaktionsidee": null,
-          "modellgrenze": null
+          "hinweis": "Leicht entzündliches Gas; typische Ethergruppe",
+          "warum": "Die C–O–C-Gruppe besitzt kein O–H. Anders als Ethanol kann Dimethylether zwischen eigenen Molekülen keine Wasserstoffbrücken spenden; bei Oxidation und Spaltung unterscheidet sich sein Verhalten von einem Alkohol.",
+          "reaktionsidee": "Vollständige Verbrennung: CH₃–O–CH₃ + 3 O₂ → 2 CO₂ + 3 H₂O.",
+          "modellgrenze": "Qualitativer Hinweis anhand funktioneller Gruppen, keine vollständige Reaktions- oder Sicherheitsvorhersage."
         }
       },
       {
