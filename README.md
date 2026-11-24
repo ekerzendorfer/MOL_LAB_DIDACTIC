@@ -72,3 +72,21 @@ Nach einem GitHub-Update in einer bereits laufenden Colab-Sitzung die Zelle **�
 Die Daten und Antwortprüfung wurden für die MOLEKÜL-WERKSTATT überarbeitet: Propanal-Stoffdaten/Reaktivität ergänzt, Multiple-Choice bei den Isomeren- und Polaritätsvergleichen aktiviert und die Antwortreihenfolge variiert. Weitere `35` von `61` Molekül-Einträgen haben noch keine Stoffdaten; manche (z. B. „Glucose offen“) sind bewusst Strukturmodelle und dürfen nicht mit Reinstoffdaten verwechselt werden.
 
 Die vollständige Aufstellung und Reihenfolge für die spätere fachliche Feinarbeit steht unter [Datenqualität-Audit](docs/DATENQUALITAET_AUDIT_2026-11-23.md).
+
+## Entwicklungsstand v0.5 – Isomerie auf Paarvergleich umgestellt
+
+Die neue Isomerie-Oberfläche wird auf einem **separaten, noch nicht freigegebenen Zweig** getestet: [`v0.5-isomerien-vergleich`](https://github.com/ekerzendorfer/MOL_LAB_DIDACTIC/tree/v0.5-isomerien-vergleich). Die öffentlich verlinkte `main`-Version **v0.4.2 bleibt während der Fachabnahme unverändert**.
+
+**[V0.5-Vorschau in Colab öffnen](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.5-isomerien-vergleich/MOL_LAB_DIDACTIC_v0_4_2.ipynb)**  
+**[Test- und Abnahmeanleitung](docs/TEST_ISOMERIE_V0.5.md)**
+
+- Isomerie beginnt mit den **sieben kuratierten Isomerenpaaren**, nicht einer Einzelmolekül-Auswahl.
+- Pro Paar zwei kompakte **2D-Strukturkarten** und **eine durchgehende Vergleichstabelle**: gemeinsame Strukturmerkmale, experimentelle/kuratierte Stoffdaten, qualitative Reaktivität.
+- **Weitere Modellwerte** (topologische polare Oberfläche, Wildman–Crippen-logP, RDKit-Rotationszählung) werden erklärend und **aufklappbar** dargestellt.
+- Nicht validierte didaktische Polaritäts-/Löslichkeits-Scores werden im Isomerievergleich **nicht mehr** als Stoffeigenschaft ausgegeben.
+- Nur ein **auf Wunsch** erstelltes 3D-Modell, zwischen beiden Isomeren umschaltbar; bisherige Einzelanalyse weiterhin optional erreichbar.
+- **Sieben paarbezogene MC-Fragen** und unveränderter Protokollmechanismus.
+- Schüleransicht ohne Versionshistorie; bisherige Texte in [CHANGELOG.md](CHANGELOG.md) archiviert.
+- Drei automatisierte Checks: `tests/validate_notebook.py`, `tests/descriptor_regression.py`, `tests/isomer_interface_regression.py`.
+
+**Keine experimentellen log Kₒw-Werte wurden dazuerfunden.** Solche Werte benötigen dokumentierte Quellen, Temperatur-/Stoffformbedingungen und separate fachliche Abnahme. Erst nach dem Colab-Test soll die neue Paarwahl auch in die Anleitungen MW-001 und MW-009 der MOLEKÜL-WERKSTATT übernommen werden.
