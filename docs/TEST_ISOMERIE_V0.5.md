@@ -15,7 +15,7 @@ Der Dateiname bleibt aus Kompatibilitätsgründen `MOL_LAB_DIDACTIC_v0_4_2.ipynb
 
 - [ ] Die frühere lange Versionenhistorie oben und unten fehlt. Sie ist in [CHANGELOG.md](../CHANGELOG.md) archiviert.
 - [ ] Bei Modul **Isomerie** steht eine Auswahl der **sieben Isomerenpaare** im Vordergrund.
-- [ ] Das erste Paar wird automatisch als Vergleich gezeigt; anschließend genügt ein Wechsel im Paar-Dropdown.
+- [ ] Beim Öffnen von **Isomerie** erscheint **noch kein Paar**; zuerst bewusst ein Paar wählen und dann **„Vergleich anzeigen“** klicken. Auch der Wechsel des Dropdowns allein löst noch keine neue Analyse aus.
 - [ ] Die optionale Einzelanalyse ist erst sichtbar, wenn „Optional: Einzelmolekül oder eigene SMILES untersuchen“ aktiviert wird.
 - [ ] **Polarität und Löslichkeit**, **Funktionelle Gruppen**, **Konformere** und **Wirkstoffe und Biomoleküle** behalten ihren bisherigen Einzelmolekül-Workflow.
 
@@ -26,7 +26,7 @@ Der Dateiname bleibt aus Kompatibilitätsgründen `MOL_LAB_DIDACTIC_v0_4_2.ipynb
 - [ ] Die Abschnitte heißen „Struktur und funktionelle Gruppen“, „Experimentelle / kuratierte Stoffdaten“ und „Qualitative Reaktivität“.
 - [ ] Es gibt keine Pandas-Zeilenindizes (`0,1,...`).
 - [ ] Die bislang verstreuten Stoffdaten und Reaktivitätshinweise sind dort enthalten, wo die Quelle entsprechende Einträge hat.
-- [ ] Fehlende Werte stehen ausdrücklich als **„nicht hinterlegt“**, nicht als `0`.
+- [ ] Leere Datenfelder werden nicht als viele einzelne Tabellenzeilen angezeigt. Bei gänzlich fehlenden Stoffdaten erscheint nur ein kurzer Hinweis; einzelne fehlende Gegenwerte stehen als **„nicht hinterlegt“**, niemals `0`.
 - [ ] RDKit-Modellgrößen (TPSA, Crippen-logP, Rotationsdeskriptor) stehen in einem **aufklappbaren** Bereich.
 - [ ] Der **nicht validierte** „Didaktische Polaritätseindruck“ und die heuristische „Wasserlöslichkeits-Tendenz“ werden im Isomerievergleich **nicht als Stoffeigenschaften** dargestellt.
 
@@ -43,21 +43,21 @@ Der Dateiname bleibt aus Kompatibilitätsgründen `MOL_LAB_DIDACTIC_v0_4_2.ipynb
 ## 4. 3D und andere Funktionen
 
 - [ ] Bei Auswahl des Paares werden **nicht** sofort zwei 3D-Modelle erzeugt.
-- [ ] „3D-Modell anzeigen“ erzeugt genau **eine** 3D-Ansicht.
-- [ ] Mit dem Umschalter Propanal/Aceton wird die bestehende 3D-Ansicht ersetzt. Kein Überlaufen des Colab-Ausgabebereichs.
+- [ ] **Direkt an jeder Strukturkarte** zwischen **2D**, **3D** und **„Oberfläche (qualitativ)“** wechseln; der 3D-Aufbau erfolgt nur bei Bedarf.
+- [ ] Der 3D-Inhalt ersetzt jeweils **das 2D-Bild derselben Struktur**. Beide Karten lassen sich unabhängig umschalten. Die Oberfläche zeigt elementgefärbte Van-der-Waals-Flächen, **kein** quantitatives elektrostatisches Potential.
 - [ ] Bei „Einzelmolekül untersuchen“ ist die bisherige detaillierte 2D-/3D-/Eigenschaften-Analyse weiterhin erreichbar.
 - [ ] Die vier anderen Lernmodule und deren MC-/Konformerfunktionen sind unverändert bedienbar.
-- [ ] Die Auswahl einer richtigen und falschen MC-Antwort führt zum korrekten Feedback; die Antwortoptionen sind gemischt.
+- [ ] „Antwort prüfen“ ohne Auswahl zeigt **direkt unter den Schaltflächen** eine Aufforderung. Eine richtige bzw. falsche Antwort zeigt Feedback an derselben Stelle, ebenso „Erklärung anzeigen“. Die Antwortoptionen sind gemischt.
 - [ ] „SchülerInnen-Protokolltext erzeugen“ verwendet das aktive Isomerenpaar und enthält keine vermeintlichen experimentellen Polaritäts-Scores.
 
 ## 5. Sieben Paarungen nacheinander
 
 1. Ethanol ↔ Dimethylether – H-Brücken, Siedepunkt
 2. Propanal ↔ Aceton – Aldehyd/Keton
-3. Butan ↔ Isobutan – Verzweigung; fehlende Stoffdaten sichtbar
-4. Propansäure ↔ Essigsäuremethylester – Carbonsäure/Ester; Datenlücken sichtbar
-5. D-Alanin ↔ L-Alanin – **Stereochemie erhalten**, kein vermeintlicher einfacher Drehtrick
-6. Glucose (offene Form) ↔ Fructose (offene Form) – Aldose/Ketose; **keine** isolierten Reinstoffdaten der offenen Konformation vortäuschen
+3. Butan ↔ Isobutan – Verzweigung; **neue quellenbelegte Werte** ca. −0,5/−12 °C Siedepunkt und −138/−160 °C Schmelzpunkt; Löslichkeit beider Stoffe sehr gering
+4. Propansäure ↔ Essigsäuremethylester – Säure/Ester; **neu ergänzt** Schmelzpunkte ca. −21/−98 °C, Siedepunkte 141/57 °C, deutlich verschiedene Wasserlöslichkeit
+5. D-Alanin ↔ L-Alanin – **Stereochemie erhalten**, keine freie Rotation als Spiegelung. Keine fingierten experimentellen Unterschiede achiraler Stoffwerte.
+6. Glucose (offene Form) ↔ Fructose (offene Form) – Aldose/Ketose; **keine** isolierten Reinstoffdaten der offenen Form vortäuschen; vorhandene offene SMILES spezifizieren die Stereozentren nicht.
 7. Maleinsäure ↔ Fumarsäure – cis/trans, Schmelz-/Löslichkeitsunterschiede, SMILES-Stereochemie
 
 ## Automatische Regression (im Entwicklungszweig)
@@ -71,3 +71,14 @@ python3 tests/isomer_interface_regression.py
 Dabei werden der Notebook-Python-Code, 61 Einzelkarten, sieben Isomerenpaar-Quizzes, sieben Paarvergleiche, Modellwerte, 3D-Lazy-Loading, Reports und die Modul-Umschaltung geprüft. Die integrierten Tests sind im GitHub-Actions-Workflow hinterlegt.
 
 **Abnahmeentscheidung:** Erst nach positivem Colab-Praxistest das Notebook auf `main` übernehmen und **anschließend** die Anleitung der MOLEKÜL-WERKSTATT bei MW-001 und MW-009 auf den neuen Paar-Dropdown umstellen. Bis dahin laufen die bekannten Links und Aufgaben unverändert.
+
+## V0.5-Nachbesserungen nach dem ersten Praxistest (24.11.2026)
+
+- Kein automatischer Start mehr bei bloßer Modulauswahl; bewusst gewähltes Paar und expliziter Klick.
+- Die **2D/3D/Oberflächen-Umschalter sitzen unmittelbar an beiden Strukturkarten**, die lange Tabelle darunter.
+- Einfache Element-Oberfläche: **qualitatives Visualisieren**, keine berechnete elektrostatische Potentialfläche oder echte Lipophilie-Oberfläche.
+- MC-Feedback erscheint in einem **live aktualisierten HTML-Widget direkt unter den Antwort-Buttons** statt im unsichtbar weit entfernten Feedback-Output.
+- Quelle und Bedingungen sind bei den ergänzten Stoffdaten dokumentiert. Die Werte für Butan/Isobutan und Propansäure/Essigsäuremethylester werden in der Entwicklungs-JSON und zur Prüfung auch im Notebook-Fallback hinterlegt.
+- Für strukturelle Fälle ohne belastbare isolierte Stoffwerte (D-/L-Alanin, offene Zucker) keine pauschalen Zahlen eingesetzt; lange Tabellen mit „nicht hinterlegt“ werden vermieden.
+
+**Zusätzlich überprüfen:** Ob die neuen Notebook-internen 3D-Karten auch in einer frischen Google-Colab-Laufzeit zuverlässig zwischen Bild, Kugel-Stab-Modell und Elementoberfläche wechseln. Der Headless-Test kann die clientseitige Rendering-Engine nicht ersetzen.
