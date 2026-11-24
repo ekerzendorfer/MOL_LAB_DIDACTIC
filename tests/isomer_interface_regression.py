@@ -22,6 +22,14 @@ assert len(ns["ISOMER_PAIR_OPTIONS"]) == 8, "7 pairs plus explicit choose placeh
 assert ns["ISOMER_PAIR_OPTIONS"][0][1] is None
 assert len(ns["ISOMER_QUIZZES"]) == 7
 assert len(ns["MOLECULES"]) == 5
+# Real source data and the notebook fallback are consistent for four added entries.
+for name in ["Butan", "Isobutan", "Propansäure", "Essigsäuremethylester"]:
+    from_file = next(x for x in json.loads((root / "molecules_v0_4_2.json").read_text(encoding="utf-8"))["modules"]["Isomerie"] if x["name"] == name)
+    in_notebook = ns["card_for"]("Isomerie", name)
+    for field in ["siedepunkt_C", "schmelzpunkt_C", "wasserloeslichkeit", "quelle"]:
+        assert from_file["stoffdaten"][field] == in_notebook["stoffdaten"][field], (name, field)
+    assert from_file["reaktivitaet"]["hinweis"] == in_notebook["reaktivitaet"]["hinweis"]
+
 assert ns["isomer_pair_dd"].value is None
 
 selected = []
@@ -74,6 +82,7 @@ with contextlib.redirect_stdout(io.StringIO()):
     left.children[1].value = "surface"
 assert counter[0] == 1, "surface must reuse cached conformer"
 assert rendered_styles[-1] == "Didaktische Polaritätsoberfläche"
+assert "SurfaceType.VDW" in left.children[2].value, "surface must actually request VDW mesh"
 assert "keine" in left.children[2].value.lower()
 with contextlib.redirect_stdout(io.StringIO()):
     left.children[1].value = "2d"
