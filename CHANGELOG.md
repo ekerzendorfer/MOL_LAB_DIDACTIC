@@ -56,5 +56,15 @@ In v0.4.2 neu bzw. sichtbar aktiviert:
 - Der Einzelmolekül-Workflow bleibt optional, die vier übrigen Module behalten die bisherigen Bedienelemente.
 - Sieben eigens formulierte Isomerenpaar-MC-Fragen ergänzt.
 - Umfangreiche Regression: 61 RDKit-Quellkarten, sieben Isomeriepaare, MC-Logik, Lazy-3D, Berichtstext und Modulumschaltung.
-- Keine neuen chemischen Zahlenwerte in die kuratierte JSON-Datenbank eingeführt.
+- Nach dem ersten Colab-Praxistest wurden vier quellenbelegte Isomerie-Stoffdatensätze ergänzt (Butan, Isobutan, Propansäure, Essigsäuremethylester), während offene Zucker-/Enantiomeren-Sonderfälle bewusst ohne erfundene Zahlen bleiben.
 - Das ist **kein** Release auf `main`. Für die Freigabe fehlt die visuelle/chemiedidaktische Sichtung in Colab.
+
+## V0.5-Nachbesserungen nach Nutzerprüfung, 24.11.2026
+
+- Keine implizite Auswahl: Beim Öffnen von Isomerie muss zuerst ein Isomerenpaar ausgewählt und über „Vergleich anzeigen“ gestartet werden.
+- Eigene, unabhängige 2D/3D/Oberflächen-Schaltflächen **direkt an jeder Molekülkarte**, statt eines einzigen späten Viewers unter der langen Tabelle.
+- Qualitätsgrenze der farbigen 3D-Oberfläche: Jmol-Atomfarben auf VDW-Oberfläche, **keine** gemessene Polarität oder berechnetes elektrostatisches Potential.
+- MC-Feedback und Erklärung erscheinen im jeweils sichtbaren Quiz direkt unter den Buttons, über einen live aktualisierten `widgets.HTML`-Wert.
+- Tabellen unterdrücken leere Zeilen, bewahren die Modell-/Quelltrennung und ergänzen besondere Interpretationstexte bei D/L-Enantiomerie und offener Glucose/Fructose.
+- WHO/ILO-ICSC und weitere Fachquellen für das Butan- und Säure/Ester-Paar; beide JSON- und Notebook-Fallback-Datensätze im Entwicklungszweig konsistent.
+- GitHub-Actions-CI prüft alle sieben Paare, bewusste Auswahl, 2D/3D/qualitative Oberfläche, sämtliche MC-Buttons und alle vier weiteren Modulsteuerungen.
