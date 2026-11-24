@@ -140,3 +140,7 @@ Die Polaritäts- und Löslichkeitsvergleiche wurden mit allen drei Ansichten in 
 - **MOL_LAB** als möglicher späterer Vertiefungslink: Auswahl geeigneter Modellvergleiche und Datenübergabe gesondert prüfen; noch keine automatische Kopplung.
 
 [**V0.7-Testnotebook in Colab öffnen**](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.7-feinschliff-restmodule/MOL_LAB_DIDACTIC_v0_4_2.ipynb). Bitte vor Freigabe die neuen 2D-Markierungen bei Vanillin/Salicylsäure, Konformere Butan/1,2-Dichlorethan und MC-Fragen bei Ibuprofen/Alanin testen.
+
+### V0.7-Nachtrag: Funktionelle Gruppen in Wirkstoffen und Biomolekülen
+
+Die aus dem Modul *Funktionelle Gruppen* bekannte interaktive Hervorhebung ist jetzt auch bei *Wirkstoffe und Biomoleküle* verfügbar. Die 3D-Darstellung und bisherigen Aufgaben bleiben erhalten. Das SMARTS-Muster **Sulfonamid** wurde für Acetazolamid ergänzt. Die automatische Regression kontrolliert die Markierung und ihre Rücksetzung.

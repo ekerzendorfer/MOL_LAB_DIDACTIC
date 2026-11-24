@@ -75,6 +75,29 @@ panels=[x for x in rendered if isinstance(x,widgets.HBox)
 assert panels, "functional view not shown"
 assert isinstance(panels[-1].children[1],widgets.HTML)
 assert "3D-Modell" in panels[-1].children[1].value
+# The same highlight works for curated drugs/biomolecules; sulfonamide is visible.
+ace = Chem.MolFromSmiles("CC(=O)Nc1nnc(s1)S(N)(=O)=O")
+assert "Sulfonamid" in ns["detect_functional_groups"](ace)
+assert len(ns["_functional_group_highlight_atoms"](ace,"Sulfonamid")[0])>=4
+rendered.clear()
+with contextlib.redirect_stdout(io.StringIO()):
+    ns["module_dd"].value="Wirkstoffe und Biomoleküle"
+    ns["example_dd"].value="Acetazolamid"
+    ns["run_btn"].click()
+assert ns["current_report"]["name"]=="Acetazolamid"
+drug_panels=[x for x in rendered if isinstance(x,widgets.HBox)
+             and len(x.children)==2
+             and isinstance(x.children[0],widgets.VBox)
+             and len(x.children[0].children)==4]
+assert drug_panels, "biomolecule highlight widget not displayed"
+drug_picker=drug_panels[-1].children[0].children[1]
+drug_view=drug_panels[-1].children[0].children[2]
+assert "Sulfonamid" in [label for label, value in drug_picker.options]
+base_image=drug_view.value
+drug_picker.value="Sulfonamid"
+assert drug_view.value!=base_image
+drug_picker.value=None
+assert drug_view.value==base_image
 
 # Energy+geometry are both represented; no energy-only grouping.
 with contextlib.redirect_stdout(io.StringIO()):
