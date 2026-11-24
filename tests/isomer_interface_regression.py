@@ -25,7 +25,7 @@ assert len(ns["ISOMER_QUIZZES"]) == 7
 assert len(ns["MOLECULES"]) == 5
 
 selected = []
-ns["display"] = lambda item: selected.append(item)
+ns["display"] = lambda *items: selected.extend(items)
 counter = [0]
 real_make3d = ns["make_3d"]
 def spy3d(mol):
@@ -67,7 +67,7 @@ with contextlib.redirect_stdout(io.StringIO()):
 assert counter[0] == 2, "switching the displayed molecule should update the one viewer"
 
 # Changing the module should reveal the guided pair selector and hide single controls.
-ns["display"] = lambda item: None
+ns["display"] = lambda *items: None
 with contextlib.redirect_stdout(io.StringIO()):
     ns["module_dd"].value = "Isomerie"
 assert ns["isomer_section"].layout.display != "none"
