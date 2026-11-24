@@ -3936,6 +3936,79 @@
           "reaktionsidee": "Neutralisation; Bildung von Citrat-Salzen und Metall-Komplexen.",
           "modellgrenze": "Qualitative Orientierung; pH-Wert und Ionisierungszustand sind entscheidend."
         }
+      },
+      {
+        "id": "atorvastatin",
+        "name": "Atorvastatin",
+        "smiles": "CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4",
+        "niveau": "Vertiefung",
+        "leitfrage": "Wie kann ein Wirkstoff mit 41 Schweratomen mehrere funktionelle Gruppen, aromatische Ringe, zwei Stereozentren und flexible Molekülbereiche vereinen?",
+        "beobachten": [
+          "Markiere die Carboxylgruppe, zwei Alkoholgruppen, die Amidgruppe, die aromatischen Ringe und die Aryl-F-Bindung.",
+          "Suche die beiden Stereozentren der Dihydroxy-Seitenkette: Konfiguration (3R,5R).",
+          "Betrachte das 3D-Modell und unterscheide starre Ringsysteme und bewegliche Kettenabschnitte.",
+          "Vergleiche 41 Schweratome und zwölf RDKit-rotierbare Bindungen. Warum ist eine einzige 3D-Geometrie nicht eindeutig?"
+        ],
+        "frage": "Welche Aussage erklärt die molekulare Komplexität von Atorvastatin am besten?",
+        "antworten": [
+          "Atorvastatin besteht aus einem einzelnen starren aromatischen Ring ohne stereogene Zentren.",
+          "Mehrere aromatische Ringe, polare Gruppen, eine flexible Seitenkette und zwei definierte Stereozentren kommen in einem Molekül zusammen.",
+          "Eine einzelne Kraftfeld-Minimierung liefert die experimentell nachgewiesene Bindepose im Zielprotein.",
+          "Die Summenformel legt die pharmakologische Wirkung und die Wasserlöslichkeit eindeutig fest."
+        ],
+        "richtig": 1,
+        "feedback": "Richtig: Vier Ringsysteme, Carboxyl-, Alkohol- und Amidfunktionen, fluoriertes Aromatensystem, flexible Kette und zwei stereogene Zentren erklären die hohe strukturelle Vielfalt.",
+        "erklaerung": "Atorvastatin (PubChem CID 60823, freie Säure) enthält drei Phenylringe, einen substituierten Pyrrolring, zwei alkoholische OH-Gruppen, eine Carboxylgruppe und eine Amidfunktion sowie eine Aryl-F-Bindung. RDKit erkennt 41 Schweratome, zwölf rotierbare Bindungen und zwei CIP-R-Stereozentren (3R,5R).",
+        "modellgrenze": "Dargestellt ist die freie neutrale Atorvastatinsäure, nicht das häufig verwendete Calciumsalz oder das pH-abhängige Carboxylat. Eine einzelne RDKit-MMFF-Geometrie ist weder die biologisch aktive Bindepose noch eine Vorhersage der Wasserlöslichkeit, Wirksamkeit oder Verteilung.",
+        "typ": "molecule",
+        "modul": "Wirkstoffe und Biomoleküle",
+        "tags": [
+          "Komplexität",
+          "Stereochemie"
+        ],
+        "didaktik": {
+          "fehlvorstellung": "Ein einziges 3D-Modell und die Summenformel erlauben eine eindeutige biologische Wirkungsprognose.",
+          "leitfrage": "Wie kann ein Wirkstoff mit 41 Schweratomen mehrere funktionelle Gruppen, aromatische Ringe, zwei Stereozentren und flexible Molekülbereiche vereinen?",
+          "beobachten": [
+            "Markiere die Carboxylgruppe, zwei Alkoholgruppen, die Amidgruppe, die aromatischen Ringe und die Aryl-F-Bindung.",
+            "Suche die beiden Stereozentren der Dihydroxy-Seitenkette: Konfiguration (3R,5R).",
+            "Betrachte das 3D-Modell und unterscheide starre Ringsysteme und bewegliche Kettenabschnitte.",
+            "Vergleiche 41 Schweratome und zwölf RDKit-rotierbare Bindungen. Warum ist eine einzige 3D-Geometrie nicht eindeutig?"
+          ],
+          "mc_frage": "Welche Aussage erklärt die molekulare Komplexität von Atorvastatin am besten?",
+          "mc_antworten": [
+            "Atorvastatin besteht aus einem einzelnen starren aromatischen Ring ohne stereogene Zentren.",
+            "Mehrere aromatische Ringe, polare Gruppen, eine flexible Seitenkette und zwei definierte Stereozentren kommen in einem Molekül zusammen.",
+            "Eine einzelne Kraftfeld-Minimierung liefert die experimentell nachgewiesene Bindepose im Zielprotein.",
+            "Die Summenformel legt die pharmakologische Wirkung und die Wasserlöslichkeit eindeutig fest."
+          ],
+          "mc_richtig": 1,
+          "feedback": "Richtig: Vier Ringsysteme, Carboxyl-, Alkohol- und Amidfunktionen, fluoriertes Aromatensystem, flexible Kette und zwei stereogene Zentren erklären die hohe strukturelle Vielfalt.",
+          "erklaerung": "Atorvastatin (PubChem CID 60823, freie Säure) enthält drei Phenylringe, einen substituierten Pyrrolring, zwei alkoholische OH-Gruppen, eine Carboxylgruppe und eine Amidfunktion sowie eine Aryl-F-Bindung. RDKit erkennt 41 Schweratome, zwölf rotierbare Bindungen und zwei CIP-R-Stereozentren (3R,5R).",
+          "modellgrenze": "Dargestellt ist die freie neutrale Atorvastatinsäure, nicht das häufig verwendete Calciumsalz oder das pH-abhängige Carboxylat. Eine einzelne RDKit-MMFF-Geometrie ist weder die biologisch aktive Bindepose noch eine Vorhersage der Wasserlöslichkeit, Wirksamkeit oder Verteilung.",
+          "mini_aufgaben": [
+            "Finde und markiere Carboxylgruppe, OH-Gruppen, Amid und Arylfluorid.",
+            "Suche die zwei Stereozentren und erkläre, warum sie pharmakochemisch relevant sein können.",
+            "Unterscheide die starren aromatischen Ringsysteme von flexiblen Kettensegmenten. Was zeigt ein einzelnes 3D-Modell nicht?"
+          ],
+          "experimenteller_bezug": "Geprüfte Atorvastatin-Struktur der freien Säure, nicht Arzneistoffsalz oder Kristallhydratform."
+        },
+        "stoffdaten": {
+          "schmelzpunkt_C": null,
+          "siedepunkt_C": null,
+          "dichte_g_cm3": null,
+          "wasserloeslichkeit": null,
+          "aggregatzustand_raumtemperatur": null,
+          "bedingungen": null,
+          "quelle": "PubChem CID 60823 (Atorvastatin, neutrale freie Säure)",
+          "hinweis": "Referenzstruktur C₃₃H₃₅FN₂O₅; M = 558,65 g/mol; (3R,5R). Keine ungesicherten experimentellen Werte ergänzt."
+        },
+        "reaktivitaet": {
+          "hinweis": "Qualitative Reaktionsmöglichkeiten von Carboxylgruppe, OH-Gruppen und Amid.",
+          "warum": "Die Säuregruppe ist ionisierbar; die beiden OH-Gruppen und Amidfunktion erlauben weitere chemische Wechselwirkungen.",
+          "reaktionsidee": "Säure-Base-Verhalten und Salzbildung an der Carboxylgruppe; keine Vorhersage von Wirkmechanismus oder Metabolismus.",
+          "modellgrenze": "Nur qualitative Gruppenchemie, keine Reaktionsvorhersage oder Proteinbindungssimulation."
+        }
       }
     ]
   },
