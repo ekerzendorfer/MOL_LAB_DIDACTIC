@@ -16,6 +16,8 @@ jobs:
       - name: Validate Python cell and curated JSON
         run: python3 tests/validate_notebook.py
       - name: Install RDKit for descriptor regression
-        run: python3 -m pip install --disable-pip-version-check rdkit
+        run: python3 -m pip install --disable-pip-version-check rdkit py3Dmol ipywidgets pandas pillow
       - name: Validate molecular descriptors across all curated examples
         run: python3 tests/descriptor_regression.py
+      - name: Validate pair-first Isomerie GUI and unchanged remaining modules
+        run: python3 tests/isomer_interface_regression.py
