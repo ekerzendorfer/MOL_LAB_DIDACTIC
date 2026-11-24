@@ -20,7 +20,7 @@ assert any(b in ns["DATA_URL"] for b in ("/v0.7-feinschliff-restmodule/", "/v0.8
 assert len(ns["MOLECULES"])==5
 assert len(data["modules"]["Funktionelle Gruppen"])==13
 assert len(data["modules"]["Konformere"])==7
-assert len(data["modules"]["Wirkstoffe und Biomoleküle"])==11
+assert len(data["modules"]["Wirkstoffe und Biomoleküle"])==12
 
 # A ring selection must mean all aromatic atoms, not a single aromatic atom.
 v=Chem.MolFromSmiles("COc1cc(C=O)ccc1O")

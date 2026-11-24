@@ -13,7 +13,7 @@ from rdkit.Chem import Crippen, Descriptors, rdMolDescriptors
 root = Path(__file__).resolve().parents[1]
 data = json.loads((root / "molecules_v0_4_2.json").read_text(encoding="utf-8"))
 cards = [(module, card) for module, items in data["modules"].items() for card in items]
-assert len(cards) == 61, f"Unexpected source count: {len(cards)}"
+assert len(cards) == 62, f"Unexpected source count: {len(cards)}"
 
 invalid = []
 descriptors = {}
@@ -36,7 +36,7 @@ for module, card in cards:
     descriptors[(module, card["name"])] = values
 
 assert not invalid, "Invalid DIDACTIC SMILES: " + repr(invalid)
-assert len(descriptors) == 61
+assert len(descriptors) == 62
 p = descriptors[("Isomerie", "Propanal")]
 a = descriptors[("Isomerie", "Aceton")]
 assert p["formula"] == a["formula"] == "C3H6O"

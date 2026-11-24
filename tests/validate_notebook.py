@@ -22,7 +22,7 @@ assert "show_comparison_quiz(pair[\"quiz\"])" in source
 assert "random.shuffle(answers)" in source
 
 cards = [c for items in data["modules"].values() for c in items]
-assert len(cards) == 61, "Unexpected change in curated molecule count"
+assert len(cards) == 62, "Unexpected change in curated molecule count"
 for card in cards:
     quiz = card
     assert quiz.get("frage") and len(quiz.get("antworten", [])) == 4, card.get("name")
@@ -36,4 +36,4 @@ assert any(c["id"] == "propanal" and c["stoffdaten"]["siedepunkt_C"] for c in da
 assert "48–49" in source and "Propanal" in source
 assert any(c["id"] == "adenin" and c["smiles"] == "Nc1ncnc2[nH]cnc12" for c in data["modules"]["Wirkstoffe und Biomoleküle"]), "Adenine SMILES was reverted"
 assert "'name': 'Adenin', 'smiles': 'Nc1ncnc2[nH]cnc12'" in source, "Adenine notebook fallback differs from JSON"
-print("DIDACTIC: notebook syntax, 61 individual MCs, 7 polarity MCs, 7 isomer MCs and curated data – OK")
+print("DIDACTIC: notebook syntax, 62 individual MCs, 7 polarity MCs, 7 isomer MCs and curated data – OK")
