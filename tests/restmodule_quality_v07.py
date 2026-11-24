@@ -33,13 +33,54 @@ for group in ["Phenol","Aldehyd","Ether"]:
     assert len(atoms)>=2 and len(bonds)>=1,group
     assert atoms==sorted(set(atoms)) and bonds==sorted(set(bonds))
 assert not ns["_functional_group_highlight_atoms"](v,"unbekannt")[0]
+
+# A functional group takes precedence over its embedded C=O fragment.
+aspirin=Chem.MolFromSmiles("CC(=O)Oc1ccccc1C(=O)O")
+aspirin_groups=ns["detect_functional_groups"](aspirin)
+assert "Carboxylgruppe" in aspirin_groups
+assert "Ester" in aspirin_groups
+assert "Carbonylgruppe" not in aspirin_groups,aspirin_groups
+assert len(ns["_free_carbonyl_matches"](aspirin))==0
+for smi in ["CC(=O)O","CC(=O)OC","CC(=O)OC(=O)C","CC(=O)N"]:
+    mol_test=Chem.MolFromSmiles(smi)
+    assert "Carbonylgruppe" not in ns["detect_functional_groups"](mol_test),smi
+assert "Carbonylgruppe" in ns["detect_functional_groups"](
+    Chem.MolFromSmiles("CC=O")), "Free aldehyde C=O remains selectable"
+
+# Caffeine: delocalized fused aromatic system PLUS TWO explicit C=O groups.
+caffeine=Chem.MolFromSmiles("Cn1cnc2n(C)c(=O)n(C)c(=O)c12")
+caffeine_groups=ns["detect_functional_groups"](caffeine)
+assert "Aromatischer Ring" in caffeine_groups
+assert "Carbonylgruppe" in caffeine_groups,caffeine_groups
+assert len(ns["_free_carbonyl_matches"](caffeine))==2
+c_atoms,c_bonds=ns["_functional_group_highlight_atoms"](caffeine,"Carbonylgruppe")
+assert len(c_atoms)==4 and len(c_bonds)==2
+ring_atoms,ring_bonds=ns["_functional_group_highlight_atoms"](caffeine,"Aromatischer Ring")
+assert len(ring_atoms)==9 and len(ring_bonds)==10
+assert ns["_functional_group_display_label"](caffeine,"Aromatischer Ring")=="Aromatisches Ringsystem (RDKit)"
+assert ns["_functional_group_display_label"](caffeine,"Carbonylgruppe")=="Ring-Carbonylgruppen (C=O)"
+caffeine_ui=ns["functional_group_highlight_widget"](caffeine,caffeine_groups)
+ui_values={value:label for label,value in caffeine_ui.children[1].options}
+assert ui_values["Aromatischer Ring"]=="Aromatisches Ringsystem (RDKit)"
+assert ui_values["Carbonylgruppe"]=="Ring-Carbonylgruppen (C=O)"
+caffeine_ui.children[1].value="Carbonylgruppe"
+assert "data:image/png" in caffeine_ui.children[2].value
+
+# Adenine: both fused heterocyclic rings are recognized as aromatic by RDKit.
+adenine=Chem.MolFromSmiles("Nc1ncnc2[nH]cnc12")
+assert "Aromatischer Ring" in ns["detect_functional_groups"](adenine)
+assert "Carbonylgruppe" not in ns["detect_functional_groups"](adenine)
+a_atoms,a_bonds=ns["_functional_group_highlight_atoms"](adenine,"Aromatischer Ring")
+assert len(a_atoms)==9 and len(a_bonds)==10
+assert ns["_functional_group_display_label"](adenine,"Aromatischer Ring")=="Aromatisches Ringsystem (RDKit)"
+
 assert "Ether" not in ns["detect_functional_groups"](
     Chem.MolFromSmiles("CC(=O)OCC")), "Ester oxygen is not an ether group"
 assert "Ether" not in ns["detect_functional_groups"](
     Chem.MolFromSmiles("CC(=O)OC(=O)C")), "Anhydride oxygen is not an ether group"
 assert "Ester" in ns["detect_functional_groups"](
     Chem.MolFromSmiles("CC(=O)OCC"))
-assert "Carbonsäure" in ns["detect_functional_groups"](
+assert "Carboxylgruppe" in ns["detect_functional_groups"](
     Chem.MolFromSmiles("O=C(O)c1ccccc1O"))
 assert "Phenol" in ns["detect_functional_groups"](
     Chem.MolFromSmiles("O=C(O)c1ccccc1O"))

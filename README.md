@@ -144,3 +144,11 @@ Die Polaritäts- und Löslichkeitsvergleiche wurden mit allen drei Ansichten in 
 ### V0.7-Nachtrag: Funktionelle Gruppen in Wirkstoffen und Biomolekülen
 
 Die aus dem Modul *Funktionelle Gruppen* bekannte interaktive Hervorhebung ist jetzt auch bei *Wirkstoffe und Biomoleküle* verfügbar. Die 3D-Darstellung und bisherigen Aufgaben bleiben erhalten. Das SMARTS-Muster **Sulfonamid** wurde für Acetazolamid ergänzt. Die automatische Regression kontrolliert die Markierung und ihre Rücksetzung.
+
+### Fachliche Feinkorrekturen der Gruppenmarkierung (24.11.2026)
+
+- **–COOH = Carboxylgruppe** (die Bezeichnung *Carbonsäure* bleibt für die Stoffklasse korrekt).
+- Eine Carbonylgruppe wird **nicht zusätzlich** als eigene Gruppe angeboten, wenn sie Teil einer Carboxyl-, Ester-, Amid- oder Carbonsäureanhydridgruppe ist; freie Aldehyd-/Keton-Carbonyle bleiben ansteuerbar.
+- Coffein: Beide **Ring-Carbonylgruppen (C=O)** werden nun erkannt und können gemeinsam markiert werden, obwohl RDKit die betreffenden Carbonylkohlenstoffe als aromatisch erkennt.
+- Coffein und Adenin: Bei kondensierten aromatischen Ringen heißt die Auswahl jetzt **Aromatisches Ringsystem (RDKit)**; markiert werden die aromatischen Ringatome und Ringbindungen. Aromatizität und Ringcarbonyle schließen einander nicht aus.
+- Alle Änderungen im V0.7-Branch, V0.6 auf main bleibt stabil.

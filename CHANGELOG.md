@@ -91,3 +91,7 @@ Sieben Polaritäts-/Löslichkeitspaare verwenden die kompakte 2D-/3D-/Elementobe
 - Fünf konkrete Biomolekül-/Wirkstoff-Fragen, explizite Protonierungs-/Stereochemie-Grenzen.
 - Heuristische Polaritäts- und Wasserlöslichkeitslabels außerhalb des Polaritätsmoduls nicht mehr in Auswertungsprotokollen.
 - V0.6 unverändert auf main; Branch-Test in Colab erforderlich.
+
+## V0.7 – Gruppenmarkierung wissenschaftlich präzisiert
+
+Carboxylgruppe statt Carbonsäure als Gruppenname; redundante allgemeine Carbonyle innerhalb von Acylfunktionen unterdrückt; Coffein-Ringcarbonyle separat erkannt; kondensierte Aromaten Coffein und Adenin in der Auswahl präzise als aromatische Ringsysteme bezeichnet. Regressionen prüfen beide Carbonyle und die aromatischen Atom-/Bindungsindices.
