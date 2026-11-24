@@ -69,7 +69,7 @@ Nach einem GitHub-Update in einer bereits laufenden Colab-Sitzung die Zelle **�
 
 ## Qualitätsprüfung der Vergleichsaufgaben (November 2026)
 
-Die Daten und Antwortprüfung wurden für die MOLEKÜL-WERKSTATT überarbeitet: Propanal-Stoffdaten/Reaktivität ergänzt, Multiple-Choice bei den Isomeren- und Polaritätsvergleichen aktiviert und die Antwortreihenfolge variiert. Weitere `35` von `61` Molekül-Einträgen haben noch keine Stoffdaten; manche (z. B. „Glucose offen“) sind bewusst Strukturmodelle und dürfen nicht mit Reinstoffdaten verwechselt werden.
+Die Daten und Antwortprüfung wurden für die MOLEKÜL-WERKSTATT überarbeitet: Propanal-Stoffdaten/Reaktivität ergänzt, Multiple-Choice bei den Isomeren- und Polaritätsvergleichen aktiviert und die Antwortreihenfolge variiert. Beim ursprünglichen V0.4.2-Stand waren weitere `35` von `61` Molekül-Einträgen ohne Stoffdaten; manche (z. B. „Glucose offen“) sind bewusst Strukturmodelle und dürfen nicht mit Reinstoffdaten verwechselt werden.
 
 Die vollständige Aufstellung und Reihenfolge für die spätere fachliche Feinarbeit steht unter [Datenqualität-Audit](docs/DATENQUALITAET_AUDIT_2026-11-23.md).
 
@@ -80,13 +80,21 @@ Die neue Isomerie-Oberfläche wird auf einem **separaten, noch nicht freigegeben
 **[V0.5-Vorschau in Colab öffnen](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.5-isomerien-vergleich/MOL_LAB_DIDACTIC_v0_4_2.ipynb)**  
 **[Test- und Abnahmeanleitung](docs/TEST_ISOMERIE_V0.5.md)**
 
-- Isomerie beginnt mit den **sieben kuratierten Isomerenpaaren**, nicht einer Einzelmolekül-Auswahl.
+- Isomerie beginnt mit einer **bewussten Auswahl** der sieben kuratierten Isomerenpaare; die Analyse startet erst über „Vergleich anzeigen“, nicht automatisch bei der Modulauswahl.
 - Pro Paar zwei kompakte **2D-Strukturkarten** und **eine durchgehende Vergleichstabelle**: gemeinsame Strukturmerkmale, experimentelle/kuratierte Stoffdaten, qualitative Reaktivität.
 - **Weitere Modellwerte** (topologische polare Oberfläche, Wildman–Crippen-logP, RDKit-Rotationszählung) werden erklärend und **aufklappbar** dargestellt.
 - Nicht validierte didaktische Polaritäts-/Löslichkeits-Scores werden im Isomerievergleich **nicht mehr** als Stoffeigenschaft ausgegeben.
-- Nur ein **auf Wunsch** erstelltes 3D-Modell, zwischen beiden Isomeren umschaltbar; bisherige Einzelanalyse weiterhin optional erreichbar.
-- **Sieben paarbezogene MC-Fragen** und unveränderter Protokollmechanismus.
+- Jede Isomerenkarte besitzt direkt über ihrer späteren Vergleichstabelle einen **2D | 3D | Oberfläche (qualitativ)**-Umschalter; die Moleküle werden erst bei Bedarf in 3D optimiert. Ein atomfarbiger Van-der-Waals-Mantel ist keine elektrostatische Potentialfläche.
+- **Sieben paarbezogene MC-Fragen** mit direkt darunter sichtbarem Feedback und Erklärung sowie der bewährte Protokollmechanismus.
 - Schüleransicht ohne Versionshistorie; bisherige Texte in [CHANGELOG.md](CHANGELOG.md) archiviert.
 - Drei automatisierte Checks: `tests/validate_notebook.py`, `tests/descriptor_regression.py`, `tests/isomer_interface_regression.py`.
 
 **Keine experimentellen log Kₒw-Werte wurden dazuerfunden.** Solche Werte benötigen dokumentierte Quellen, Temperatur-/Stoffformbedingungen und separate fachliche Abnahme. Erst nach dem Colab-Test soll die neue Paarwahl auch in die Anleitungen MW-001 und MW-009 der MOLEKÜL-WERKSTATT übernommen werden.
+
+### Nachbesserungen V0.5 nach Praxistest vom 24.11.2026
+
+Für die Isomerie-Paare **Butan/Isobutan** und **Propansäure/Essigsäuremethylester** wurden experimentelle Schmelz-/Siedepunkte und qualitative Löslichkeitsangaben aus ICSC-/Fachquellen ergänzt und mit Bedingungen bzw. Quellen-URLs versehen. Die anderen Paare werden **nicht** mit ungeprüften Reinstoffdaten aufgefüllt. Bei offenen Zuckerformen sind solche Angaben zum isolierten offenen Molekül nicht sinnvoll.
+
+Die gemeinsame Vergleichstabelle blendet weitgehend leere Abschnitte aus; der thematische Strukturhinweis bleibt erhalten. Für fehlende Angaben wird nie „0“ erfunden. Die neue [Prüfliste V0.5](docs/TEST_ISOMERIE_V0.5.md) berücksichtigt die gemeldeten Colab-Probleme.
+
+Die öffentliche V0.4.2-Fassung und die Werkstatt bleiben weiterhin unverändert, bis die Notebook-Oberfläche direkt in Colab abgenommen ist.
