@@ -12,7 +12,8 @@
       "v0.4.0 macht Reaktivitäts-Hinweise in der Oberfläche sichtbar, wo sie didaktisch sinnvoll sind.",
       "SchülerInnen-Protokolle werden aus Leitfragen, Modellwerten, Mini-Aufgaben und optionalen Stoffdaten erzeugt.",
       "Stoffdaten werden vor allem in Molekül- und Isomerenvergleichen angezeigt, damit sie als Struktur-Eigenschaft-Bezug verstanden werden.",
-      "v0.4.2 glättet Multiple-Choice-Fragen und Reaktivitäts-Hinweise, ergänzt n-Pentan und 2-Butanol im Konformer-Modul und bereitet einklappbare Bereiche für spätere Versionen vor."
+      "v0.4.2 glättet Multiple-Choice-Fragen und Reaktivitäts-Hinweise, ergänzt n-Pentan und 2-Butanol im Konformer-Modul und bereitet einklappbare Bereiche für spätere Versionen vor.",
+      "V0.5-Entwurf: Für Butan/Isobutan und Propansäure/Essigsäuremethylester wurden vergleichbare, quellenbeschriftete Stoffdaten und qualitative Reaktivitätshinweise ergänzt; Daten für isolierte offene Zuckerformen wurden bewusst nicht erfunden."
     ],
     "future_ui": {
       "collapsible_sections": [
@@ -1356,20 +1357,20 @@
           "experimenteller_bezug": null
         },
         "stoffdaten": {
-          "schmelzpunkt_C": null,
-          "siedepunkt_C": null,
+          "schmelzpunkt_C": "−138",
+          "siedepunkt_C": "−0,5",
           "dichte_g_cm3": null,
-          "wasserloeslichkeit": null,
-          "aggregatzustand_raumtemperatur": null,
-          "bedingungen": null,
-          "quelle": null,
-          "hinweis": null
+          "wasserloeslichkeit": "sehr gering (~0,0061 g/100 mL bei 20 °C)",
+          "aggregatzustand_raumtemperatur": "gasförmig",
+          "bedingungen": "Schmelz-/Siedepunkt bei ca. 1013 hPa; Löslichkeit 20 °C",
+          "quelle": "WHO/ILO/UNEP International Chemical Safety Card ICSC 0232, https://www.inchem.org/documents/icsc/icsc/eics0232.htm",
+          "hinweis": "Dichte des Flüssiggases ist ohne geeignete Temperatur-/Druckangabe nicht vergleichbar."
         },
         "reaktivitaet": {
-          "hinweis": null,
-          "warum": null,
-          "reaktionsidee": null,
-          "modellgrenze": null
+          "hinweis": "relativ reaktionsträges, unpolares Alkan",
+          "warum": "C–C- und C–H-σ-Bindungen; keine stark polaren Gruppen.",
+          "reaktionsidee": "Verbrennung oder radikalische Halogenierung bei geeigneter Aktivierung.",
+          "modellgrenze": "Die Molekülstruktur alleine liefert keine Flammen- oder Reaktionsgeschwindigkeitsprognose."
         }
       },
       {
@@ -1420,20 +1421,20 @@
           "experimenteller_bezug": null
         },
         "stoffdaten": {
-          "schmelzpunkt_C": null,
-          "siedepunkt_C": null,
+          "schmelzpunkt_C": "−160",
+          "siedepunkt_C": "−12",
           "dichte_g_cm3": null,
-          "wasserloeslichkeit": null,
-          "aggregatzustand_raumtemperatur": null,
-          "bedingungen": null,
-          "quelle": null,
-          "hinweis": null
+          "wasserloeslichkeit": "sehr gering (ca. 49 mg/L bei 25 °C; anderer Quellen-/Messkontext)",
+          "aggregatzustand_raumtemperatur": "gasförmig",
+          "bedingungen": "Schmelz-/Siedepunkt bei ca. 1013 hPa; Löslichkeit ca. 25 °C",
+          "quelle": "WHO/ILO/UNEP ICSC 0901, https://www.ilo.org/dyn/icsc/showcard.display?p_card_id=0901&p_lang=en; TCEQ Butanes DSD, https://www.tceq.texas.gov/downloads/toxicology/dsd/final/butanes.pdf/@@download/file/butanes.pdf",
+          "hinweis": "Die beiden Löslichkeitswerte haben unterschiedliche Quellen und Temperaturen; sie begründen keinen präzisen quantitativen Unterschied."
         },
         "reaktivitaet": {
-          "hinweis": null,
-          "warum": null,
-          "reaktionsidee": null,
-          "modellgrenze": null
+          "hinweis": "relativ reaktionsträges, verzweigtes Alkan",
+          "warum": "Gleiche Summenformel wie Butan, andere C-C-Verknüpfung und Molekülgestalt.",
+          "reaktionsidee": "Verbrennung; radikalische Substitution bei geeigneter Aktivierung.",
+          "modellgrenze": "Die unterschiedliche Siedetemperatur ist keine Aussage über relative chemische Reaktionsgeschwindigkeit."
         }
       },
       {
@@ -1484,20 +1485,20 @@
           "experimenteller_bezug": null
         },
         "stoffdaten": {
-          "schmelzpunkt_C": null,
-          "siedepunkt_C": null,
+          "schmelzpunkt_C": "−21",
+          "siedepunkt_C": "141",
           "dichte_g_cm3": null,
-          "wasserloeslichkeit": null,
-          "aggregatzustand_raumtemperatur": null,
-          "bedingungen": null,
-          "quelle": null,
+          "wasserloeslichkeit": "sehr gut; mit Wasser mischbar",
+          "aggregatzustand_raumtemperatur": "flüssig",
+          "bedingungen": "ca. 1013 hPa; Stoffwerte um Raumtemperatur",
+          "quelle": "WHO/ILO/UNEP ICSC 0806, https://www.inchem.org/documents/icsc/icsc/eics0806.htm; USDA Propionic acid report, https://www.ams.usda.gov/sites/default/files/media/Prop%20acid%20report.pdf",
           "hinweis": null
         },
         "reaktivitaet": {
-          "hinweis": null,
-          "warum": null,
-          "reaktionsidee": null,
-          "modellgrenze": null
+          "hinweis": "Carbonsäure; schwach sauer",
+          "warum": "Carboxylgruppe mit abspaltbarem O–H-Proton; Carboxylat ist mesomeriestabilisiert.",
+          "reaktionsidee": "Säure-Base-Reaktion mit Basen, Esterbildung unter geeigneten Bedingungen.",
+          "modellgrenze": "Säurestärke und Veresterung hängen von Lösungsmittel und Reaktionsbedingungen ab."
         }
       },
       {
@@ -1548,20 +1549,20 @@
           "experimenteller_bezug": null
         },
         "stoffdaten": {
-          "schmelzpunkt_C": null,
-          "siedepunkt_C": null,
+          "schmelzpunkt_C": "−98",
+          "siedepunkt_C": "57",
           "dichte_g_cm3": null,
-          "wasserloeslichkeit": null,
-          "aggregatzustand_raumtemperatur": null,
-          "bedingungen": null,
-          "quelle": null,
+          "wasserloeslichkeit": "24,4 g/100 mL Wasser bei 20 °C (begrenzt mischbar)",
+          "aggregatzustand_raumtemperatur": "flüssig",
+          "bedingungen": "Siedepunkt ca. 1013 hPa; Löslichkeit bei 20 °C",
+          "quelle": "WHO/ILO/UNEP International Chemical Safety Card ICSC 0507, https://inchem.org/documents/icsc/icsc/eics0507.htm",
           "hinweis": null
         },
         "reaktivitaet": {
-          "hinweis": null,
-          "warum": null,
-          "reaktionsidee": null,
-          "modellgrenze": null
+          "hinweis": "Ester; keine freie Carboxyl-O–H-Gruppe",
+          "warum": "Carbonyl-C ist über O an einen weiteren C-Rest gebunden.",
+          "reaktionsidee": "Esterhydrolyse unter sauren oder basischen Bedingungen.",
+          "modellgrenze": "Esterhydrolyse und Gleichgewicht erfordern Reaktionsbedingungen; nicht allein aus einer Strukturansicht ablesbar."
         }
       },
       {
