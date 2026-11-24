@@ -112,3 +112,16 @@ Die Isomerie-Oberfläche wurde am 24.11.2026 in Colab abgenommen und anschließe
 ### UI-Nachbesserung nach Colab-Test (24.11.2026)
 
 In V0.5 startet die Isomerie-Analyse bei der Auswahl eines kuratierten Paares (nicht schon beim Öffnen des Moduls). Vier korrekt umbrechende Antwortzeilen ersetzen die in Colab überlappenden langen Radio-Optionen. Die beiden schmalen Strukturkarten behalten beim Wechsel zwischen 2D, 3D und Oberfläche dieselbe Breite. Der Colab-Praxistest war erfolgreich; V0.5 ist nun auf `main` verfügbar.
+
+## V0.6-Entwurf – Polarität und Löslichkeit (24.11.2026)
+
+**Entwicklung ausschließlich auf dem Branch [v0.6-polaritaet-qualitaet](https://github.com/ekerzendorfer/MOL_LAB_DIDACTIC/tree/v0.6-polaritaet-qualitaet). V0.5 auf main bleibt unverändert.**
+
+- Die sieben kuratierten Polaritätspaare beginnen nach bewusster Auswahl direkt; die Einzelanalyse bleibt für MW-015 und eigene SMILES erhalten.
+- Zwei kompakte Karten verwenden denselben 2D/3D/qualitativen Elementoberflächen-Umschalter wie Isomerie. Erst bei Bedarf wird eine 3D-Modellgeometrie berechnet.
+- Statt mehrerer verstreuter Tabellen stehen die kuratierten Stoffdaten und Reaktivität in einer gemeinsamen Vergleichstabelle. RDKit-Modellwerte sind aufklappbar, unvalidierte Polaritäts-/Löslichkeits-Scores fehlen bewusst in Paaransicht und Paarbericht.
+- Die Elementoberfläche ist **keine** elektrostatische Potentialfläche, kein Dipolmodell und keine quantitative Polaritätsmessung.
+- Kleine fachliche Korrekturen: Aldehyd-Erkennung einschließlich Methanal, Trennung Ester/Carbonsäureanhydrid und Butan-MC zur anti-/gauche-Konformation im Konformer-Modul.
+- Bei der Einzelanalyse bleiben die bisherigen Funktionen erhalten; die didaktische Heuristik wird sichtbar als **unvalidiert** gekennzeichnet.
+
+**[V0.6-Colab-Testnotebook](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.6-polaritaet-qualitaet/MOL_LAB_DIDACTIC_v0_4_2.ipynb)** · Freigabe erst nach visuellem Praxistest.
