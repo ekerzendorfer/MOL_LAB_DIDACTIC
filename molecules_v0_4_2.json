@@ -2795,16 +2795,16 @@
           "Drehe anschließend das 3D-Modell.",
           "Vergleiche die Deskriptoren mit der Leitfrage."
         ],
-        "frage": "Was unterscheidet Butan von Isobutan?",
+        "frage": "Worin unterscheiden sich anti- und gauche-Konformationen von n-Butan?",
         "antworten": [
-          "Die C-Atome sind anders verknüpft: Butan ist unverzweigt, Isobutan verzweigt.",
-          "Butan und Isobutan unterscheiden sich in der Summenformel.",
-          "Isobutan enthält eine OH-Gruppe.",
-          "Verzweigung verändert keine physikalischen Eigenschaften."
+          "Sie entstehen durch Rotation um die zentrale C–C-Einfachbindung und unterscheiden sich in ihrer relativen Energie.",
+          "Die beiden Formen besitzen unterschiedliche Summenformeln.",
+          "Beim Übergang von anti zu gauche wird eine C–C-Bindung gebrochen.",
+          "Es handelt sich um Konstitutionsisomere wie Butan und Isobutan."
         ],
         "richtig": 0,
-        "feedback": "Richtig: Es handelt sich um Konstitutionsisomerie mit anderer C-Gerüstform.",
-        "erklaerung": "Butan kann um C-C-Einfachbindungen rotieren; verschiedene Formen haben verschiedene relative Energien.",
+        "feedback": "Anti und gauche sind Konformere desselben Moleküls: Der Diederwinkel zwischen den Methylgruppen beträgt ungefähr 180° bzw. 60°.",
+        "erklaerung": "Rotation um die zentrale C–C-Einfachbindung verändert die räumliche Anordnung ohne Bindungsbruch; anti ist im einfachen Kraftfeldmodell energetisch günstiger als gauche.",
         "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
         "id": "butan",
         "typ": "molecule",
@@ -2818,16 +2818,16 @@
             "Drehe anschließend das 3D-Modell.",
             "Vergleiche die Deskriptoren mit der Leitfrage."
           ],
-          "mc_frage": "Was unterscheidet Butan von Isobutan?",
+          "mc_frage": "Worin unterscheiden sich anti- und gauche-Konformationen von n-Butan?",
           "mc_antworten": [
-            "Die C-Atome sind anders verknüpft: Butan ist unverzweigt, Isobutan verzweigt.",
-            "Butan und Isobutan unterscheiden sich in der Summenformel.",
-            "Isobutan enthält eine OH-Gruppe.",
-            "Verzweigung verändert keine physikalischen Eigenschaften."
+            "Sie entstehen durch Rotation um die zentrale C–C-Einfachbindung und unterscheiden sich in ihrer relativen Energie.",
+            "Die beiden Formen besitzen unterschiedliche Summenformeln.",
+            "Beim Übergang von anti zu gauche wird eine C–C-Bindung gebrochen.",
+            "Es handelt sich um Konstitutionsisomere wie Butan und Isobutan."
           ],
           "mc_richtig": 0,
-          "feedback": "Richtig: Es handelt sich um Konstitutionsisomerie mit anderer C-Gerüstform.",
-          "erklaerung": "Butan kann um C-C-Einfachbindungen rotieren; verschiedene Formen haben verschiedene relative Energien.",
+          "feedback": "Anti und gauche sind Konformere desselben Moleküls: Der Diederwinkel zwischen den Methylgruppen beträgt ungefähr 180° bzw. 60°.",
+          "erklaerung": "Rotation um die zentrale C–C-Einfachbindung verändert die räumliche Anordnung ohne Bindungsbruch; anti ist im einfachen Kraftfeldmodell energetisch günstiger als gauche.",
           "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
           "mini_aufgaben": [],
           "experimenteller_bezug": null
