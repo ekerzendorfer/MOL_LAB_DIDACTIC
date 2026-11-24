@@ -27,3 +27,5 @@ jobs:
         run: python3 tests/restmodule_quality_v07.py
       - name: Validate v0.8 stereochemistry and D-glucose guided exploration
         run: python3 tests/stereochemistry_glucose_v08.py
+      - name: Validate Atorvastatin structure and teaching workflow
+        run: python3 tests/atorvastatin_v08.py
