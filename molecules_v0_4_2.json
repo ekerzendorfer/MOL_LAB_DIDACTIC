@@ -3371,17 +3371,17 @@
           "Drehe anschließend das 3D-Modell.",
           "Vergleiche die Deskriptoren mit der Leitfrage."
         ],
-        "frage": "Welche Aussage passt am besten?",
+        "frage": "Welche Gruppen ermöglichen Paracetamol Wasserstoffbrücken, und welcher Bereich ist weniger polar?",
         "antworten": [
-          "Paracetamol enthält Phenol und Amid.",
-          "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-          "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-          "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+          "Phenolische OH-Gruppe und Amid können Wasserstoffbrücken bilden; der aromatische Ring ist vergleichsweise unpolar.",
+          "Nur der aromatische Ring bildet starke Wasserstoffbrücken mit Wasser.",
+          "Paracetamol besteht aus einem Ester und einer Carbonsäure.",
+          "Aus der Summenformel allein folgt die Wasserlöslichkeit eindeutig."
         ],
         "richtig": 0,
-        "feedback": "Richtig: Paracetamol enthält Phenol und Amid.",
-        "erklaerung": "Diese Gruppen können H-Brücken bilden; der Aromat ist unpolarer.",
-        "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+        "feedback": "Phenolische OH-Gruppe und Amid ermöglichen Donor-/Akzeptor-Wechselwirkungen; die aromatische Struktur beeinflusst das Gesamtverhalten.",
+        "erklaerung": "Die phenolische OH-Gruppe und die Amidgruppe bieten verschiedene polare Wechselwirkungsmöglichkeiten. Daraus folgt weder unmittelbar die Löslichkeit noch die pharmakologische Wirkung.",
+        "modellgrenze": "Die neutrale 2D-Struktur beschreibt keine Solvatation, Kristallstruktur, Bindestelle oder pharmakologische Wirkung. RDKit-Modellwerte sind keine experimentellen Arzneistoffdaten.",
         "id": "paracetamol",
         "typ": "molecule",
         "modul": "Wirkstoffe und Biomoleküle",
@@ -3394,17 +3394,17 @@
             "Drehe anschließend das 3D-Modell.",
             "Vergleiche die Deskriptoren mit der Leitfrage."
           ],
-          "mc_frage": "Welche Aussage passt am besten?",
+          "mc_frage": "Welche Gruppen ermöglichen Paracetamol Wasserstoffbrücken, und welcher Bereich ist weniger polar?",
           "mc_antworten": [
-            "Paracetamol enthält Phenol und Amid.",
-            "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-            "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-            "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+            "Phenolische OH-Gruppe und Amid können Wasserstoffbrücken bilden; der aromatische Ring ist vergleichsweise unpolar.",
+            "Nur der aromatische Ring bildet starke Wasserstoffbrücken mit Wasser.",
+            "Paracetamol besteht aus einem Ester und einer Carbonsäure.",
+            "Aus der Summenformel allein folgt die Wasserlöslichkeit eindeutig."
           ],
           "mc_richtig": 0,
-          "feedback": "Richtig: Paracetamol enthält Phenol und Amid.",
-          "erklaerung": "Diese Gruppen können H-Brücken bilden; der Aromat ist unpolarer.",
-          "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+          "feedback": "Phenolische OH-Gruppe und Amid ermöglichen Donor-/Akzeptor-Wechselwirkungen; die aromatische Struktur beeinflusst das Gesamtverhalten.",
+          "erklaerung": "Die phenolische OH-Gruppe und die Amidgruppe bieten verschiedene polare Wechselwirkungsmöglichkeiten. Daraus folgt weder unmittelbar die Löslichkeit noch die pharmakologische Wirkung.",
+          "modellgrenze": "Die neutrale 2D-Struktur beschreibt keine Solvatation, Kristallstruktur, Bindestelle oder pharmakologische Wirkung. RDKit-Modellwerte sind keine experimentellen Arzneistoffdaten.",
           "mini_aufgaben": [],
           "experimenteller_bezug": null
         },
@@ -3435,17 +3435,17 @@
           "Drehe anschließend das 3D-Modell.",
           "Vergleiche die Deskriptoren mit der Leitfrage."
         ],
-        "frage": "Welche Aussage passt am besten?",
+        "frage": "Warum kann die Wasserlöslichkeit von Ibuprofen vom pH-Wert abhängen?",
         "antworten": [
-          "Es besitzt eine polare Carboxylgruppe und einen großen unpolaren Bereich.",
-          "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-          "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-          "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+          "Die Carboxylgruppe kann deprotonieren; daneben besitzt Ibuprofen einen großen lipophilen Aromat- und Alkylbereich.",
+          "Ibuprofen hat keine ionisierbare Gruppe und liegt bei jedem pH gleich vor.",
+          "Der aromatische Ring wird bei höherem pH immer zu einem positiv geladenen Ion.",
+          "Die zwei Sauerstoffatome machen jede Ibuprofenform vollständig mit Wasser mischbar."
         ],
         "richtig": 0,
-        "feedback": "Richtig: Es besitzt eine polare Carboxylgruppe und einen großen unpolaren Bereich.",
-        "erklaerung": "Wirkstoffe enthalten oft beide Bereiche: polar für Wechselwirkungen, unpolar für Bindungstaschen/Membranen.",
-        "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+        "feedback": "Eine Carboxylgruppe kann pH-abhängig ionisiert sein; der große Kohlenwasserstoffanteil beeinflusst das Verhalten der neutralen Form.",
+        "erklaerung": "Die saure Carboxylgruppe kann zu einem Carboxylat deprotonieren; die aromatische und verzweigte Seitenkette ist überwiegend lipophil. Entscheidend sind pH, Stoffform und Umgebung.",
+        "modellgrenze": "Die gezeigte Struktur besitzt eine definierte Stereokonfiguration und zeigt die neutrale Säureform. RDKit-logP ist kein pH-abhängiger logD und keine gesicherte Wasserlöslichkeitsprognose.",
         "id": "ibuprofen",
         "typ": "molecule",
         "modul": "Wirkstoffe und Biomoleküle",
@@ -3458,17 +3458,17 @@
             "Drehe anschließend das 3D-Modell.",
             "Vergleiche die Deskriptoren mit der Leitfrage."
           ],
-          "mc_frage": "Welche Aussage passt am besten?",
+          "mc_frage": "Warum kann die Wasserlöslichkeit von Ibuprofen vom pH-Wert abhängen?",
           "mc_antworten": [
-            "Es besitzt eine polare Carboxylgruppe und einen großen unpolaren Bereich.",
-            "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-            "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-            "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+            "Die Carboxylgruppe kann deprotonieren; daneben besitzt Ibuprofen einen großen lipophilen Aromat- und Alkylbereich.",
+            "Ibuprofen hat keine ionisierbare Gruppe und liegt bei jedem pH gleich vor.",
+            "Der aromatische Ring wird bei höherem pH immer zu einem positiv geladenen Ion.",
+            "Die zwei Sauerstoffatome machen jede Ibuprofenform vollständig mit Wasser mischbar."
           ],
           "mc_richtig": 0,
-          "feedback": "Richtig: Es besitzt eine polare Carboxylgruppe und einen großen unpolaren Bereich.",
-          "erklaerung": "Wirkstoffe enthalten oft beide Bereiche: polar für Wechselwirkungen, unpolar für Bindungstaschen/Membranen.",
-          "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+          "feedback": "Eine Carboxylgruppe kann pH-abhängig ionisiert sein; der große Kohlenwasserstoffanteil beeinflusst das Verhalten der neutralen Form.",
+          "erklaerung": "Die saure Carboxylgruppe kann zu einem Carboxylat deprotonieren; die aromatische und verzweigte Seitenkette ist überwiegend lipophil. Entscheidend sind pH, Stoffform und Umgebung.",
+          "modellgrenze": "Die gezeigte Struktur besitzt eine definierte Stereokonfiguration und zeigt die neutrale Säureform. RDKit-logP ist kein pH-abhängiger logD und keine gesicherte Wasserlöslichkeitsprognose.",
           "mini_aufgaben": [],
           "experimenteller_bezug": null
         },
@@ -3499,17 +3499,17 @@
           "Drehe anschließend das 3D-Modell.",
           "Vergleiche die Deskriptoren mit der Leitfrage."
         ],
-        "frage": "Welche Aussage passt am besten?",
+        "frage": "Welche Strukturteile von Acetazolamid sind für polare Wechselwirkungen und Ionisierbarkeit bedeutsam?",
         "antworten": [
-          "Es besitzt mehrere polare Gruppen und Heteroatome.",
-          "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-          "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-          "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+          "Sulfonamid, Amidgruppe und heteroatomreicher Ring bieten verschiedene polare Wechselwirkungen; der Ladungszustand hängt von der Umgebung ab.",
+          "Das Molekül enthält ausschließlich Kohlenstoff und Wasserstoff.",
+          "Acetazolamid besitzt weder Sauerstoff noch Stickstoff oder Schwefel.",
+          "Alle N-Atome sind unabhängig vom pH-Wert stets positiv geladen."
         ],
         "richtig": 0,
-        "feedback": "Richtig: Es besitzt mehrere polare Gruppen und Heteroatome.",
-        "erklaerung": "Als Carboanhydrase-Hemmstoff eignet es sich für Struktur-Wirkungs- und Protein-Ligand-Bezüge.",
-        "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+        "feedback": "Sulfonamid- und Amidgruppen sowie der heteroatomreiche Ring tragen zu polaren Wechselwirkungen bei; die Sulfonamidgruppe kann ionisieren.",
+        "erklaerung": "Acetazolamid besitzt eine Sulfonamidgruppe, eine Amidgruppe und ein schwefel-/stickstoffhaltiges Ringsystem. Diese Struktur erklärt mögliche Wechselwirkungen, nicht automatisch die Bindung an ein Protein.",
+        "modellgrenze": "Die Darstellung enthält keine Protonierungszustandsrechnung und keine Bindepose an Carboanhydrase. Biologische Wirksamkeit lässt sich aus der Elementoberfläche oder RDKit-Deskriptoren nicht ableiten.",
         "id": "acetazolamid",
         "typ": "molecule",
         "modul": "Wirkstoffe und Biomoleküle",
@@ -3522,17 +3522,17 @@
             "Drehe anschließend das 3D-Modell.",
             "Vergleiche die Deskriptoren mit der Leitfrage."
           ],
-          "mc_frage": "Welche Aussage passt am besten?",
+          "mc_frage": "Welche Strukturteile von Acetazolamid sind für polare Wechselwirkungen und Ionisierbarkeit bedeutsam?",
           "mc_antworten": [
-            "Es besitzt mehrere polare Gruppen und Heteroatome.",
-            "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-            "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-            "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+            "Sulfonamid, Amidgruppe und heteroatomreicher Ring bieten verschiedene polare Wechselwirkungen; der Ladungszustand hängt von der Umgebung ab.",
+            "Das Molekül enthält ausschließlich Kohlenstoff und Wasserstoff.",
+            "Acetazolamid besitzt weder Sauerstoff noch Stickstoff oder Schwefel.",
+            "Alle N-Atome sind unabhängig vom pH-Wert stets positiv geladen."
           ],
           "mc_richtig": 0,
-          "feedback": "Richtig: Es besitzt mehrere polare Gruppen und Heteroatome.",
-          "erklaerung": "Als Carboanhydrase-Hemmstoff eignet es sich für Struktur-Wirkungs- und Protein-Ligand-Bezüge.",
-          "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+          "feedback": "Sulfonamid- und Amidgruppen sowie der heteroatomreiche Ring tragen zu polaren Wechselwirkungen bei; die Sulfonamidgruppe kann ionisieren.",
+          "erklaerung": "Acetazolamid besitzt eine Sulfonamidgruppe, eine Amidgruppe und ein schwefel-/stickstoffhaltiges Ringsystem. Diese Struktur erklärt mögliche Wechselwirkungen, nicht automatisch die Bindung an ein Protein.",
+          "modellgrenze": "Die Darstellung enthält keine Protonierungszustandsrechnung und keine Bindepose an Carboanhydrase. Biologische Wirksamkeit lässt sich aus der Elementoberfläche oder RDKit-Deskriptoren nicht ableiten.",
           "mini_aufgaben": [],
           "experimenteller_bezug": null
         },
@@ -3573,7 +3573,7 @@
         "richtig": 0,
         "feedback": "Richtig: Amino- und Carboxylgruppe prägen die Polarität und Säure-Base-Eigenschaften.",
         "erklaerung": "Die Seitenkette ist nur ein Wasserstoffatom.",
-        "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+        "modellgrenze": "Glycin ist achiral; das neutrale SMILES ist eine vereinfachte Struktur. In Wasser ist je nach pH die Zwitterionform besonders wichtig; die Neutralform-Deskriptoren beschreiben nicht alle wässrigen Eigenschaften.",
         "id": "glycin",
         "typ": "molecule",
         "modul": "Wirkstoffe und Biomoleküle",
@@ -3596,7 +3596,7 @@
           "mc_richtig": 0,
           "feedback": "Richtig: Amino- und Carboxylgruppe prägen die Polarität und Säure-Base-Eigenschaften.",
           "erklaerung": "Die Seitenkette ist nur ein Wasserstoffatom.",
-          "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+          "modellgrenze": "Glycin ist achiral; das neutrale SMILES ist eine vereinfachte Struktur. In Wasser ist je nach pH die Zwitterionform besonders wichtig; die Neutralform-Deskriptoren beschreiben nicht alle wässrigen Eigenschaften.",
           "mini_aufgaben": [],
           "experimenteller_bezug": null
         },
@@ -3627,17 +3627,17 @@
           "Drehe anschließend das 3D-Modell.",
           "Vergleiche die Deskriptoren mit der Leitfrage."
         ],
-        "frage": "Welche Aussage passt am besten?",
+        "frage": "Warum ist Alanin chiral und warum hängt seine Ladungsform vom pH-Wert ab?",
         "antworten": [
-          "Das zentrale C-Atom trägt vier verschiedene Gruppen.",
-          "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-          "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-          "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+          "Das α-C trägt vier verschiedene Substituenten; Amino- und Carboxylgruppe können Protonen aufnehmen bzw. abgeben.",
+          "Alanin besitzt kein stereogenes Zentrum, weil es eine Methylgruppe enthält.",
+          "Die Aminogruppe kann niemals protoniert werden.",
+          "Die neutrale Struktur ist bei allen pH-Werten die einzige Form in Wasser."
         ],
         "richtig": 0,
-        "feedback": "Richtig: Das zentrale C-Atom trägt vier verschiedene Gruppen.",
-        "erklaerung": "Alanin ist ein einfaches Beispiel für Chiralität in Biomolekülen.",
-        "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+        "feedback": "Alanin ist am α-C chiral; in wässriger Lösung bestimmen Säure-Base-Gleichgewichte den Protonierungszustand der Amino- und Carboxylgruppe.",
+        "erklaerung": "Die Gruppen H, CH₃, NH₂ und COOH am α-C sind verschieden. In Wasser liegt Alanin häufig als Zwitterion vor; das gezeigte neutrale SMILES ist ein vereinfachtes Strukturmodell.",
+        "modellgrenze": "Das chirale SMILES zeigt die neutrale Struktur; bei passenden wässrigen pH-Werten überwiegt die Zwitterionform. Berechnete Neutralform-Deskriptoren sind nicht automatisch Eigenschaften des wässrigen Alanins.",
         "id": "alanin",
         "typ": "molecule",
         "modul": "Wirkstoffe und Biomoleküle",
@@ -3650,17 +3650,17 @@
             "Drehe anschließend das 3D-Modell.",
             "Vergleiche die Deskriptoren mit der Leitfrage."
           ],
-          "mc_frage": "Welche Aussage passt am besten?",
+          "mc_frage": "Warum ist Alanin chiral und warum hängt seine Ladungsform vom pH-Wert ab?",
           "mc_antworten": [
-            "Das zentrale C-Atom trägt vier verschiedene Gruppen.",
-            "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-            "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-            "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+            "Das α-C trägt vier verschiedene Substituenten; Amino- und Carboxylgruppe können Protonen aufnehmen bzw. abgeben.",
+            "Alanin besitzt kein stereogenes Zentrum, weil es eine Methylgruppe enthält.",
+            "Die Aminogruppe kann niemals protoniert werden.",
+            "Die neutrale Struktur ist bei allen pH-Werten die einzige Form in Wasser."
           ],
           "mc_richtig": 0,
-          "feedback": "Richtig: Das zentrale C-Atom trägt vier verschiedene Gruppen.",
-          "erklaerung": "Alanin ist ein einfaches Beispiel für Chiralität in Biomolekülen.",
-          "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+          "feedback": "Alanin ist am α-C chiral; in wässriger Lösung bestimmen Säure-Base-Gleichgewichte den Protonierungszustand der Amino- und Carboxylgruppe.",
+          "erklaerung": "Die Gruppen H, CH₃, NH₂ und COOH am α-C sind verschieden. In Wasser liegt Alanin häufig als Zwitterion vor; das gezeigte neutrale SMILES ist ein vereinfachtes Strukturmodell.",
+          "modellgrenze": "Das chirale SMILES zeigt die neutrale Struktur; bei passenden wässrigen pH-Werten überwiegt die Zwitterionform. Berechnete Neutralform-Deskriptoren sind nicht automatisch Eigenschaften des wässrigen Alanins.",
           "mini_aufgaben": [],
           "experimenteller_bezug": null
         },
@@ -3691,17 +3691,17 @@
           "Drehe anschließend das 3D-Modell.",
           "Vergleiche die Deskriptoren mit der Leitfrage."
         ],
-        "frage": "Welche Aussage passt am besten?",
+        "frage": "Wie beeinflussen die Seitenkette und ionisierbaren Gruppen die Eigenschaften von Phenylalanin?",
         "antworten": [
-          "Die Seitenkette enthält einen aromatischen Ring.",
-          "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-          "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-          "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+          "Die aromatische Seitenkette ist überwiegend unpolar; Amino- und Carboxylgruppe können pH-abhängige Ladungen tragen.",
+          "Die aromatische Seitenkette ist eine stark saure Carboxylgruppe.",
+          "Phenylalanin enthält keine Aminogruppe und keine Carboxylgruppe.",
+          "Das Molekül besteht ausschließlich aus unpolaren Bindungen und kann keine Ionen bilden."
         ],
         "richtig": 0,
-        "feedback": "Richtig: Die Seitenkette enthält einen aromatischen Ring.",
-        "erklaerung": "Aromatische hydrophobe Seitenketten sind wichtig für Proteinstruktur und Wechselwirkungen.",
-        "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+        "feedback": "Die Phenylgruppe ermöglicht hydrophobe und aromatische Wechselwirkungen; Amino- und Carboxylgruppe prägen die Säure-Base-Eigenschaften.",
+        "erklaerung": "Phenylalanin kombiniert eine hydrophobe aromatische Seitenkette mit den für Aminosäuren typischen ionisierbaren Gruppen. In Proteinen hängt die Rolle dieser Seitenkette von ihrer Umgebung ab.",
+        "modellgrenze": "Das SMILES zeigt eine definierte Konfiguration, aber eine neutrale Aminosäureform. pH-abhängige Zwitterionen, Proteinstruktur und Bindungsenergie werden nicht berechnet.",
         "id": "phenylalanin",
         "typ": "molecule",
         "modul": "Wirkstoffe und Biomoleküle",
@@ -3714,17 +3714,17 @@
             "Drehe anschließend das 3D-Modell.",
             "Vergleiche die Deskriptoren mit der Leitfrage."
           ],
-          "mc_frage": "Welche Aussage passt am besten?",
+          "mc_frage": "Wie beeinflussen die Seitenkette und ionisierbaren Gruppen die Eigenschaften von Phenylalanin?",
           "mc_antworten": [
-            "Die Seitenkette enthält einen aromatischen Ring.",
-            "Die Summenformel allein erklärt alle Stoffeigenschaften.",
-            "Das Molekül ist automatisch ionisch, wenn Sauerstoff oder Stickstoff vorkommt.",
-            "Die räumliche Struktur spielt für Eigenschaften keine Rolle."
+            "Die aromatische Seitenkette ist überwiegend unpolar; Amino- und Carboxylgruppe können pH-abhängige Ladungen tragen.",
+            "Die aromatische Seitenkette ist eine stark saure Carboxylgruppe.",
+            "Phenylalanin enthält keine Aminogruppe und keine Carboxylgruppe.",
+            "Das Molekül besteht ausschließlich aus unpolaren Bindungen und kann keine Ionen bilden."
           ],
           "mc_richtig": 0,
-          "feedback": "Richtig: Die Seitenkette enthält einen aromatischen Ring.",
-          "erklaerung": "Aromatische hydrophobe Seitenketten sind wichtig für Proteinstruktur und Wechselwirkungen.",
-          "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+          "feedback": "Die Phenylgruppe ermöglicht hydrophobe und aromatische Wechselwirkungen; Amino- und Carboxylgruppe prägen die Säure-Base-Eigenschaften.",
+          "erklaerung": "Phenylalanin kombiniert eine hydrophobe aromatische Seitenkette mit den für Aminosäuren typischen ionisierbaren Gruppen. In Proteinen hängt die Rolle dieser Seitenkette von ihrer Umgebung ab.",
+          "modellgrenze": "Das SMILES zeigt eine definierte Konfiguration, aber eine neutrale Aminosäureform. pH-abhängige Zwitterionen, Proteinstruktur und Bindungsenergie werden nicht berechnet.",
           "mini_aufgaben": [],
           "experimenteller_bezug": null
         },
@@ -3829,7 +3829,7 @@
         "richtig": 0,
         "feedback": "Richtig: Mehrere OH-Gruppen ermöglichen viele Wechselwirkungen mit Wasser.",
         "erklaerung": "In RNA ist Ribose Teil des Zucker-Phosphat-Rückgrats; hier wird die offenkettige Form vereinfacht gezeigt.",
-        "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+        "modellgrenze": "Das SMILES zeigt eine offenkettige Ribose ohne Stereomarker. In Wasser liegen überwiegend cyclische Formen im Gleichgewicht vor. Die gezeigte Struktur darf nicht als vollständige 3D-/Stereochemie der biologischen D-Ribose interpretiert werden.",
         "id": "ribose",
         "typ": "molecule",
         "modul": "Wirkstoffe und Biomoleküle",
@@ -3852,7 +3852,7 @@
           "mc_richtig": 0,
           "feedback": "Richtig: Mehrere OH-Gruppen ermöglichen viele Wechselwirkungen mit Wasser.",
           "erklaerung": "In RNA ist Ribose Teil des Zucker-Phosphat-Rückgrats; hier wird die offenkettige Form vereinfacht gezeigt.",
-          "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+          "modellgrenze": "Das SMILES zeigt eine offenkettige Ribose ohne Stereomarker. In Wasser liegen überwiegend cyclische Formen im Gleichgewicht vor. Die gezeigte Struktur darf nicht als vollständige 3D-/Stereochemie der biologischen D-Ribose interpretiert werden.",
           "mini_aufgaben": [],
           "experimenteller_bezug": null
         },
