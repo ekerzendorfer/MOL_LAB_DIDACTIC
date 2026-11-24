@@ -46,3 +46,15 @@ In v0.4.2 neu bzw. sichtbar aktiviert:
   und nicht validierter didaktischer Polaritäts-/Löslichkeitsheuristik.
 - Änderungen erfolgen auf `v0.5-isomerien-vergleich`; die Live-Version auf `main`
   bleibt während der Entwicklung unverändert.
+
+## V0.5 – implementierter Entwurf, 24.11.2026
+
+- Die Notebook-Titelseite wurde reduziert, die frühere untere Entwicklungsseite entfernt.
+- Im Modul „Isomerie“ sind alle sieben Paare unmittelbar auswählbar.
+- Neue kombinierte Vergleichsfläche mit 2D-Strukturen, Strukturmerkmalen, Stoffdaten, Reaktivität und getrennten erklärten RDKit-Deskriptoren.
+- 3D-Viewer wird nur auf Anforderung aufgebaut und zwischen A/B umgeschaltet.
+- Der Einzelmolekül-Workflow bleibt optional, die vier übrigen Module behalten die bisherigen Bedienelemente.
+- Sieben eigens formulierte Isomerenpaar-MC-Fragen ergänzt.
+- Umfangreiche Regression: 61 RDKit-Quellkarten, sieben Isomeriepaare, MC-Logik, Lazy-3D, Berichtstext und Modulumschaltung.
+- Keine neuen chemischen Zahlenwerte in die kuratierte JSON-Datenbank eingeführt.
+- Das ist **kein** Release auf `main`. Für die Freigabe fehlt die visuelle/chemiedidaktische Sichtung in Colab.
