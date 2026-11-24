@@ -2,7 +2,7 @@ name: DIDACTIC notebook data integrity
 
 on:
   push:
-    branches: [main, v0.5-isomerien-vergleich, v0.6-polaritaet-qualitaet, v0.7-feinschliff-restmodule]
+    branches: [main, v0.5-isomerien-vergleich, v0.6-polaritaet-qualitaet, v0.7-feinschliff-restmodule, v0.8-stereochemie-glucose]
   workflow_dispatch:
 
 permissions:
@@ -25,3 +25,5 @@ jobs:
         run: python3 tests/polarity_interface_regression.py
       - name: Validate v0.7 functional highlights, conformers and biomolecule quizzes
         run: python3 tests/restmodule_quality_v07.py
+      - name: Validate v0.8 stereochemistry and D-glucose guided exploration
+        run: python3 tests/stereochemistry_glucose_v08.py

@@ -95,3 +95,10 @@ Sieben Polaritäts-/Löslichkeitspaare verwenden die kompakte 2D-/3D-/Elementobe
 ## V0.7 – Gruppenmarkierung wissenschaftlich präzisiert
 
 Carboxylgruppe statt Carbonsäure als Gruppenname; redundante allgemeine Carbonyle innerhalb von Acylfunktionen unterdrückt; Coffein-Ringcarbonyle separat erkannt; kondensierte Aromaten Coffein und Adenin in der Auswahl präzise als aromatische Ringsysteme bezeichnet. Regressionen prüfen beide Carbonyle und die aromatischen Atom-/Bindungsindices.
+
+## V0.8-Entwurf – Stereochemie und Glucose
+
+- Sichtbare Lernweg-Zuordnung Konstitutionsisomerie / Enantiomerie / E/Z; α-C-Markierung und RDKit CIP D-/L-Alanin, Alkendoppelbindungs-Markierung Malein-/Fumarsäure.
+- Geführter offenkettig ↔ α/β-D-Glucopyranose-Lernweg mit vier Schritten, 2D/3D/Oberfläche, MC-Auswertung und Protokoll.
+- Strukturreferenzen: PubChem CID 107526 (offen), 79025 (α), 64689 (β). Datenbank der bisherigen 61 Moleküle bleibt unverändert; keine quantitativ vorhergesagte Mutarotation.
+- V0.7-Biomolekülmarkierungen bleiben erhalten, V0.6 bleibt auf `main` unverändert.

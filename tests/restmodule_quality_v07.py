@@ -16,7 +16,7 @@ ns={"__name__":"__didactic_v07_regression__"}
 with contextlib.redirect_stdout(io.StringIO()):
     exec(compile("".join(code["source"]), "DIDACTIC main cell", "exec"), ns)
 data=json.loads((root/"molecules_v0_4_2.json").read_text(encoding="utf-8"))
-assert "v0.7-feinschliff-restmodule" in ns["DATA_URL"]
+assert any(b in ns["DATA_URL"] for b in ("/v0.7-feinschliff-restmodule/", "/v0.8-stereochemie-glucose/", "/main/"))
 assert len(ns["MOLECULES"])==5
 assert len(data["modules"]["Funktionelle Gruppen"])==13
 assert len(data["modules"]["Konformere"])==7

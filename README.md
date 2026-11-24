@@ -152,3 +152,15 @@ Die aus dem Modul *Funktionelle Gruppen* bekannte interaktive Hervorhebung ist j
 - Coffein: Beide **Ring-Carbonylgruppen (C=O)** werden nun erkannt und können gemeinsam markiert werden, obwohl RDKit die betreffenden Carbonylkohlenstoffe als aromatisch erkennt.
 - Coffein und Adenin: Bei kondensierten aromatischen Ringen heißt die Auswahl jetzt **Aromatisches Ringsystem (RDKit)**; markiert werden die aromatischen Ringatome und Ringbindungen. Aromatizität und Ringcarbonyle schließen einander nicht aus.
 - Alle Änderungen im V0.7-Branch, V0.6 auf main bleibt stabil.
+
+## V0.8 – Stereochemie und Glucose (Entwurf, 24.11.2026)
+
+Auf dem Entwicklungsbranch `v0.8-stereochemie-glucose` (basierend auf V0.7) werden zwei bestehende Isomerie-Paare stereochemisch aufgewertet und ein separater geführter Glucose-Lernweg angeboten.
+
+- **D-/L-Alanin**: das stereogene α-C ist in 2D markiert, tatsächliche RDKit-CIP-Konfigurationen R/S werden erläutert; D/L ist nicht mit R/S oder (+)/(−) gleichzusetzen.
+- **Maleinsäure/Fumarsäure**: die E/Z-relevante Doppelbindung ist markiert; Z/E und cis/trans werden didaktisch eingeordnet.
+- **Glucose:** ein eigener Button unter dem Isomerie-Dropdown startet vier Lernschritte (offene D-Glucose; Kette/α; Kette/β; α/β nebeneinander). Verwendet stereochemisch definierte SMILES aus PubChem, ohne die bisherigen 61 Moleküleinträge oder sieben Vergleichspaare zu ändern. Das C1 der Aldehydform, C5–O und das anomere C1 sind farblich hervorgehoben. Die drei Karten bieten bei Bedarf 3D und qualitative Elementoberfläche.
+- **Gleichgewicht:** intramolekulare Halbacetalbildung ohne Wasserabspaltung; Mutarotation über Ringöffnung und -schluss. Dies ist ein diskreter Strukturvergleich, keine quantitative Reaktions-, Geschwindigkeits- oder Gleichgewichtssimulation.
+- Der Glucose-Lernweg hat eine eigene MC-Aufgabe, Erklärung und einen Protokolltext. Das **Reset-3D** stellt den gewählten Lernschritt wieder her. Tests prüfen echte Stereokonfiguration, C1-Differenz und die UI-Wechsel.
+
+[**V0.8 in Colab testen**](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.8-stereochemie-glucose/MOL_LAB_DIDACTIC_v0_4_2.ipynb). Nur Entwicklungsbranch, noch keine Veröffentlichung auf `main`.
