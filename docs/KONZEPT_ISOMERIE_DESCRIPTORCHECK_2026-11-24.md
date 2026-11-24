@@ -1,6 +1,6 @@
 # Konzept: Isomerie-Modul und Deskriptor-Qualität in MOL_LAB DIDACTIC
 
-**Stand:** 24.11.2026 · **Status:** Vorschlag / noch nicht implementiert  
+**Stand:** 24.11.2026 · **Status:** auf dem Entwicklungszweig `v0.5-isomerien-vergleich` technisch umgesetzt und automatisch geprüft; Colab-Sichtprüfung ausständig  
 **Betroffene aktuelle Version:** `MOL_LAB_DIDACTIC_v0_4_2.ipynb` (v0.4.2)  
 **Auslöser:** Praxistest MW-009 Propanal/Aceton; Rückmeldung zur Vergleichsansicht, Modellwerten und Notebooksichtbarkeit.  
 **Geltung:** Zunächst *nur* das Modul „Isomerie“, gemeinsame Deskriptor-Funktionen werden jedoch für alle Module überprüft. Die bestehende Notebook-Funktionalität bleibt bis zur fachlichen Freigabe unverändert.
@@ -125,4 +125,4 @@ Das ist nicht nur ein UI-Problem: Änderungen an den Deskriptoren und ihrer Inte
 
 **Testfragen:** Liefert die Hauptansicht unmittelbar die zwei 2D-Strukturen, alle relevanten experimentellen Daten und deren Quellen? Lassen sich dieselben physikalisch unwidersprüchlichen Modellwerte korrekt einordnen? Ist die gesamte Ansicht mobil benutzbar? Funktionieren Antwortprüfung, 3D und Report weiterhin?
 
-**Vorerst keine Änderung am Notebook, der Werkstatt oder an MOLLAB_PRO.** Dieses Dokument dient der fachlichen Abstimmung.
+**Umsetzung:** Die Notebook-Änderungen liegen ausschließlich auf dem Entwicklungszweig; `main`, die MOLEKÜL-WERKSTATT und MOLLAB_PRO wurden nicht verändert. Für die fachliche und visuelle Abnahme siehe [Testblatt V0.5](TEST_ISOMERIE_V0.5.md).
