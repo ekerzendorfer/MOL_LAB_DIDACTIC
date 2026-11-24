@@ -2,7 +2,7 @@ name: DIDACTIC notebook data integrity
 
 on:
   push:
-    branches: [main]
+    branches: [main, v0.5-isomerien-vergleich]
   workflow_dispatch:
 
 permissions:
@@ -15,3 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate Python cell and curated JSON
         run: python3 tests/validate_notebook.py
+      - name: Install RDKit for descriptor regression
+        run: python3 -m pip install --disable-pip-version-check rdkit
+      - name: Validate molecular descriptors across all curated examples
+        run: python3 tests/descriptor_regression.py
