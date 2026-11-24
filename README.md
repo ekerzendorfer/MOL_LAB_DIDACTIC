@@ -164,3 +164,11 @@ Auf dem Entwicklungsbranch `v0.8-stereochemie-glucose` (basierend auf V0.7) werd
 - Der Glucose-Lernweg hat eine eigene MC-Aufgabe, Erklärung und einen Protokolltext. Das **Reset-3D** stellt den gewählten Lernschritt wieder her. Tests prüfen echte Stereokonfiguration, C1-Differenz und die UI-Wechsel.
 
 [**V0.8 in Colab testen**](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.8-stereochemie-glucose/MOL_LAB_DIDACTIC_v0_4_2.ipynb). Nur Entwicklungsbranch, noch keine Veröffentlichung auf `main`.
+
+### Abschlussbeispiel V0.8: Atorvastatin (24.11.2026)
+
+Als **62. Moleküleintrag** und **12. Wirkstoff/Biomolekül** ergänzt: die neutrale freie Atorvastatinsäure, [PubChem CID 60823](https://pubchem.ncbi.nlm.nih.gov/compound/60823). Mit stereochemisch definiertem SMILES: C₃₃H₃₅FN₂O₅, 558,65 g/mol, 41 Schweratome, vier Ringe, zwölf nach RDKit definiert rotierbare Bindungen und zwei R-Stereozentren (3R,5R).
+
+Im bestehenden Modul sind Carboxylgruppe, OH-Gruppen, Amid, aromatisches Ringsystem und neu **Arylfluorid** markierbar; die 2D-Darstellung erhält für diese umfangreiche Struktur eine größere Fläche. Eine kompakte Komplexitätsübersicht, eine eigene MC-Aufgabe sowie Beobachtungsfragen gehören zur Karte. **Keine** Vorhersage von Bindeposen oder Arzneiwirkung: freie Säure und pharmazeutisches Calciumsalz unterscheiden sich, und ein einzelnes 3D-Kraftfeldminimum ist nur ein Modell. Keine frei erfundenen experimentellen Stoffdaten.
+
+Fosravuconazol ist weiterhin **nur als mögliche spätere Vertiefung** dokumentiert. Die Veröffentlichung von V0.8 auf `main` erfolgt erst nach praktischem Colab-Test.

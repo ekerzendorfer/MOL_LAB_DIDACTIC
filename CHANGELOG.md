@@ -102,3 +102,10 @@ Carboxylgruppe statt Carbonsäure als Gruppenname; redundante allgemeine Carbony
 - Geführter offenkettig ↔ α/β-D-Glucopyranose-Lernweg mit vier Schritten, 2D/3D/Oberfläche, MC-Auswertung und Protokoll.
 - Strukturreferenzen: PubChem CID 107526 (offen), 79025 (α), 64689 (β). Datenbank der bisherigen 61 Moleküle bleibt unverändert; keine quantitativ vorhergesagte Mutarotation.
 - V0.7-Biomolekülmarkierungen bleiben erhalten, V0.6 bleibt auf `main` unverändert.
+
+## V0.8-Entwurf – Atorvastatin (24.11.2026)
+
+- Als 62. Eintrag Atorvastatin, PubChem CID 60823, mit korrekter (3R,5R)-Konfiguration in JSON und Notebook-Fallback aufgenommen.
+- Überwiegend strukturelle Gruppenmarkierung einschließlich Arylfluorid sowie vergrößerte 2D-Zeichnung ausschließlich bei großen Molekülen.
+- Dynamische Komplexitätsanzeige, eigenes MC, fachliche Erklärungen und Modellgrenze zum Calciumsalz/einzelnen 3D-Konformer.
+- Regresstests für Formel, Molmasse, zwei R-Zentren, Schweratom-/Ringzahl, funktionelle Gruppen, Darstellung, Quiz und Protokoll.

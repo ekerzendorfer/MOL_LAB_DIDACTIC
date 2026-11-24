@@ -23,3 +23,9 @@ Atorvastatin zuerst als ein einziges zusätzliches *Wirkstoff-Strukturlabor*. Da
 - https://pubchem.ncbi.nlm.nih.gov/compound/60823
 - https://pubchem.ncbi.nlm.nih.gov/compound/9807507
 - https://pubchem.ncbi.nlm.nih.gov/compound/467825
+
+## Umsetzung – 24.11.2026
+
+**Atorvastatin ist auf dem V0.8-Entwicklungsbranch implementiert** (neutrale freie Säure; stereochemisch definierte Struktur nach PubChem CID 60823). Als 12. Eintrag in *Wirkstoffe und Biomoleküle* zeigt das Beispiel 41 Schweratome, (3R,5R)-Stereochemie, vier Ringsysteme und zwölf rotierbare Bindungen. Die neue 2D-Gruppenmarkierung ist für große Strukturen vergrößert und erkennt auch Arylfluorid; eine gesonderte Komplexitätsübersicht vermittelt Grenzen eines einzelnen Kraftfeldmodells.
+
+**Fosravuconazol und Ravuconazol bleiben nur mögliche Folgeschritte**, derzeit nicht Bestandteil der kuratierten Daten. Nach Colab-Abnahme kann V0.8 veröffentlicht werden.
