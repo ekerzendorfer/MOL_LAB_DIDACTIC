@@ -83,3 +83,11 @@ Die sieben kuratierten Isomerenpaare wurden nach positivem Anwender-Colab-Test f
 ## V0.6 freigegeben auf main – 24.11.2026
 
 Sieben Polaritäts-/Löslichkeitspaare verwenden die kompakte 2D-/3D-/Elementoberflächen-Umschaltung und eine gemeinsame qualifizierte Vergleichstabelle. Vom Nutzer in Colab abgenommen. Begleitend korrigierte SMARTS-Muster (Methanal / Ester gegen Anhydrid) und anti-/gauche-MC für Butan. Einzelmolekülmodus bleibt verfügbar.
+
+## V0.7 – Entwurf zur fachlichen und visuellen Abnahme
+
+- Gruppenweise 2D-Hervorhebung, zusätzliche Ether-/Esterspezifität.
+- Vergleich ausgewählter Konformer-Geometrien, relevante Torsionswinkel in Beschriftung und Tabelle.
+- Fünf konkrete Biomolekül-/Wirkstoff-Fragen, explizite Protonierungs-/Stereochemie-Grenzen.
+- Heuristische Polaritäts- und Wasserlöslichkeitslabels außerhalb des Polaritätsmoduls nicht mehr in Auswertungsprotokollen.
+- V0.6 unverändert auf main; Branch-Test in Colab erforderlich.

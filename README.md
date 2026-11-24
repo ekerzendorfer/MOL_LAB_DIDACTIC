@@ -129,3 +129,14 @@ In V0.5 startet die Isomerie-Analyse bei der Auswahl eines kuratierten Paares (n
 ### V0.6-Freigabe
 
 Die Polaritäts- und Löslichkeitsvergleiche wurden mit allen drei Ansichten in Colab visuell geprüft und am 24.11.2026 freigegeben. Der stabile JSON-Pfad zeigt nun auf `main`; V0.6 erhält weiterhin die bestehenden Notebook-/JSON-Dateinamen, damit Links gültig bleiben.
+
+## V0.7 – Feinschliff der restlichen Module (Entwurf, 24.11.2026)
+
+**Ausschließlich im Branch [v0.7-feinschliff-restmodule](https://github.com/ekerzendorfer/MOL_LAB_DIDACTIC/tree/v0.7-feinschliff-restmodule)**. Die freigegebene V0.6 auf `main` bleibt unverändert.
+
+- **Funktionelle Gruppen:** In der Einzelanalyse lässt sich eine erkannte funktionelle Gruppe gezielt in der RDKit-2D-Darstellung hervorheben. Für Aromaten werden alle Ringatome markiert. Ester und Ether werden nicht mehr verwechselt; 3D- und Modellwertdarstellung bleiben verfügbar.
+- **Konformere:** Eindeutige geometrische Minima über Heavy-Atom-RMSD statt bloßer Energiestufen. Für Butan und 1,2-Dichlorethan werden Diederwinkel (anti/gauche) angezeigt. Relative Kraftfeldenergien sind nicht experimentelle Populationen und keine Aktivierungsbarrieren.
+- **Wirkstoffe und Biomoleküle:** Fünf generische MC-Fragen fachlich präzisiert, bei Glycin/Alanin/Phenylalanin Zwitterionen, bei Ribose die offenkettige und nicht stereospezifizierte Modellform erläutert. Unvalidierte Polaritäts-/Löslichkeits-Scores werden außerhalb des Polaritätsmoduls nicht mehr als Eigenschaft im Bericht geführt.
+- **MOL_LAB** als möglicher späterer Vertiefungslink: Auswahl geeigneter Modellvergleiche und Datenübergabe gesondert prüfen; noch keine automatische Kopplung.
+
+[**V0.7-Testnotebook in Colab öffnen**](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.7-feinschliff-restmodule/MOL_LAB_DIDACTIC_v0_4_2.ipynb). Bitte vor Freigabe die neuen 2D-Markierungen bei Vanillin/Salicylsäure, Konformere Butan/1,2-Dichlorethan und MC-Fragen bei Ibuprofen/Alanin testen.

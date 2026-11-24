@@ -2,7 +2,7 @@ name: DIDACTIC notebook data integrity
 
 on:
   push:
-    branches: [main, v0.5-isomerien-vergleich, v0.6-polaritaet-qualitaet]
+    branches: [main, v0.5-isomerien-vergleich, v0.6-polaritaet-qualitaet, v0.7-feinschliff-restmodule]
   workflow_dispatch:
 
 permissions:
@@ -23,3 +23,5 @@ jobs:
         run: python3 tests/isomer_interface_regression.py
       - name: Validate V0.6 polarity UI and chemistry corrections
         run: python3 tests/polarity_interface_regression.py
+      - name: Validate v0.7 functional highlights, conformers and biomolecule quizzes
+        run: python3 tests/restmodule_quality_v07.py
