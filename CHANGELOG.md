@@ -75,3 +75,7 @@ In v0.4.2 neu bzw. sichtbar aktiviert:
 - Einheitliche kompakte Strukturkarten und identische Anzeigebreite für 2D, 3D und Elementoberfläche.
 - Unmittelbarer Start des Vergleichs nach Auswahl eines Paares; weiterhin kein automatischer Start beim bloßen Modulwechsel.
 - UI-Regressionstests entsprechend aktualisiert; echte Colab-Abnahme steht aus.
+
+## V0.5 – Freigabe auf main am 24.11.2026
+
+Die sieben kuratierten Isomerenpaare wurden nach positivem Anwender-Colab-Test freigegeben. Das Notebook zeigt nun **v0.5** statt **v0.5 – Entwurf**. Alte Dateinamen bleiben für Links erhalten; die übrigen vier Module werden in einer separaten Qualitätssichtung überprüft.

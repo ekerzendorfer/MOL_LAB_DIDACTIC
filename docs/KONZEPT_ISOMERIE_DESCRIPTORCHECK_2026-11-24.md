@@ -1,9 +1,9 @@
 # Konzept: Isomerie-Modul und Deskriptor-Qualität in MOL_LAB DIDACTIC
 
-**Stand:** 24.11.2026 · **Status:** auf dem Entwicklungszweig `v0.5-isomerien-vergleich` technisch umgesetzt und automatisch geprüft; Colab-Sichtprüfung ausständig  
-**Betroffene aktuelle Version:** `MOL_LAB_DIDACTIC_v0_4_2.ipynb` (v0.4.2)  
+**Stand:** 24.11.2026 · **Status:** historisches Konzeptdokument zum V0.5-Umbau; Isomerie in Colab abgenommen und auf `main` veröffentlicht  
+**Dateiname (aus Kompatibilitätsgründen):** `MOL_LAB_DIDACTIC_v0_4_2.ipynb`; veröffentlichte Oberfläche V0.5  
 **Auslöser:** Praxistest MW-009 Propanal/Aceton; Rückmeldung zur Vergleichsansicht, Modellwerten und Notebooksichtbarkeit.  
-**Geltung:** Zunächst *nur* das Modul „Isomerie“, gemeinsame Deskriptor-Funktionen werden jedoch für alle Module überprüft. Die bestehende Notebook-Funktionalität bleibt bis zur fachlichen Freigabe unverändert.
+**Geltung:** Zunächst *nur* das Modul „Isomerie“, gemeinsame Deskriptor-Funktionen werden jedoch für alle Module überprüft. Die historische Planung dokumentiert die Erhaltung der übrigen Module während der Isomerie-Umstellung.
 
 ## 1. Diagnose im aktuellen Code
 
@@ -126,3 +126,7 @@ Das ist nicht nur ein UI-Problem: Änderungen an den Deskriptoren und ihrer Inte
 **Testfragen:** Liefert die Hauptansicht unmittelbar die zwei 2D-Strukturen, alle relevanten experimentellen Daten und deren Quellen? Lassen sich dieselben physikalisch unwidersprüchlichen Modellwerte korrekt einordnen? Ist die gesamte Ansicht mobil benutzbar? Funktionieren Antwortprüfung, 3D und Report weiterhin?
 
 **Umsetzung:** Die Notebook-Änderungen liegen ausschließlich auf dem Entwicklungszweig; `main`, die MOLEKÜL-WERKSTATT und MOLLAB_PRO wurden nicht verändert. Für die fachliche und visuelle Abnahme siehe [Testblatt V0.5](TEST_ISOMERIE_V0.5.md).
+
+## Historischer Hinweis zur Freigabe
+
+Der oben dokumentierte Entwurf wurde inzwischen umgesetzt. Die Bedienung des Isomerie-Moduls wurde am 24.11.2026 in Google Colab abgenommen und V0.5 danach als Fast-forward auf `main` veröffentlicht. Die MOLEKÜL-WERKSTATT-Anleitungen werden auf die neue Paarwahl aktualisiert. Frühere Aussagen zu offenen Freigaben beziehen sich auf den damaligen Planungsstand.

@@ -1,15 +1,15 @@
 # DIDACTIC v0.5 – Abnahme der neuen Isomerie-Ansicht
 
-**Stand:** 24.11.2026 · **Entwicklungszweig:** `v0.5-isomerien-vergleich`  
-**Status:** Automatische Chemie-, Daten-, Notebook- und Widgettests erfolgreich. **Erneuter visueller Colab-Test der neuesten Nachbesserungen steht noch aus.** Die stabile `main`-Version bleibt unverändert.
+**Stand:** 24.11.2026 · **Freigabezweig:** `main`  
+**Status:** Automatische Chemie-, Daten-, Notebook- und Widgettests erfolgreich. **Visueller Colab-Test vom Nutzer am 24.11.2026 positiv abgeschlossen; V0.5 ist auf `main` veröffentlicht.**
 
-## Isolierter Test in Colab
+## Veröffentlichung und Regression in Colab
 
-- [Entwicklungsnotebook direkt in Colab öffnen](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.5-isomerien-vergleich/MOL_LAB_DIDACTIC_v0_4_2.ipynb)
-- Alternativ die [Notebook-Datei auf dem Entwicklungszweig](https://github.com/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.5-isomerien-vergleich/MOL_LAB_DIDACTIC_v0_4_2.ipynb) öffnen.
+- [V0.5 auf main direkt in Colab öffnen](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/main/MOL_LAB_DIDACTIC_v0_4_2.ipynb)
+- Alternativ die [Notebook-Datei auf main](https://github.com/ekerzendorfer/MOL_LAB_DIDACTIC/blob/main/MOL_LAB_DIDACTIC_v0_4_2.ipynb) öffnen.
 - **Laufzeit → Alle ausführen**. Keine Ausführung in einer älteren, noch aktiven Laufzeit voraussetzen.
 
-Der Dateiname bleibt aus Kompatibilitätsgründen `MOL_LAB_DIDACTIC_v0_4_2.ipynb`; **die Oberfläche zeigt v0.5 – Entwurf**.
+Der Dateiname bleibt aus Kompatibilitätsgründen `MOL_LAB_DIDACTIC_v0_4_2.ipynb`; **die Oberfläche zeigt V0.5**.
 
 ## 1. Einstieg
 
@@ -60,7 +60,7 @@ Der Dateiname bleibt aus Kompatibilitätsgründen `MOL_LAB_DIDACTIC_v0_4_2.ipynb
 6. Glucose (offene Form) ↔ Fructose (offene Form) – Aldose/Ketose; **keine** isolierten Reinstoffdaten der offenen Form vortäuschen; vorhandene offene SMILES spezifizieren die Stereozentren nicht.
 7. Maleinsäure ↔ Fumarsäure – cis/trans, Schmelz-/Löslichkeitsunterschiede, SMILES-Stereochemie
 
-## Automatische Regression (im Entwicklungszweig)
+## Automatische Regression (auf main)
 
 ```bash
 python3 tests/validate_notebook.py
@@ -70,7 +70,7 @@ python3 tests/isomer_interface_regression.py
 
 Dabei werden der Notebook-Python-Code, 61 Einzelkarten, sieben Isomerenpaar-Quizzes, sieben Paarvergleiche, Modellwerte, 3D-Lazy-Loading, Reports und die Modul-Umschaltung geprüft. Die integrierten Tests sind im GitHub-Actions-Workflow hinterlegt.
 
-**Abnahmeentscheidung:** Erst nach positivem Colab-Praxistest das Notebook auf `main` übernehmen und **anschließend** die Anleitung der MOLEKÜL-WERKSTATT bei MW-001 und MW-009 auf den neuen Paar-Dropdown umstellen. Bis dahin laufen die bekannten Links und Aufgaben unverändert.
+**Abnahme:** Isomerie in Colab positiv geprüft und V0.5 nach `main` übernommen. Die Anleitung der MOLEKÜL-WERKSTATT bei MW-001 und MW-009 ist auf den Paar-Dropdown umzustellen.
 
 ## V0.5-Nachbesserungen nach dem ersten Praxistest (24.11.2026)
 
@@ -78,7 +78,7 @@ Dabei werden der Notebook-Python-Code, 61 Einzelkarten, sieben Isomerenpaar-Quiz
 - Die **2D/3D/Oberflächen-Umschalter sitzen unmittelbar an beiden Strukturkarten**, die lange Tabelle darunter.
 - Einfache Element-Oberfläche: **qualitatives Visualisieren**, keine berechnete elektrostatische Potentialfläche oder echte Lipophilie-Oberfläche.
 - MC-Feedback erscheint in einem **live aktualisierten HTML-Widget direkt unter den Antwort-Buttons** statt im unsichtbar weit entfernten Feedback-Output.
-- Quelle und Bedingungen sind bei den ergänzten Stoffdaten dokumentiert. Die Werte für Butan/Isobutan und Propansäure/Essigsäuremethylester werden in der Entwicklungs-JSON und zur Prüfung auch im Notebook-Fallback hinterlegt.
+- Quelle und Bedingungen sind bei den ergänzten Stoffdaten dokumentiert. Die Werte für Butan/Isobutan und Propansäure/Essigsäuremethylester sind in der publizierten JSON und im Notebook-Fallback hinterlegt.
 - Für strukturelle Fälle ohne belastbare isolierte Stoffwerte (D-/L-Alanin, offene Zucker) keine pauschalen Zahlen eingesetzt; lange Tabellen mit „nicht hinterlegt“ werden vermieden.
 
 **Zusätzlich überprüfen:** Ob die neuen Notebook-internen 3D-Karten auch in einer frischen Google-Colab-Laufzeit zuverlässig zwischen Bild, Kugel-Stab-Modell und Elementoberfläche wechseln. Der Headless-Test kann die clientseitige Rendering-Engine nicht ersetzen.
