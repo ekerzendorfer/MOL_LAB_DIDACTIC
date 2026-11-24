@@ -19,7 +19,7 @@ data = json.loads((root / "molecules_v0_4_2.json").read_text(encoding="utf-8"))
 assert len(data["polarity_pairs"]) == 7
 assert len(ns["POLARITY_PAIRS"]) == 7
 assert ns["polar_pair_dd"].value is None
-assert "v0.6-polaritaet-qualitaet/molecules_v0_4_2.json" in ns["DATA_URL"]
+assert "/main/molecules_v0_4_2.json" in ns["DATA_URL"]
 assert len(ns["MOLECULES"]) == 5
 butan = next(c for c in data["modules"]["Konformere"] if c["name"] == "Butan")
 butan_runtime = ns["card_for"]("Konformere", "Butan")

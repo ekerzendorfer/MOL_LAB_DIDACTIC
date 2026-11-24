@@ -1,4 +1,4 @@
-# MOL_LAB DIDACTIC v0.5
+# MOL_LAB DIDACTIC v0.6
 
 **Molekülwerkstatt für den Chemieunterricht der SEK2**  
 Didaktisch reduzierte Colab-App zur Untersuchung von Struktur, räumlicher Gestalt, Polarität, Löslichkeit, Isomerie, funktionellen Gruppen, Konformeren und einfachen Struktur–Eigenschafts-Beziehungen.
@@ -115,7 +115,7 @@ In V0.5 startet die Isomerie-Analyse bei der Auswahl eines kuratierten Paares (n
 
 ## V0.6-Entwurf – Polarität und Löslichkeit (24.11.2026)
 
-**Entwicklung ausschließlich auf dem Branch [v0.6-polaritaet-qualitaet](https://github.com/ekerzendorfer/MOL_LAB_DIDACTIC/tree/v0.6-polaritaet-qualitaet). V0.5 auf main bleibt unverändert.**
+**V0.6 nach positivem Praxistest am 24.11.2026 auf `main` freigegeben.** Der Entwicklungszweig bleibt als Historie bestehen.
 
 - Die sieben kuratierten Polaritätspaare beginnen nach bewusster Auswahl direkt; die Einzelanalyse bleibt für MW-015 und eigene SMILES erhalten.
 - Zwei kompakte Karten verwenden denselben 2D/3D/qualitativen Elementoberflächen-Umschalter wie Isomerie. Erst bei Bedarf wird eine 3D-Modellgeometrie berechnet.
@@ -124,4 +124,8 @@ In V0.5 startet die Isomerie-Analyse bei der Auswahl eines kuratierten Paares (n
 - Kleine fachliche Korrekturen: Aldehyd-Erkennung einschließlich Methanal, Trennung Ester/Carbonsäureanhydrid und Butan-MC zur anti-/gauche-Konformation im Konformer-Modul.
 - Bei der Einzelanalyse bleiben die bisherigen Funktionen erhalten; die didaktische Heuristik wird sichtbar als **unvalidiert** gekennzeichnet.
 
-**[V0.6-Colab-Testnotebook](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.6-polaritaet-qualitaet/MOL_LAB_DIDACTIC_v0_4_2.ipynb)** · Freigabe erst nach visuellem Praxistest.
+**[V0.6-Colab-Testnotebook](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.6-polaritaet-qualitaet/MOL_LAB_DIDACTIC_v0_4_2.ipynb)** · Visueller Praxistest erfolgreich abgeschlossen.
+
+### V0.6-Freigabe
+
+Die Polaritäts- und Löslichkeitsvergleiche wurden mit allen drei Ansichten in Colab visuell geprüft und am 24.11.2026 freigegeben. Der stabile JSON-Pfad zeigt nun auf `main`; V0.6 erhält weiterhin die bestehenden Notebook-/JSON-Dateinamen, damit Links gültig bleiben.

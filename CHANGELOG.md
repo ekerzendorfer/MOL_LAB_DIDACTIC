@@ -79,3 +79,7 @@ In v0.4.2 neu bzw. sichtbar aktiviert:
 ## V0.5 – Freigabe auf main am 24.11.2026
 
 Die sieben kuratierten Isomerenpaare wurden nach positivem Anwender-Colab-Test freigegeben. Das Notebook zeigt nun **v0.5** statt **v0.5 – Entwurf**. Alte Dateinamen bleiben für Links erhalten; die übrigen vier Module werden in einer separaten Qualitätssichtung überprüft.
+
+## V0.6 freigegeben auf main – 24.11.2026
+
+Sieben Polaritäts-/Löslichkeitspaare verwenden die kompakte 2D-/3D-/Elementoberflächen-Umschaltung und eine gemeinsame qualifizierte Vergleichstabelle. Vom Nutzer in Colab abgenommen. Begleitend korrigierte SMARTS-Muster (Methanal / Ester gegen Anhydrid) und anti-/gauche-MC für Butan. Einzelmolekülmodus bleibt verfügbar.
