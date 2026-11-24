@@ -98,3 +98,7 @@ Für die Isomerie-Paare **Butan/Isobutan** und **Propansäure/Essigsäuremethyle
 Die gemeinsame Vergleichstabelle blendet weitgehend leere Abschnitte aus; der thematische Strukturhinweis bleibt erhalten. Für fehlende Angaben wird nie „0“ erfunden. Die neue [Prüfliste V0.5](docs/TEST_ISOMERIE_V0.5.md) berücksichtigt die gemeldeten Colab-Probleme.
 
 Die öffentliche V0.4.2-Fassung und die Werkstatt bleiben weiterhin unverändert, bis die Notebook-Oberfläche direkt in Colab abgenommen ist.
+
+### UI-Nachbesserung nach Colab-Test (24.11.2026)
+
+In V0.5 startet die Isomerie-Analyse bei der Auswahl eines kuratierten Paares (nicht schon beim Öffnen des Moduls). Vier korrekt umbrechende Antwortzeilen ersetzen die in Colab überlappenden langen Radio-Optionen. Die beiden schmalen Strukturkarten behalten beim Wechsel zwischen 2D, 3D und Oberfläche dieselbe Breite. Bitte die aktuelle Branch-Version in einer frisch gestarteten Colab-Laufzeit prüfen; `main` bleibt bis zur Freigabe auf V0.4.2.

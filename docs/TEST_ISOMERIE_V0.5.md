@@ -1,7 +1,7 @@
 # DIDACTIC v0.5 – Abnahme der neuen Isomerie-Ansicht
 
 **Stand:** 24.11.2026 · **Entwicklungszweig:** `v0.5-isomerien-vergleich`  
-**Status:** Automatische Chemie-, Daten-, Notebook- und Widgettests erfolgreich. **Visueller Colab-Test steht noch aus.** Die stabile `main`-Version bleibt unverändert.
+**Status:** Automatische Chemie-, Daten-, Notebook- und Widgettests erfolgreich. **Erneuter visueller Colab-Test der neuesten Nachbesserungen steht noch aus.** Die stabile `main`-Version bleibt unverändert.
 
 ## Isolierter Test in Colab
 
@@ -15,7 +15,7 @@ Der Dateiname bleibt aus Kompatibilitätsgründen `MOL_LAB_DIDACTIC_v0_4_2.ipynb
 
 - [ ] Die frühere lange Versionenhistorie oben und unten fehlt. Sie ist in [CHANGELOG.md](../CHANGELOG.md) archiviert.
 - [ ] Bei Modul **Isomerie** steht eine Auswahl der **sieben Isomerenpaare** im Vordergrund.
-- [ ] Beim Öffnen von **Isomerie** erscheint **noch kein Paar**; zuerst bewusst ein Paar wählen und dann **„Vergleich anzeigen“** klicken. Auch der Wechsel des Dropdowns allein löst noch keine neue Analyse aus.
+- [ ] Beim Öffnen von **Isomerie** erscheint **noch kein Paar**; zuerst bewusst ein Paar wählen. **Diese Auswahl startet den Vergleich sofort**; ein zusätzlicher Button ist nicht mehr nötig.
 - [ ] Die optionale Einzelanalyse ist erst sichtbar, wenn „Optional: Einzelmolekül oder eigene SMILES untersuchen“ aktiviert wird.
 - [ ] **Polarität und Löslichkeit**, **Funktionelle Gruppen**, **Konformere** und **Wirkstoffe und Biomoleküle** behalten ihren bisherigen Einzelmolekül-Workflow.
 
@@ -43,11 +43,11 @@ Der Dateiname bleibt aus Kompatibilitätsgründen `MOL_LAB_DIDACTIC_v0_4_2.ipynb
 ## 4. 3D und andere Funktionen
 
 - [ ] Bei Auswahl des Paares werden **nicht** sofort zwei 3D-Modelle erzeugt.
-- [ ] **Direkt an jeder Strukturkarte** zwischen **2D**, **3D** und **„Oberfläche (qualitativ)“** wechseln; der 3D-Aufbau erfolgt nur bei Bedarf.
+- [ ] **Direkt an jeder kompakten Strukturkarte** zwischen **2D**, **3D** und **„Oberfläche (qualitativ)“** wechseln; 2D und 3D sind gleich breit; der 3D-Aufbau erfolgt nur bei Bedarf.
 - [ ] Der 3D-Inhalt ersetzt jeweils **das 2D-Bild derselben Struktur**. Beide Karten lassen sich unabhängig umschalten. Die Oberfläche zeigt elementgefärbte Van-der-Waals-Flächen, **kein** quantitatives elektrostatisches Potential.
 - [ ] Bei „Einzelmolekül untersuchen“ ist die bisherige detaillierte 2D-/3D-/Eigenschaften-Analyse weiterhin erreichbar.
 - [ ] Die vier anderen Lernmodule und deren MC-/Konformerfunktionen sind unverändert bedienbar.
-- [ ] „Antwort prüfen“ ohne Auswahl zeigt **direkt unter den Schaltflächen** eine Aufforderung. Eine richtige bzw. falsche Antwort zeigt Feedback an derselben Stelle, ebenso „Erklärung anzeigen“. Die Antwortoptionen sind gemischt.
+- [ ] Die vier MC-Antworten stehen in **vier separat anklickbaren, mehrzeiligen Auswahlzeilen**, ohne überlappende Beschriftung und ohne vorausgewählte Antwort. „Antwort prüfen“ ohne Auswahl zeigt **direkt unter den Schaltflächen** eine Aufforderung. Eine richtige bzw. falsche Antwort zeigt Feedback an derselben Stelle, ebenso „Erklärung anzeigen“. Die Antwortoptionen sind gemischt.
 - [ ] „SchülerInnen-Protokolltext erzeugen“ verwendet das aktive Isomerenpaar und enthält keine vermeintlichen experimentellen Polaritäts-Scores.
 
 ## 5. Sieben Paarungen nacheinander
@@ -82,3 +82,10 @@ Dabei werden der Notebook-Python-Code, 61 Einzelkarten, sieben Isomerenpaar-Quiz
 - Für strukturelle Fälle ohne belastbare isolierte Stoffwerte (D-/L-Alanin, offene Zucker) keine pauschalen Zahlen eingesetzt; lange Tabellen mit „nicht hinterlegt“ werden vermieden.
 
 **Zusätzlich überprüfen:** Ob die neuen Notebook-internen 3D-Karten auch in einer frischen Google-Colab-Laufzeit zuverlässig zwischen Bild, Kugel-Stab-Modell und Elementoberfläche wechseln. Der Headless-Test kann die clientseitige Rendering-Engine nicht ersetzen.
+
+## Bedienkorrekturen nach Colab-Screenshots (24.11.2026)
+
+- Vier Antwortzeilen mit unabhängig umbrochenem HTML-Text und jeweils einer Checkbox (technisch gegenseitig ausschließend) ersetzen das fehleranfällige native Colab-RadioButtons-Layout. Der Platzhalter zählt nicht als fünfte Antwort.
+- 2D, 3D und qualitative Oberfläche verwenden ein Anzeigefenster mit 410 px Breite (auf kleinen Bildschirmen maximal 100 %), die zwei Karten haben je 475 px Breite; die Vergleichstabelle bleibt bis 1040 px breit.
+- Bei Auswahl eines Isomerenpaars startet die Auswertung direkt. Das Dropdown bleibt zunächst leer, wenn man nur das Modul Isomerie öffnet. Der separate Vergleichs-Button entfällt.
+- Die automatischen UI-Tests prüfen Checkbox-Auswahl, automatische Paarumschaltung und Kartenbreite. Der visuelle Test direkt in Colab ist weiterhin notwendig.

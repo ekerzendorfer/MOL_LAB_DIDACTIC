@@ -1,7 +1,7 @@
 """Headless V0.5 Isomerie regression, including all seven curated pairs.
 
 Tests the same ipywidgets callbacks that the learner uses in Colab:
-conscious selection, in-place 2D/3D/surface tabs, local MC feedback, notes
+automatic pair selection, equal-size 2D/3D/surface tabs, wrapping MC choices, notes
 and unchanged single-molecule controls in unrelated modules.
 """
 import contextlib
@@ -73,10 +73,13 @@ for card in cards.children:
     assert [value for label, value in toggle.options] == ["2d", "3d", "surface"]
     assert isinstance(image, widgets.HTML)
     assert "2D-Struktur" in image.value and "data:image/png" in image.value
+    assert "width:410px" in image.value
+    assert card.layout.width == "475px"
 left, right = cards.children
 with contextlib.redirect_stdout(io.StringIO()):
     left.children[1].value = "3d"
 assert counter[0] == 1 and "<iframe" in left.children[2].value
+assert 'width="410"' in left.children[2].value
 assert "2D-Struktur" in right.children[2].value
 with contextlib.redirect_stdout(io.StringIO()):
     left.children[1].value = "surface"
@@ -99,13 +102,19 @@ assert ns["single_section"].layout.display == "none"
 assert ns["polar_section"].layout.display == "none"
 assert ns["isomer_pair_dd"].value is None
 assert not ns["current_report"], "module selection must NOT launch first pair"
+# Four readable, separately selectable lines; no fifth placeholder row.
+quiz_rows = ns["_quiz_answer_rows"](ns["ISOMER_QUIZZES"]["Propansäure"]["antworten"])
+assert len(quiz_rows.children) == 4
+assert all(len(row.children) == 2 for row in quiz_rows.children)
+quiz_rows.children[0].children[0].value = True
+assert ns["answer_radio"].value == ns["ISOMER_QUIZZES"]["Propansäure"]["antworten"][0]
+quiz_rows.children[2].children[0].value = True
+assert not quiz_rows.children[0].children[0].value
+assert ns["answer_radio"].value == ns["ISOMER_QUIZZES"]["Propansäure"]["antworten"][2]
 
 for label, left in ns["ISOMER_PAIR_OPTIONS"][1:]:
     with contextlib.redirect_stdout(io.StringIO()):
         ns["isomer_pair_dd"].value = left
-    assert not ns["current_report"], "dropdown alone must not launch an analysis"
-    with contextlib.redirect_stdout(io.StringIO()):
-        ns["compare_btn"].click()
     report = ns["current_report"]
     assert report["type"] == "isomer_pair", left
     assert len(report["cards"]) == 2
@@ -142,4 +151,4 @@ assert ns["polar_section"].layout.display != "none"
 assert ns["single_section"].layout.display != "none"
 
 assert len(notebook["cells"]) == 5
-print("V0.5 UI: 7 pairs, explicit choice, two in-place 2D/3D/surface tabs, immediate MC feedback, other modules – OK")
+print("V0.5 UI: 7 pairs, auto comparison after selection, equal-size 2D/3D tabs, wrapping MC choices, other modules – OK")

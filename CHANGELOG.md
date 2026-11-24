@@ -68,3 +68,10 @@ In v0.4.2 neu bzw. sichtbar aktiviert:
 - Tabellen unterdrücken leere Zeilen, bewahren die Modell-/Quelltrennung und ergänzen besondere Interpretationstexte bei D/L-Enantiomerie und offener Glucose/Fructose.
 - WHO/ILO-ICSC und weitere Fachquellen für das Butan- und Säure/Ester-Paar; beide JSON- und Notebook-Fallback-Datensätze im Entwicklungszweig konsistent.
 - GitHub-Actions-CI prüft alle sieben Paare, bewusste Auswahl, 2D/3D/qualitative Oberfläche, sämtliche MC-Buttons und alle vier weiteren Modulsteuerungen.
+
+## V0.5 – Colab-Bedienkorrekturen, 24.11.2026
+
+- Vier einzeln umbrechende MC-Auswahlzeilen statt fehlerhafter mehrzeiliger nativer RadioButtons; keine vorausgewählte Antwort.
+- Einheitliche kompakte Strukturkarten und identische Anzeigebreite für 2D, 3D und Elementoberfläche.
+- Unmittelbarer Start des Vergleichs nach Auswahl eines Paares; weiterhin kein automatischer Start beim bloßen Modulwechsel.
+- UI-Regressionstests entsprechend aktualisiert; echte Colab-Abnahme steht aus.
