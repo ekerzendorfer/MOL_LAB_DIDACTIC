@@ -2981,47 +2981,53 @@
         "name": "Cyclohexan",
         "smiles": "C1CCCCC1",
         "niveau": "Basis",
-        "leitfrage": "Warum ist die Sesselstruktur von Cyclohexan wichtig?",
+        "leitfrage": "Warum sind Sessel, Twist-Boat und Wanne von Cyclohexan unterschiedlich günstig, obwohl sie dieselbe Bindungsverknüpfung besitzen?",
         "beobachten": [
-          "Betrachte zuerst die 2D-Struktur.",
-          "Drehe anschließend das 3D-Modell.",
-          "Vergleiche die Deskriptoren mit der Leitfrage."
+          "Vergleiche die drei gezielt dargestellten 3D-Ringformen Sessel, Twist-Boat und Wanne.",
+          "Achte auf gestaffelte bzw. ekliptische C–H-Bindungen und die Nähe der beiden Flaggenmast-Wasserstoffe in der Wanne.",
+          "Ordne die Formen nach relativen MMFF-Modellenergien und unterscheide Minima und Sattelpunkt.",
+          "Warum würde die normale Konformersuche die Wannenform nicht zuverlässig als stabiles Minimum liefern?"
         ],
-        "frage": "Warum ist die Sesselstruktur von Cyclohexan besonders günstig?",
+        "frage": "Welche Aussage zum Konformationsverhalten von Cyclohexan ist fachlich richtig?",
         "antworten": [
-          "Sie verringert Winkel- und Torsionsspannung gegenüber einer flachen Ringform.",
-          "Cyclohexan ist vollständig planar wie Benzol.",
-          "Die Sesselstruktur entsteht nur durch Ionenbindung.",
-          "Ringe können keine räumlichen Konformationen besitzen."
+          "Sessel und Wanne sind gleich günstige stabile Energieminima.",
+          "Die Twist-Boat-Struktur ist immer energetisch günstiger als der Sessel.",
+          "Der Sessel ist am günstigsten; Twist-Boat ist ein höheres lokales Minimum, die Wanne eine instabile höherenergetische Referenzgeometrie.",
+          "Cyclohexan muss planar sein, weil es nur C–C-Einfachbindungen enthält."
         ],
-        "richtig": 0,
-        "feedback": "Richtig: Die nicht-planare Sesselstruktur reduziert ungünstige Spannungen.",
-        "erklaerung": "Cyclohexan ist nicht planar; die Sesselstruktur ist energetisch günstig.",
-        "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
+        "richtig": 2,
+        "feedback": "Richtig: Der Sessel minimiert Winkel- und Torsionsspannung; Twist-Boat ist ein lokales Minimum, die symmetrische Wanne liegt als Übergangs-/Sattelpunktgeometrie zwischen Twist-Boat-Formen.",
+        "erklaerung": "Die Sesselkonformation besitzt annähernd tetraedrische C–C–C-Winkel und weitgehend gestaffelte Bindungen. In der Wanne treten ungünstige ekliptische Bindungsstellungen und Flaggenmast-Wechselwirkungen auf. Durch Verdrillung entsteht das energieärmere Twist-Boat mit einem lokalen Minimum. Eine gewöhnliche MMFF-Minimierung findet primär Minima und darf die Wanne nicht als drittes stabiles Minimum ausgeben.",
+        "modellgrenze": "Die drei Geometrien sind gezielt erzeugte MMFF-Referenzmodelle, keine drei gleichberechtigten stabilen Konformere. Die Wanne ist eine instabile stationäre/Sattelpunktgeometrie; ihre Darstellung erfordert einen symmetrischen Start und ist kein Ergebnis einer gewöhnlichen Minima-Suche. Die relativen MMFF-Energien sind Modellpotentiale, keine experimentellen freien Energien oder Ringinversionsbarrieren. Der Halbsessel als höherenergetische Übergangsgeometrie ist hier nicht dargestellt.",
         "id": "cyclohexan",
         "typ": "molecule",
         "modul": "Konformere",
         "tags": [],
         "didaktik": {
           "fehlvorstellung": null,
-          "leitfrage": "Warum ist die Sesselstruktur von Cyclohexan wichtig?",
+          "leitfrage": "Warum sind Sessel, Twist-Boat und Wanne von Cyclohexan unterschiedlich günstig, obwohl sie dieselbe Bindungsverknüpfung besitzen?",
           "beobachten": [
-            "Betrachte zuerst die 2D-Struktur.",
-            "Drehe anschließend das 3D-Modell.",
-            "Vergleiche die Deskriptoren mit der Leitfrage."
+            "Vergleiche die drei gezielt dargestellten 3D-Ringformen Sessel, Twist-Boat und Wanne.",
+            "Achte auf gestaffelte bzw. ekliptische C–H-Bindungen und die Nähe der beiden Flaggenmast-Wasserstoffe in der Wanne.",
+            "Ordne die Formen nach relativen MMFF-Modellenergien und unterscheide Minima und Sattelpunkt.",
+            "Warum würde die normale Konformersuche die Wannenform nicht zuverlässig als stabiles Minimum liefern?"
           ],
-          "mc_frage": "Warum ist die Sesselstruktur von Cyclohexan besonders günstig?",
+          "mc_frage": "Welche Aussage zum Konformationsverhalten von Cyclohexan ist fachlich richtig?",
           "mc_antworten": [
-            "Sie verringert Winkel- und Torsionsspannung gegenüber einer flachen Ringform.",
-            "Cyclohexan ist vollständig planar wie Benzol.",
-            "Die Sesselstruktur entsteht nur durch Ionenbindung.",
-            "Ringe können keine räumlichen Konformationen besitzen."
+            "Sessel und Wanne sind gleich günstige stabile Energieminima.",
+            "Die Twist-Boat-Struktur ist immer energetisch günstiger als der Sessel.",
+            "Der Sessel ist am günstigsten; Twist-Boat ist ein höheres lokales Minimum, die Wanne eine instabile höherenergetische Referenzgeometrie.",
+            "Cyclohexan muss planar sein, weil es nur C–C-Einfachbindungen enthält."
           ],
-          "mc_richtig": 0,
-          "feedback": "Richtig: Die nicht-planare Sesselstruktur reduziert ungünstige Spannungen.",
-          "erklaerung": "Cyclohexan ist nicht planar; die Sesselstruktur ist energetisch günstig.",
-          "modellgrenze": "Die App liefert Modellwerte und Strukturhinweise. Experimente und Kontext können dadurch nicht vollständig ersetzt werden.",
-          "mini_aufgaben": [],
+          "mc_richtig": 2,
+          "feedback": "Richtig: Der Sessel minimiert Winkel- und Torsionsspannung; Twist-Boat ist ein lokales Minimum, die symmetrische Wanne liegt als Übergangs-/Sattelpunktgeometrie zwischen Twist-Boat-Formen.",
+          "erklaerung": "Die Sesselkonformation besitzt annähernd tetraedrische C–C–C-Winkel und weitgehend gestaffelte Bindungen. In der Wanne treten ungünstige ekliptische Bindungsstellungen und Flaggenmast-Wechselwirkungen auf. Durch Verdrillung entsteht das energieärmere Twist-Boat mit einem lokalen Minimum. Eine gewöhnliche MMFF-Minimierung findet primär Minima und darf die Wanne nicht als drittes stabiles Minimum ausgeben.",
+          "modellgrenze": "Die drei Geometrien sind gezielt erzeugte MMFF-Referenzmodelle, keine drei gleichberechtigten stabilen Konformere. Die Wanne ist eine instabile stationäre/Sattelpunktgeometrie; ihre Darstellung erfordert einen symmetrischen Start und ist kein Ergebnis einer gewöhnlichen Minima-Suche. Die relativen MMFF-Energien sind Modellpotentiale, keine experimentellen freien Energien oder Ringinversionsbarrieren. Der Halbsessel als höherenergetische Übergangsgeometrie ist hier nicht dargestellt.",
+          "mini_aufgaben": [
+            "Vergleiche die Sechsringgestalt und erkläre die Vorteile weitgehend gestaffelter Bindungen im Sessel.",
+            "Bestimme die Reihenfolge der berechneten relativen Energien. Welche Form ist kein Minimum?",
+            "Erkläre, warum eine einfache Energieminimierung die Wanne nicht systematisch liefert."
+          ],
           "experimenteller_bezug": null
         },
         "stoffdaten": {
