@@ -92,9 +92,16 @@ panels=[x.data for x in visual if isinstance(x,HTML)
 assert len(panels)==1
 assert panels[0].count("<iframe") == 4
 assert all(shape in panels[0] for shape in ("Sessel","Twist-Boat","Wanne","Halbsessel"))
-tbl=[x for x in visual if isinstance(x,pd.DataFrame)]
-assert len(tbl)==1 and len(tbl[0])==4
-assert "Einordnung" in tbl[0].columns
+tbl=[x.data for x in visual if isinstance(x,HTML)
+     and "class='cyclo-energy-table'" in x.data]
+assert len(tbl)==1 and tbl[0].count("<tr>")==4
+assert "Einordnung" in tbl[0]
+assert all(m["classification"] in tbl[0] for m in models)
+assert "white-space:normal" in tbl[0]
+assert "fixierte Annäherung an eine Übergangslage (kein Minimum)" in tbl[0]
+details=[x.data for x in visual if isinstance(x,HTML)
+         and "Was zeigen die vier Ringformen?" in x.data]
+assert len(details)==1 and " open>" not in details[0]
 assert any(isinstance(x,HTML) and "kein drittes stabiles Minimum" in x.data
            for x in visual)
 
