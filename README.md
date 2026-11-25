@@ -172,3 +172,11 @@ Als **62. Moleküleintrag** und **12. Wirkstoff/Biomolekül** ergänzt: die neut
 Im bestehenden Modul sind Carboxylgruppe, OH-Gruppen, Amid, aromatisches Ringsystem und neu **Arylfluorid** markierbar; die 2D-Darstellung erhält für diese umfangreiche Struktur eine größere Fläche. Eine kompakte Komplexitätsübersicht, eine eigene MC-Aufgabe sowie Beobachtungsfragen gehören zur Karte. **Keine** Vorhersage von Bindeposen oder Arzneiwirkung: freie Säure und pharmazeutisches Calciumsalz unterscheiden sich, und ein einzelnes 3D-Kraftfeldminimum ist nur ein Modell. Keine frei erfundenen experimentellen Stoffdaten.
 
 Fosravuconazol ist weiterhin **nur als mögliche spätere Vertiefung** dokumentiert. Die Veröffentlichung von V0.8 auf `main` erfolgt erst nach praktischem Colab-Test.
+
+### Cyclohexan: drei kuratierte Referenzgeometrien für MW-024 (25.11.2026)
+
+Im Modul **Konformere → Cyclohexan** zeigt der Button **„Konformere berechnen“** drei gezielt erzeugte und mit RDKit/MMFF94 behandelte 3D-Ringformen nebeneinander: **Sessel, Twist-Boat und Wanne**. Die relative Energiereihenfolge lautet Sessel < Twist-Boat < Wanne. Die Wanne ist eine **stationäre Sattel-/Übergangsgeometrie**, kein drittes stabiles Energieminimum. Aus mathematisch definierten Ring-Puckering-Startgeometrien werden H-Positionen und 3D-Geometrien mit zunächst festgehaltenen Ring-C-Atomen vorbereitet und dann im MMFF-Kraftfeld behandelt. Ring-Torsionen validieren die jeweils erzeugte Form.
+
+Die dargestellten Energien sind **relative MMFF-Potentiale** (kcal/mol), weder experimentelle freie Energien noch Ringinversionsbarrieren. Literatur-Orientierung: Twist-Boat ~5,5 und Wanne ~6,9 kcal/mol über Sessel; modellabhängige Werte dürfen abweichen. Der höherliegende Halbsessel ist nicht enthalten. **Alle anderen Moleküle nutzen unverändert die bisherige ETKDG/MMFF-Minimasuche.** Die MW-024-Interaktion, Lernkontrolle, Protokoll und „3D neu aufbauen“ bleiben nutzbar.
+
+Referenzen: [Oregon State University Cyclohexane Conformations](https://sites.science.oregonstate.edu/~gablek/CH334/Chapter4/bare_cyclohexane.htm), [Chemistry LibreTexts – Conformations of Cycloalkanes](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Basic_Principles_of_Organic_Chemistry_%28Roberts_and_Caserio%29/12%3A_Cycloalkanes_Cycloalkenes_and_Cycloalkynes/12.03%3A_Conformations_of_Cycloalkanes).

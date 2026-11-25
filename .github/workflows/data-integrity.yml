@@ -29,3 +29,5 @@ jobs:
         run: python3 tests/stereochemistry_glucose_v08.py
       - name: Validate Atorvastatin structure and teaching workflow
         run: python3 tests/atorvastatin_v08.py
+      - name: Validate cyclohexane chair, twist-boat, saddle boat and MW-024 workflow
+        run: python3 tests/cyclohexane_reference_v08.py

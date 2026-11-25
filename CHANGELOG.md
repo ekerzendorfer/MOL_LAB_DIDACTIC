@@ -109,3 +109,10 @@ Carboxylgruppe statt Carbonsäure als Gruppenname; redundante allgemeine Carbony
 - Überwiegend strukturelle Gruppenmarkierung einschließlich Arylfluorid sowie vergrößerte 2D-Zeichnung ausschließlich bei großen Molekülen.
 - Dynamische Komplexitätsanzeige, eigenes MC, fachliche Erklärungen und Modellgrenze zum Calciumsalz/einzelnen 3D-Konformer.
 - Regresstests für Formel, Molmasse, zwei R-Zentren, Schweratom-/Ringzahl, funktionelle Gruppen, Darstellung, Quiz und Protokoll.
+
+## V0.8 – Cyclohexan-Referenzvergleich für MW-024 (25.11.2026)
+
+- Sessel, Twist-Boat und Wanne als drei 3D-Referenzgeometrien im Modul Konformere, nur für Cyclohexan.
+- Sessel = globales Minimum, Twist-Boat = lokales Minimum, Wanne = stationäre Sattel-/Übergangsgeometrie, kein stabiles drittes Minimum.
+- Reproduzierbare symmetrische Ring-Puckering-Vorbereitung, MMFF94-Modellrelativenergien; Test der Ring-Torsionen, Energiefolge, 3D-Anzeigen, MW-024-Protokoll und Reset.
+- Allgemeine Konformersuche für alle anderen Moleküle unverändert.
