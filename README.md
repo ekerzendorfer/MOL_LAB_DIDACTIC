@@ -1,4 +1,4 @@
-# MOL_LAB DIDACTIC v0.6
+# MOL_LAB DIDACTIC v0.8
 
 **Molekülwerkstatt für den Chemieunterricht der SEK2**  
 Didaktisch reduzierte Colab-App zur Untersuchung von Struktur, räumlicher Gestalt, Polarität, Löslichkeit, Isomerie, funktionellen Gruppen, Konformeren und einfachen Struktur–Eigenschafts-Beziehungen.
@@ -153,9 +153,9 @@ Die aus dem Modul *Funktionelle Gruppen* bekannte interaktive Hervorhebung ist j
 - Coffein und Adenin: Bei kondensierten aromatischen Ringen heißt die Auswahl jetzt **Aromatisches Ringsystem (RDKit)**; markiert werden die aromatischen Ringatome und Ringbindungen. Aromatizität und Ringcarbonyle schließen einander nicht aus.
 - Alle Änderungen im V0.7-Branch, V0.6 auf main bleibt stabil.
 
-## V0.8 – Stereochemie und Glucose (Entwurf, 24.11.2026)
+## V0.8 – Stereochemie und Glucose (auf main veröffentlicht: 25.11.2026)
 
-Auf dem Entwicklungsbranch `v0.8-stereochemie-glucose` (basierend auf V0.7) werden zwei bestehende Isomerie-Paare stereochemisch aufgewertet und ein separater geführter Glucose-Lernweg angeboten.
+Ausgehend vom Entwicklungsbranch `v0.8-stereochemie-glucose` sind seit der Freigabe auf `main` zwei bestehende Isomerie-Paare stereochemisch aufgewertet; ein geführter Glucose-Lernweg ist zusätzlich verfügbar.
 
 - **D-/L-Alanin**: das stereogene α-C ist in 2D markiert, tatsächliche RDKit-CIP-Konfigurationen R/S werden erläutert; D/L ist nicht mit R/S oder (+)/(−) gleichzusetzen.
 - **Maleinsäure/Fumarsäure**: die E/Z-relevante Doppelbindung ist markiert; Z/E und cis/trans werden didaktisch eingeordnet.
@@ -163,7 +163,7 @@ Auf dem Entwicklungsbranch `v0.8-stereochemie-glucose` (basierend auf V0.7) werd
 - **Gleichgewicht:** intramolekulare Halbacetalbildung ohne Wasserabspaltung; Mutarotation über Ringöffnung und -schluss. Dies ist ein diskreter Strukturvergleich, keine quantitative Reaktions-, Geschwindigkeits- oder Gleichgewichtssimulation.
 - Der Glucose-Lernweg hat eine eigene MC-Aufgabe, Erklärung und einen Protokolltext. Das **Reset-3D** stellt den gewählten Lernschritt wieder her. Tests prüfen echte Stereokonfiguration, C1-Differenz und die UI-Wechsel.
 
-[**V0.8 in Colab testen**](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/v0.8-stereochemie-glucose/MOL_LAB_DIDACTIC_v0_4_2.ipynb). Nur Entwicklungsbranch, noch keine Veröffentlichung auf `main`.
+[**V0.8 auf main in Colab öffnen**](https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/main/MOL_LAB_DIDACTIC_v0_4_2.ipynb). Der Entwicklungsbranch bleibt als Historie erhalten.
 
 ### Abschlussbeispiel V0.8: Atorvastatin (24.11.2026)
 
@@ -171,13 +171,13 @@ Als **62. Moleküleintrag** und **12. Wirkstoff/Biomolekül** ergänzt: die neut
 
 Im bestehenden Modul sind Carboxylgruppe, OH-Gruppen, Amid, aromatisches Ringsystem und neu **Arylfluorid** markierbar; die 2D-Darstellung erhält für diese umfangreiche Struktur eine größere Fläche. Eine kompakte Komplexitätsübersicht, eine eigene MC-Aufgabe sowie Beobachtungsfragen gehören zur Karte. **Keine** Vorhersage von Bindeposen oder Arzneiwirkung: freie Säure und pharmazeutisches Calciumsalz unterscheiden sich, und ein einzelnes 3D-Kraftfeldminimum ist nur ein Modell. Keine frei erfundenen experimentellen Stoffdaten.
 
-Fosravuconazol ist weiterhin **nur als mögliche spätere Vertiefung** dokumentiert. Die Veröffentlichung von V0.8 auf `main` erfolgt erst nach praktischem Colab-Test.
+Fosravuconazol ist weiterhin **nur als mögliche spätere Vertiefung** dokumentiert. V0.8 ist seit 25.11.2026 auf `main` freigegeben; vor einer öffentlichen Vorführung bleibt ein abschließender visueller Colab-Check sinnvoll.
 
-### Cyclohexan: drei kuratierte Referenzgeometrien für MW-024 (25.11.2026)
+### Cyclohexan: vier kuratierte Referenzgeometrien für MW-024 (25.11.2026)
 
-Im Modul **Konformere → Cyclohexan** zeigt der Button **„Konformere berechnen“** drei gezielt erzeugte und mit RDKit/MMFF94 behandelte 3D-Ringformen nebeneinander: **Sessel, Twist-Boat und Wanne**. Die relative Energiereihenfolge lautet Sessel < Twist-Boat < Wanne. Die Wanne ist eine **stationäre Sattel-/Übergangsgeometrie**, kein drittes stabiles Energieminimum. Aus mathematisch definierten Ring-Puckering-Startgeometrien werden H-Positionen und 3D-Geometrien mit zunächst festgehaltenen Ring-C-Atomen vorbereitet und dann im MMFF-Kraftfeld behandelt. Ring-Torsionen validieren die jeweils erzeugte Form.
+Im Modul **Konformere → Cyclohexan** zeigt der Button **„Konformere berechnen“** vier gezielt erzeugte und mit RDKit/MMFF94 behandelte Ringformen nebeneinander: **Sessel, Twist-Boat, Wanne und Halbsessel**. Die Modellpotentiale folgen Sessel < Twist-Boat < Wanne < Halbsessel. Die Wanne ist eine **stationäre Sattel-/Übergangsgeometrie**, kein drittes stabiles Energieminimum. Aus mathematisch definierten Ring-Puckering-Startgeometrien werden H-Positionen und 3D-Geometrien mit zunächst festgehaltenen Ring-C-Atomen vorbereitet und dann im MMFF-Kraftfeld behandelt. Ring-Torsionen validieren die jeweils erzeugte Form.
 
-Die dargestellten Energien sind **relative MMFF-Potentiale** (kcal/mol), weder experimentelle freie Energien noch Ringinversionsbarrieren. Literatur-Orientierung: Twist-Boat ~5,5 und Wanne ~6,9 kcal/mol über Sessel; modellabhängige Werte dürfen abweichen. Der höherliegende Halbsessel ist nicht enthalten. **Alle anderen Moleküle nutzen unverändert die bisherige ETKDG/MMFF-Minimasuche.** Die MW-024-Interaktion, Lernkontrolle, Protokoll und „3D neu aufbauen“ bleiben nutzbar.
+Die dargestellten Energien sind **relative MMFF-Potentiale** (kcal/mol), weder experimentelle freie Energien noch Ringinversionsbarrieren. Literatur-Orientierung: Twist-Boat ~5,5 und Wanne ~6,9 kcal/mol über Sessel; modellabhängige Werte dürfen abweichen. Der Halbsessel ist ausdrücklich nur eine geometrisch eingeschränkte Annäherung, keine berechnete Übergangszustandsgeometrie. **Alle anderen Moleküle nutzen unverändert die bisherige ETKDG/MMFF-Minimasuche.** Die MW-024-Interaktion, Lernkontrolle, Protokoll und „3D neu aufbauen“ bleiben nutzbar.
 
 Referenzen: [Oregon State University Cyclohexane Conformations](https://sites.science.oregonstate.edu/~gablek/CH334/Chapter4/bare_cyclohexane.htm), [Chemistry LibreTexts – Conformations of Cycloalkanes](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Basic_Principles_of_Organic_Chemistry_%28Roberts_and_Caserio%29/12%3A_Cycloalkanes_Cycloalkenes_and_Cycloalkynes/12.03%3A_Conformations_of_Cycloalkanes).
 
@@ -188,3 +188,9 @@ Cyclohexan zeigt nun **vier gezielte 3D-Ringformen**: Sessel, Twist-Boat, Wanne 
 **Wissenschaftliche Einordnung:** Die Wanne ist kein Energieminimum. Der Halbsessel ist in DIDACTIC ein **geometrisch eingeschränktes Referenzmodell** mit vier nahezu koplanaren Ring-C-Atomen und zwei benachbarten, entgegengesetzt ausgelenkten Ring-C-Atomen. Das MMFF-Potential wird an dieser restringierten Struktur ausgewertet, ohne einen Sattelpunkt per Hesse-/Frequenzanalyse zu lokalisieren. Die näherungsweise +10,8 kcal/mol für einen tatsächlichen Halbsessel-Übergangszustand sind nur eine **Literaturorientierung**, keine von DIDACTIC bestimmte Aktivierungsbarriere. Die freie Minimierung klappt die Halbsessel-Referenz zu einem Minimum zusammen. Andere Moleküle verwenden unverändert die allgemeine Konformersuche.
 
 Literatur: [Carey & Sundberg, Advanced Organic Chemistry, Teil A, Stereochemistry/Conformation](https://beckassets.blob.core.windows.net/product/readingsample/436588/9780387448978_excerpt_001.pdf).
+
+### Veröffentlichung von V0.8 auf main – 25.11.2026
+
+Die stabile V0.8 bündelt die in V0.7 entwickelten funktionellen Gruppen/biochemischen Präzisierungen, stereochemische Isomerenpaare, den vierstufigen D-Glucose-Lernweg, Atorvastatin und den Cyclohexan-Vierervergleich einschließlich Halbsessel. Das Hauptnotebook liest seine JSON-Daten wieder aus `main`; Notebook- und JSON-Dateinamen bleiben zur Linkkompatibilität unverändert. Alle automatisierten Notebook-, RDKit-, UI- und didaktischen Regressionen wurden vor Veröffentlichung geprüft.
+
+**Hinweis zur wissenschaftlichen Einordnung:** Die vier Cyclohexan-Bilder sind didaktische 3D-Referenzen, keine vier Minima. Die Halbsessel-Referenz nutzt geometrische Positionsrestriktionen, sodass ihre MMFF-Modellenergie nicht als gemessene oder präzise berechnete Barriere ausgegeben werden darf.

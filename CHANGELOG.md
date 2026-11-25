@@ -120,3 +120,7 @@ Carboxylgruppe statt Carbonsäure als Gruppenname; redundante allgemeine Carbony
 ## V0.8 – Vier Cyclohexan-Ringformen (25.11.2026)
 
 Gezielt eingeschränkter Halbsessel (hochenergetisches Übergangsmodell) ergänzt, zusätzlich zu Sessel, Twist-Boat und Wanne. Eigene geometrische Plausibilitätsprüfung, relative MMFF-Modellenergie, Untersuchung des Kollapses bei freier Minimierung, aktualisierte Quiz- und Protokollinhalte. Sessel < Twist-Boat < Wanne < Halbsessel; Übergangszustand wird **nicht** aus einer Hesse-/Frequenzanalyse behauptet.
+
+## V0.8 auf main freigegeben – 25.11.2026
+
+V0.7-Verbesserungen, Stereoisomerie/Glucose, Atorvastatin und vier Cyclohexan-Ringreferenzen integriert. Colab-Version „v0.8“; JSON-Pfad dauerhaft auf `main`, Kompatibilitätstests einschliesslich Halbsessel-Ringgeometrie erfolgreich. Der Forschungsweg MW-024 wird separat im MOLEKUELWERKSTATT-Repository ausgebaut.
