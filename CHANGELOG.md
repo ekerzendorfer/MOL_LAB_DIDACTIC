@@ -116,3 +116,7 @@ Carboxylgruppe statt Carbonsäure als Gruppenname; redundante allgemeine Carbony
 - Sessel = globales Minimum, Twist-Boat = lokales Minimum, Wanne = stationäre Sattel-/Übergangsgeometrie, kein stabiles drittes Minimum.
 - Reproduzierbare symmetrische Ring-Puckering-Vorbereitung, MMFF94-Modellrelativenergien; Test der Ring-Torsionen, Energiefolge, 3D-Anzeigen, MW-024-Protokoll und Reset.
 - Allgemeine Konformersuche für alle anderen Moleküle unverändert.
+
+## V0.8 – Vier Cyclohexan-Ringformen (25.11.2026)
+
+Gezielt eingeschränkter Halbsessel (hochenergetisches Übergangsmodell) ergänzt, zusätzlich zu Sessel, Twist-Boat und Wanne. Eigene geometrische Plausibilitätsprüfung, relative MMFF-Modellenergie, Untersuchung des Kollapses bei freier Minimierung, aktualisierte Quiz- und Protokollinhalte. Sessel < Twist-Boat < Wanne < Halbsessel; Übergangszustand wird **nicht** aus einer Hesse-/Frequenzanalyse behauptet.

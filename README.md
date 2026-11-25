@@ -180,3 +180,11 @@ Im Modul **Konformere → Cyclohexan** zeigt der Button **„Konformere berechne
 Die dargestellten Energien sind **relative MMFF-Potentiale** (kcal/mol), weder experimentelle freie Energien noch Ringinversionsbarrieren. Literatur-Orientierung: Twist-Boat ~5,5 und Wanne ~6,9 kcal/mol über Sessel; modellabhängige Werte dürfen abweichen. Der höherliegende Halbsessel ist nicht enthalten. **Alle anderen Moleküle nutzen unverändert die bisherige ETKDG/MMFF-Minimasuche.** Die MW-024-Interaktion, Lernkontrolle, Protokoll und „3D neu aufbauen“ bleiben nutzbar.
 
 Referenzen: [Oregon State University Cyclohexane Conformations](https://sites.science.oregonstate.edu/~gablek/CH334/Chapter4/bare_cyclohexane.htm), [Chemistry LibreTexts – Conformations of Cycloalkanes](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Basic_Principles_of_Organic_Chemistry_%28Roberts_and_Caserio%29/12%3A_Cycloalkanes_Cycloalkenes_and_Cycloalkynes/12.03%3A_Conformations_of_Cycloalkanes).
+
+### Ergänzung vom 25.11.2026: Halbsessel als vierte Ringreferenz
+
+Cyclohexan zeigt nun **vier gezielte 3D-Ringformen**: Sessel, Twist-Boat, Wanne und Halbsessel (zwei Zeilen mit je zwei Referenzkarten bei ausreichender Fensterbreite). Die Vergleichstabelle enthält vier relative MMFF94-Potentialwerte. Die Ringinversion lässt sich als Sessel → Halbsessel → Twist-Boat → Wanne → Twist-Boat → Halbsessel → Sessel erklären.
+
+**Wissenschaftliche Einordnung:** Die Wanne ist kein Energieminimum. Der Halbsessel ist in DIDACTIC ein **geometrisch eingeschränktes Referenzmodell** mit vier nahezu koplanaren Ring-C-Atomen und zwei benachbarten, entgegengesetzt ausgelenkten Ring-C-Atomen. Das MMFF-Potential wird an dieser restringierten Struktur ausgewertet, ohne einen Sattelpunkt per Hesse-/Frequenzanalyse zu lokalisieren. Die näherungsweise +10,8 kcal/mol für einen tatsächlichen Halbsessel-Übergangszustand sind nur eine **Literaturorientierung**, keine von DIDACTIC bestimmte Aktivierungsbarriere. Die freie Minimierung klappt die Halbsessel-Referenz zu einem Minimum zusammen. Andere Moleküle verwenden unverändert die allgemeine Konformersuche.
+
+Literatur: [Carey & Sundberg, Advanced Organic Chemistry, Teil A, Stereochemistry/Conformation](https://beckassets.blob.core.windows.net/product/readingsample/436588/9780387448978_excerpt_001.pdf).
