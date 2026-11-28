@@ -2,7 +2,7 @@ name: DIDACTIC notebook data integrity
 
 on:
   push:
-    branches: [main, v0.5-isomerien-vergleich, v0.6-polaritaet-qualitaet, v0.7-feinschliff-restmodule, v0.8-stereochemie-glucose, v0.9a-dipol-labor, v0.9b-vektoraddition]
+    branches: [main, v0.5-isomerien-vergleich, v0.6-polaritaet-qualitaet, v0.7-feinschliff-restmodule, v0.8-stereochemie-glucose, v0.9a-dipol-labor, v0.9b-vektoraddition, v0.9c-basisset]
   workflow_dispatch:
 
 permissions:
@@ -32,5 +32,5 @@ jobs:
       - name: Validate cyclohexane chair, twist-boat, saddle boat and MW-024 workflow
         run: python3 tests/cyclohexane_reference_v08.py
 
-      - name: Validate V0.9a water EN and dipole overlay workflow
+      - name: Validate dipole basisset geometry and overlay workflow
         run: python3 tests/dipole_learning_v09a.py

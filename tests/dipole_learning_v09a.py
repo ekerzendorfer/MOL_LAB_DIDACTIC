@@ -18,7 +18,7 @@ ns={"__name__":"__dipole_v09a_regression__"}
 with contextlib.redirect_stdout(io.StringIO()):
     exec(compile(source,"DIDACTIC main cell","exec"),ns)
 assert ns["DIPOLE_SETS"]["basis"]["members"]==["co2","h2o","nh3","ch4"]
-assert [k for k,v in ns["DIPOLE_CASES"].items() if v["ready"]]==["co2","h2o"]
+assert [k for k,v in ns["DIPOLE_CASES"].items() if v["ready"]]==["co2","h2o","nh3","ch4"]
 mol=Chem.MolFromSmiles("O")
 m3=ns["make_3d"](mol)
 card=ns["card_for"]("Polarität und Löslichkeit","Wasser")
@@ -43,7 +43,7 @@ expected=[ns["_dip_unit"](ns["_dip_vsub"](tuple(conf.GetAtomPosition(o)),tuple(c
           for a in m3.GetAtoms() if a.GetSymbol()=="H"]
 for u in expected:
     assert any(all(math.isclose(x,y,abs_tol=1e-10) for x,y in zip(u,b["direction"].values())) for b in p["bonds"])
-for k in ("nh3","ch4"):
+for k in ("unknown",):
     try: ns["dipole_learning_payload"](m3,k)
     except ValueError: pass
     else: raise AssertionError("unready case accepted")
@@ -162,3 +162,68 @@ click(0);assert.equal(activeShapes.size,0);assert.equal(activeLabels.size,0);
 console.log('CO2 zero-sum overlays: OK');"""
         subprocess.run(["node","-e",harness+script+zero_checks],check=True)
 print("V0.9b: head-to-tail vectors, idealized CO2 symmetry and reversible overlay lifecycle – OK")
+
+# V0.9c: symmetric hydrides and generalized n+2 step construction.
+for cid,smiles,name,n,high,de in (("nh3","N","Ammoniak",3,"N",.84),("ch4","C","Methan",4,"C",.35)):
+    m=ns["make_3d"](Chem.MolFromSmiles(smiles))
+    before=Chem.MolToMolBlock(m)
+    p=ns["dipole_learning_payload"](m,cid)
+    assert Chem.MolToMolBlock(m)==before and p["idealized"]
+    assert len(p["bonds"])==n and len(p["points"])==n+1
+    assert len(p["labels"])==n+1
+    assert all((b["low"],b["high"],b["delta_en"])==("H",high,de) for b in p["bonds"])
+    pts=list(map(xyz,p["points"]))
+    directions=[xyz(b["direction"]) for b in p["bonds"]]
+    for i,u in enumerate(directions):
+        assert close(ns["_dip_vsub"](pts[i+1],pts[i]),ns["_dip_vscale"](u,.86))
+        assert math.isclose(ns["_dip_dot"](u,u),1,abs_tol=1e-10)
+    dots=[ns["_dip_dot"](u,v) for i,u in enumerate(directions) for v in directions[i+1:]]
+    assert max(dots)-min(dots)<1e-8
+    if cid=="ch4":
+        assert p["zero"] and close(pts[0],pts[-1])
+        assert all(math.isclose(d,-1/3,abs_tol=1e-8) for d in dots)
+    else:
+        assert not p["zero"] and .8<p["sum_norm"]<1.3
+        assert close(ns["_dip_vsub"](xyz(p["result_end"]),xyz(p["result_start"])),ns["_dip_vsub"](pts[-1],pts[0]))
+        axis=ns["_dip_unit"](tuple(sum(v[k] for v in directions) for k in range(3)))
+        assert all(math.isclose(ns["_dip_dot"](u,axis),p["sum_norm"]/n,abs_tol=1e-8) for u in directions)
+        # Direction and clearance relative to the actually displayed model.
+        parsed=Chem.MolFromMolBlock(p["molblock"],removeHs=False)
+        conf=parsed.GetConformer()
+        for atom in parsed.GetAtoms():
+            pos=tuple(conf.GetAtomPosition(atom.GetIdx()))
+            radial=ns["_dip_vsub"](pos,xyz(p["result_start"]))
+            transverse=ns["_dip_vsub"](radial,ns["_dip_vscale"](axis,ns["_dip_dot"](radial,axis)))
+            assert math.sqrt(ns["_dip_dot"](transverse,transverse))>=.5998
+    card=ns["card_for"]("Polarität und Löslichkeit",name)
+    assert ns["dipole_case_id"]("Polarität und Löslichkeit",card,Chem.MolFromSmiles(smiles))==cid
+    frame=ns["dipole_learning_iframe"](m,cid)
+    inner=html.unescape(re.search(r"srcdoc='(.*?)' width=",frame,re.S).group(1))
+    script=re.findall(r"<script>(.*?)</script>",inner,re.S)[0]
+    check=f"const n={n},zero={str(p['zero']).lower()};"+"""
+function click(k){get('dip-stage-'+k).events.click();}
+click(1);assert.equal(activeLabels.size,n+1);
+click(2);assert.equal(activeShapes.size,2*n);
+click(3);assert.equal(activeShapes.size,1);
+for(let i=1;i<n;i++){get('dip-next').events.click();assert.equal(activeShapes.size,i+1);}
+assert.equal(get('dip-add-count').textContent,n+' von '+(n+2));
+get('dip-next').events.click();
+assert.equal(activeShapes.size,n+1);
+assert.equal([...activeShapes].filter(x=>x.type==='arrow'&&x.s.color==='#17814a').length,zero?0:1);
+get('dip-next').events.click();
+assert.equal(activeShapes.size,zero?0:1);
+assert.equal(activeLabels.size,zero?1:0);
+assert.equal(get('dip-next').disabled,true);
+assert.equal(get('dip-add-count').textContent,(n+2)+' von '+(n+2));
+get('dip-prev').events.click();assert.equal(activeShapes.size,n+1);
+click(0);assert.equal(activeShapes.size,0);assert.equal(activeLabels.size,0);
+assert.equal(calls.model,1);assert.equal(calls.zoomTo,1);
+console.log('Hydride polygon overlays: OK');"""
+    subprocess.run(["node","-e",harness+script+check],check=True)
+    visual.clear()
+    with contextlib.redirect_stdout(io.StringIO()):
+        ns["polar_pair_dd"].value=None
+        ns["example_dd"].value=name
+        ns["run_btn"].click()
+    assert len(find_launcher())==1
+print("V0.9c: all four molecules, exact hydride symmetry, variable step count and reversible overlays – OK")

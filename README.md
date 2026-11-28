@@ -208,3 +208,7 @@ Abgenommene V0.9a bleibt separat erhalten. Wasser und CO₂ sind im Dipol-Lernmo
 ### V0.9b.1 – Position der Resultierenden
 
 Nach praktischer Abnahme mit sieben bestandenen Prüfpunkten: grüner Modellvektor in der letzten Stufe seitlich parallel versetzt, ohne Änderung von Länge oder Richtung. CO₂ unverändert. Sichtkontrolle der Pfeilspitze noch offen; main bleibt unverändert.
+
+## V0.9c – Vollständiges Basisset (Entwurf)
+
+NH₃ und CH₄ ergänzt. Das Vektorpolygon wird aus der Bindungszahl aufgebaut (n+2 Schritte), mit vier unterscheidbaren Farben und grüner Summe nur bei nicht verschwindendem Ergebnis. Symmetrische Lerngeometrien NH₃ (mittlere RDKit-Bindungslänge und axialer Projektionswinkel) und CH₄ (idealer Tetraeder) getrennt von unveränderter Einzelanalyse. Keine quantitativen Debye-Werte. Experimentelle Referenzwerte folgen getrennt nach Sichtprüfung. [Testanleitung](docs/TEST_DIPOL_V0.9c.md).
