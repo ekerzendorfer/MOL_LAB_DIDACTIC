@@ -200,3 +200,7 @@ Die stabile V0.8 bündelt die in V0.7 entwickelten funktionellen Gruppen/biochem
 Nur auf `v0.9a-dipol-labor`. Modul **Polarität und Löslichkeit → Wasser → Molekül analysieren → Bindungsdipole untersuchen**. Drei Stufen im selben drehbaren 3D-Fenster: Geometrie, EN-Werte (Pauling), Bindungsdipole. Gleich lange qualitative Pfeile parallel zu den beiden O–H-Bindungen, H → O mit Querstrich am positiven Ende. Keine Debye-Werte; physikalische Dipolmomentkonvention entgegengesetzt. Die normale Einzelanalyse und alle anderen Module bleiben unverändert. Vektorsumme, CO₂, NH₃ und CH₄ folgen erst nach Colab-Abnahme. Die Metadaten halten das Basisset bereit, nur H₂O ist aktiv.
 
 [Testanleitung V0.9a](docs/TEST_DIPOL_V0.9a.md).
+
+## V0.9b – Räumliche Vektoraddition (Entwurf)
+
+Abgenommene V0.9a bleibt separat erhalten. Wasser und CO₂ sind im Dipol-Lernmodus aktiv. Stufe 4 zeigt freie Vektoren (blau/orange), Spitze-an-Anfang-Konstruktion, grüne Resultierende bzw. Nullsumme und schließlich die Modellresultierende am Molekül. Vor-/Zurück ohne Neuladen des Viewers. CO₂ verwendet ausschließlich im Lernmodus eine idealisierte lineare, symmetrische Geometrie, um numerische Restpfeile zu vermeiden. Keine Debye-Werte. [Testanleitung](docs/TEST_DIPOL_V0.9b.md).

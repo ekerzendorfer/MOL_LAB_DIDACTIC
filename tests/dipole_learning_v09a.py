@@ -18,7 +18,7 @@ ns={"__name__":"__dipole_v09a_regression__"}
 with contextlib.redirect_stdout(io.StringIO()):
     exec(compile(source,"DIDACTIC main cell","exec"),ns)
 assert ns["DIPOLE_SETS"]["basis"]["members"]==["co2","h2o","nh3","ch4"]
-assert [k for k,v in ns["DIPOLE_CASES"].items() if v["ready"]]==["h2o"]
+assert [k for k,v in ns["DIPOLE_CASES"].items() if v["ready"]]==["co2","h2o"]
 mol=Chem.MolFromSmiles("O")
 m3=ns["make_3d"](mol)
 card=ns["card_for"]("Polarität und Löslichkeit","Wasser")
@@ -43,7 +43,7 @@ expected=[ns["_dip_unit"](ns["_dip_vsub"](tuple(conf.GetAtomPosition(o)),tuple(c
           for a in m3.GetAtoms() if a.GetSymbol()=="H"]
 for u in expected:
     assert any(all(math.isclose(x,y,abs_tol=1e-10) for x,y in zip(u,b["direction"].values())) for b in p["bonds"])
-for k in ("co2","nh3","ch4"):
+for k in ("nh3","ch4"):
     try: ns["dipole_learning_payload"](m3,k)
     except ValueError: pass
     else: raise AssertionError("unready case accepted")
@@ -80,7 +80,7 @@ global.window={addEventListener(){},setTimeout(){}};
 const viewer={addModel(){calls.model++},setStyle(){},zoomTo(){calls.zoomTo++},zoom(){calls.zoom++},render(){calls.render++},resize(){},
 addLabel(t,s){const x={t,s};activeLabels.add(x);return x},removeLabel(x){assert(activeLabels.delete(x))},
 addArrow(s){const x={type:'arrow',s};activeShapes.add(x);return x},
-addCylinder(s){const x={type:'cross',s};activeShapes.add(x);return x},removeShape(x){assert(activeShapes.delete(x))}};
+addCylinder(s){const x={type:'cross',s};activeShapes.add(x);return x},addSphere(s){const x={type:'sphere',s};activeShapes.add(x);return x},removeShape(x){assert(activeShapes.delete(x))}};
 global.$3Dmol={createViewer(){return viewer}};
 """
 checks="""assert.equal(calls.model,1);assert.equal(calls.zoomTo,1);assert.equal(activeLabels.size,0);
@@ -91,6 +91,13 @@ assert.equal([...activeShapes].filter(x=>x.type==='arrow').length,2);
 assert.equal(get('dip-stage-2').attrs['aria-pressed'],'true');
 click(0);assert.equal(activeLabels.size,0);assert.equal(activeShapes.size,0);
 click(2);click(1);assert.equal(activeLabels.size,3);assert.equal(activeShapes.size,0);
+click(3);assert.equal(activeLabels.size,0);assert.equal(activeShapes.size,1);
+get('dip-next').events.click();assert.equal(activeShapes.size,2);
+get('dip-next').events.click();assert.equal(activeShapes.size,3);
+get('dip-next').events.click();assert.equal(activeShapes.size,1);
+assert.equal(get('dip-next').disabled,true);
+get('dip-prev').events.click();assert.equal(activeShapes.size,3);
+click(0);assert.equal(activeShapes.size,0);assert.equal(get('dip-add-controls').hidden,true);
 assert.equal(calls.model,1);assert.equal(calls.zoomTo,1);assert.equal(calls.zoom,1);
 console.log('Dipole JS overlays: OK');
 """
@@ -107,3 +114,39 @@ with contextlib.redirect_stdout(io.StringIO()):
     ns["polar_pair_dd"].value="Wasser vs. Schwefelwasserstoff"
 assert not find_launcher()
 print("V0.9a: water geometry and EN arrows, isolated lazy widget, JS lifecycle – OK")
+
+# V0.9b: check the exact head-to-tail construction and the zero case.
+def xyz(p):return tuple(p[k] for k in ("x","y","z"))
+def close(a,b):return all(math.isclose(x,y,abs_tol=1e-8) for x,y in zip(a,b))
+for cid,smiles in (("h2o","O"),("co2","O=C=O")):
+    m=ns["make_3d"](Chem.MolFromSmiles(smiles))
+    before=Chem.MolToMolBlock(m)
+    payload=ns["dipole_learning_payload"](m,cid)
+    assert Chem.MolToMolBlock(m)==before
+    points=list(map(xyz,payload["points"]))
+    for i,b in enumerate(payload["bonds"]):
+        assert close(ns["_dip_vsub"](points[i+1],points[i]),ns["_dip_vscale"](xyz(b["direction"]),.86))
+    assert close(ns["_dip_vsub"](xyz(payload["result_end"]),xyz(payload["result_start"])),ns["_dip_vsub"](points[-1],points[0]))
+    assert payload["zero"]==(cid=="co2")
+    if cid=="h2o": assert 1.0<payload["sum_norm"]<1.4
+    else:
+        assert payload["idealized"] and payload["sum_norm"]==0
+        assert close(points[0],points[-1])
+        assert all(b["low"]=="C" and b["delta_en"]==.89 for b in payload["bonds"])
+        card=ns["card_for"]("Polarität und Löslichkeit","Kohlenstoffdioxid")
+        assert ns["dipole_case_id"]("Polarität und Löslichkeit",card,Chem.MolFromSmiles(smiles))=="co2"
+        frame=ns["dipole_learning_iframe"](m,cid)
+        inner=html.unescape(re.search(r"srcdoc='(.*?)' width=",frame,re.S).group(1))
+        script=re.findall(r"<script>(.*?)</script>",inner,re.S)[0]
+        zero_checks="""function click(k){get('dip-stage-'+k).events.click();}
+click(3);assert.equal(activeShapes.size,1);
+get('dip-next').events.click();assert.equal(activeShapes.size,2);
+get('dip-next').events.click();assert.equal(activeShapes.size,3);assert.equal(activeLabels.size,1);
+assert.equal([...activeShapes].filter(x=>x.type==='arrow'&&x.s.color==='#17814a').length,0);
+get('dip-next').events.click();assert.equal(activeShapes.size,0);assert.equal(activeLabels.size,1);
+assert.equal(calls.model,1);assert.equal(calls.zoomTo,1);
+get('dip-prev').events.click();assert.equal(activeShapes.size,3);
+click(0);assert.equal(activeShapes.size,0);assert.equal(activeLabels.size,0);
+console.log('CO2 zero-sum overlays: OK');"""
+        subprocess.run(["node","-e",harness+script+zero_checks],check=True)
+print("V0.9b: head-to-tail vectors, idealized CO2 symmetry and reversible overlay lifecycle – OK")
