@@ -194,3 +194,9 @@ Literatur: [Carey & Sundberg, Advanced Organic Chemistry, Teil A, Stereochemistr
 Die stabile V0.8 bündelt die in V0.7 entwickelten funktionellen Gruppen/biochemischen Präzisierungen, stereochemische Isomerenpaare, den vierstufigen D-Glucose-Lernweg, Atorvastatin und den Cyclohexan-Vierervergleich einschließlich Halbsessel. Das Hauptnotebook liest seine JSON-Daten wieder aus `main`; Notebook- und JSON-Dateinamen bleiben zur Linkkompatibilität unverändert. Alle automatisierten Notebook-, RDKit-, UI- und didaktischen Regressionen wurden vor Veröffentlichung geprüft.
 
 **Hinweis zur wissenschaftlichen Einordnung:** Die vier Cyclohexan-Bilder sind didaktische 3D-Referenzen, keine vier Minima. Die Halbsessel-Referenz nutzt geometrische Positionsrestriktionen, sodass ihre MMFF-Modellenergie nicht als gemessene oder präzise berechnete Barriere ausgegeben werden darf.
+
+## V0.9a – Dipol-Lernmodus Wasser (Entwurf, 28.11.2026)
+
+Nur auf `v0.9a-dipol-labor`. Modul **Polarität und Löslichkeit → Wasser → Molekül analysieren → Bindungsdipole untersuchen**. Drei Stufen im selben drehbaren 3D-Fenster: Geometrie, EN-Werte (Pauling), Bindungsdipole. Gleich lange qualitative Pfeile parallel zu den beiden O–H-Bindungen, H → O mit Querstrich am positiven Ende. Keine Debye-Werte; physikalische Dipolmomentkonvention entgegengesetzt. Die normale Einzelanalyse und alle anderen Module bleiben unverändert. Vektorsumme, CO₂, NH₃ und CH₄ folgen erst nach Colab-Abnahme. Die Metadaten halten das Basisset bereit, nur H₂O ist aktiv.
+
+[Testanleitung V0.9a](docs/TEST_DIPOL_V0.9a.md).
