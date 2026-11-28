@@ -83,7 +83,7 @@ addArrow(s){const x={type:'arrow',s};activeShapes.add(x);return x},
 addCylinder(s){const x={type:'cross',s};activeShapes.add(x);return x},addSphere(s){const x={type:'sphere',s};activeShapes.add(x);return x},removeShape(x){assert(activeShapes.delete(x))}};
 global.$3Dmol={createViewer(){return viewer}};
 """
-checks="""assert.equal(calls.model,1);assert.equal(calls.zoomTo,1);assert.equal(activeLabels.size,0);
+checks="""assert.equal(calls.model,1);assert.equal(calls.zoomTo,1);assert.equal(activeLabels.size,0);assert.equal(get('dip-reference').hidden,true);
 function click(k){const b=get('dip-stage-'+k);assert(!b.disabled);b.events.click();}
 click(1);assert.equal(activeLabels.size,3);assert.equal(activeShapes.size,0);
 click(2);assert.equal(activeLabels.size,3);assert.equal(activeShapes.size,4);
@@ -95,8 +95,9 @@ click(3);assert.equal(activeLabels.size,0);assert.equal(activeShapes.size,1);
 get('dip-next').events.click();assert.equal(activeShapes.size,2);
 get('dip-next').events.click();assert.equal(activeShapes.size,3);
 get('dip-next').events.click();assert.equal(activeShapes.size,1);
+assert.equal(get('dip-reference').hidden,false);assert.equal(get('dip-reference-value').textContent,'≈ 1,855 D');get('dip-reference').open=true;
 assert.equal(get('dip-next').disabled,true);
-get('dip-prev').events.click();assert.equal(activeShapes.size,3);
+get('dip-prev').events.click();assert.equal(activeShapes.size,3);assert.equal(get('dip-reference').hidden,true);assert.equal(get('dip-reference').open,false);
 click(0);assert.equal(activeShapes.size,0);assert.equal(get('dip-add-controls').hidden,true);
 assert.equal(calls.model,1);assert.equal(calls.zoomTo,1);assert.equal(calls.zoom,1);
 console.log('Dipole JS overlays: OK');
@@ -214,7 +215,7 @@ get('dip-next').events.click();
 assert.equal(activeShapes.size,zero?0:1);
 assert.equal(activeLabels.size,zero?1:0);
 assert.equal(get('dip-next').disabled,true);
-assert.equal(get('dip-add-count').textContent,(n+2)+' von '+(n+2));
+assert.equal(get('dip-add-count').textContent,(n+2)+' von '+(n+2));assert.equal(get('dip-reference').hidden,false);assert.equal(get('dip-reference-value').textContent,zero?'0 D':'≈ 1,476 D');
 get('dip-prev').events.click();assert.equal(activeShapes.size,n+1);
 click(0);assert.equal(activeShapes.size,0);assert.equal(activeLabels.size,0);
 assert.equal(calls.model,1);assert.equal(calls.zoomTo,1);
@@ -227,3 +228,6 @@ console.log('Hydride polygon overlays: OK');"""
         ns["run_btn"].click()
     assert len(find_launcher())==1
 print("V0.9c: all four molecules, exact hydride symmetry, variable step count and reversible overlays – OK")
+
+assert {k:v["value_D"] for k,v in ns["DIPOLE_REFERENCE"].items()}=={"co2":0.0,"h2o":1.85498,"nh3":1.476,"ch4":0.0}
+print("V0.9d: reference values and final-stage gating – OK")

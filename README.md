@@ -212,3 +212,7 @@ Nach praktischer Abnahme mit sieben bestandenen Prüfpunkten: grüner Modellvekt
 ## V0.9c – Vollständiges Basisset (Entwurf)
 
 NH₃ und CH₄ ergänzt. Das Vektorpolygon wird aus der Bindungszahl aufgebaut (n+2 Schritte), mit vier unterscheidbaren Farben und grüner Summe nur bei nicht verschwindendem Ergebnis. Symmetrische Lerngeometrien NH₃ (mittlere RDKit-Bindungslänge und axialer Projektionswinkel) und CH₄ (idealer Tetraeder) getrennt von unveränderter Einzelanalyse. Keine quantitativen Debye-Werte. Experimentelle Referenzwerte folgen getrennt nach Sichtprüfung. [Testanleitung](docs/TEST_DIPOL_V0.9c.md).
+
+## V0.9d – Experimenteller Bezug (Entwurf)
+
+Nach dem letzten Additionsschritt erscheint ein zunächst geschlossenes Details-Feld mit NIST-Gasphasenreferenzen: CO₂/CH₄ 0 D (Symmetrie), H₂O μ₀ ≈ 1,855 D, NH₃ μ₀ ≈ 1,476 D. Quelle: https://cccbdb.nist.gov/diplistx.asp. Keine Skalierung der Modellpfeile in Debye. Bei Verlassen der letzten Stufe wird das Feld wieder geschlossen und verborgen. [Abnahme](docs/TEST_DIPOL_V0.9d.md).
