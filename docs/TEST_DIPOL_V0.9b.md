@@ -29,3 +29,10 @@ Nur qualitative gleich lange Modellvektoren, keine Debye. Chemische Pfeilkonvent
 ### V0.9b.1 – Darstellungskorrektur
 
 Nur die Position der abschließenden grünen Resultierenden bei nicht verschwindender Summe wird geändert: seitlich neben das Molekül verschoben, mit mindestens 0,60 Å Abstand der Pfeilachse zu allen Atomzentren. Betrag und Richtung bleiben identisch zur konstruierten Summe. Die Hilfsfunktion ist für die spätere NH₃-Erweiterung wiederverwendbar. Bei CO₂ bleibt die Nullsumme unverändert; bei CH₄ ist später ebenfalls kein Richtungspfeil vorgesehen. Keine Garantie gegen projektionsbedingte Überdeckung aus jeder Blickrichtung; durch Drehen ist die räumliche Trennung sichtbar. Noch offen: Colab-Sichtprüfung der letzten Stufe bei Wasser.
+
+## Nachabnahme V0.9b.1 – 28.11.2026
+
+- [x] Anwender bestätigt: „Der verschobene Vektor erscheint korrekt neben dem Molekül!“
+- [x] Vollständige [automatisierte Regression](https://github.com/ekerzendorfer/MOL_LAB_DIDACTIC/actions/runs/46145453172) erfolgreich.
+
+Alle acht praktischen Prüfpunkte sind damit erfüllt. Abgenommener Programmcommit: `4db2776422470fd3883074c75cdc37a9a3f97adb`. V0.9b.1 dient als gesicherte Grundlage für V0.9c (NH₃ und CH₄). main bleibt bis zur Gesamtfreigabe unverändert.
