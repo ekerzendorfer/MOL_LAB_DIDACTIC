@@ -216,3 +216,7 @@ NH₃ und CH₄ ergänzt. Das Vektorpolygon wird aus der Bindungszahl aufgebaut 
 ## V0.9d – Experimenteller Bezug (Entwurf)
 
 Nach dem letzten Additionsschritt erscheint ein zunächst geschlossenes Details-Feld mit NIST-Gasphasenreferenzen: CO₂/CH₄ 0 D (Symmetrie), H₂O μ₀ ≈ 1,855 D, NH₃ μ₀ ≈ 1,476 D. Quelle: https://cccbdb.nist.gov/diplistx.asp. Keine Skalierung der Modellpfeile in Debye. Bei Verlassen der letzten Stufe wird das Feld wieder geschlossen und verborgen. [Abnahme](docs/TEST_DIPOL_V0.9d.md).
+
+## V0.9 – Freigabe MW-015 (28.11.2026)
+
+Praktische Gesamtfreigabe durch den Anwender einschließlich Experimentellem Bezug. Alle vier Basismoleküle, reversible Vektoraddition und freiwilliger Referenzvergleich. Stabiles Notebook: https://colab.research.google.com/github/ekerzendorfer/MOL_LAB_DIDACTIC/blob/main/MOL_LAB_DIDACTIC_v0_4_2.ipynb. Weitere Sets und allgemeine Dipolmoment-Anzeige sind bewusst zurückgestellt. V0.9d bleibt in der Historie dokumentiert. Bitte Colab-Tests nicht über ältere Notebook-Stände in den stabilen Branch zurückspeichern.
