@@ -18,3 +18,13 @@ Quelle: [NIST CCCBDB – experimental dipole moments](https://cccbdb.nist.gov/di
 - [ ] MW-015 führt zu allen vier Beispielen und dem optionalen experimentellen Bezug; Notizen bleiben je Molekül getrennt.
 
 Noch keine Freigabe auf main. Die allgemeine Dipolmomentberechnung und weitere Sets sind bewusst nicht enthalten.
+
+## Gesamtfreigabeprüfung MW-015 – 28.11.2026
+
+- [x] Experimenteller Bezug erst nach dem letzten Additionsschritt.
+- [x] Referenzwert, Quellenangabe und Modellgrenze verständlich.
+- [x] Zurückschalten verbirgt Referenz.
+- [x] Werkstatt-Anleitung verständlich.
+- [x] Vollständiger Forschungsweg mit Protokoll funktioniert.
+
+5/5 praktische Prüfpunkte bestanden. Abgenommene V0.9d-Programmquelle: `41229838aad18bfc7d973fdfef297ee20a149b04`, [Regression erfolgreich](https://github.com/ekerzendorfer/MOL_LAB_DIDACTIC/actions/runs/46147361353). Zwei spätere Colab-Speicherstände enthielten nach Vergleich exakt die V0.9c-Programmquelle (ohne experimentellen Bezug) und Ausgaben; jüngster Stand `d25e27264f2ecb21c2c2a1bb6249828205039086` mit fehlgeschlagener Regression. Die abgenommene V0.9d-Notebookdatei wird byteidentisch durch einen neuen Commit wiederhergestellt; die Colab-Speicherstände bleiben in der Historie erhalten. Kein Force-Push. Freigabe auf main erst nach erneut erfolgreicher Regression.
