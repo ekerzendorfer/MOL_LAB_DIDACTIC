@@ -12,3 +12,20 @@
 - [ ] Sonstige DIDACTIC-Funktionen unverändert.
 
 Nur qualitative gleich lange Modellvektoren, keine Debye. Chemische Pfeilkonvention. CO₂-Geometrie im Lernmodus idealisiert; normaler Viewer unverändert. Die JS-Tests verwenden einen Mock, keine visuelle WebGL-Abnahme. NH₃/CH₄ und experimentelle Referenzwerte folgen V0.9c.
+
+## Praktische Abnahme – 28.11.2026 (V0.9b)
+
+- [x] H₂O: bisherige drei Stufen unverändert.
+- [x] CO₂: EN-Werte und Bindungsdipole korrekt.
+- [x] H₂O: schrittweise Vektoraddition verständlich.
+- [ ] H₂O: grüne Resultierende – Richtung laut Anwender korrekt, Spitze aber vom O-Atom verdeckt. Sichtkontrolle nach Korrektur offen.
+- [x] CO₂: vollständige Kompensation nachvollziehbar.
+- [x] Vorwärts und rückwärts schalten funktioniert.
+- [x] Räumliche Orientierung bleibt erhalten.
+- [x] Größenverhältnisse, Farben und Lesbarkeit zufriedenstellend.
+
+7/8 Prüfpunkte bestanden. [Regression des geprüften Stands](https://github.com/ekerzendorfer/MOL_LAB_DIDACTIC/actions/runs/46144224024) erfolgreich.
+
+### V0.9b.1 – Darstellungskorrektur
+
+Nur die Position der abschließenden grünen Resultierenden bei nicht verschwindender Summe wird geändert: seitlich neben das Molekül verschoben, mit mindestens 0,60 Å Abstand der Pfeilachse zu allen Atomzentren. Betrag und Richtung bleiben identisch zur konstruierten Summe. Die Hilfsfunktion ist für die spätere NH₃-Erweiterung wiederverwendbar. Bei CO₂ bleibt die Nullsumme unverändert; bei CH₄ ist später ebenfalls kein Richtungspfeil vorgesehen. Keine Garantie gegen projektionsbedingte Überdeckung aus jeder Blickrichtung; durch Drehen ist die räumliche Trennung sichtbar. Noch offen: Colab-Sichtprüfung der letzten Stufe bei Wasser.

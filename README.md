@@ -204,3 +204,7 @@ Nur auf `v0.9a-dipol-labor`. Modul **Polarität und Löslichkeit → Wasser → 
 ## V0.9b – Räumliche Vektoraddition (Entwurf)
 
 Abgenommene V0.9a bleibt separat erhalten. Wasser und CO₂ sind im Dipol-Lernmodus aktiv. Stufe 4 zeigt freie Vektoren (blau/orange), Spitze-an-Anfang-Konstruktion, grüne Resultierende bzw. Nullsumme und schließlich die Modellresultierende am Molekül. Vor-/Zurück ohne Neuladen des Viewers. CO₂ verwendet ausschließlich im Lernmodus eine idealisierte lineare, symmetrische Geometrie, um numerische Restpfeile zu vermeiden. Keine Debye-Werte. [Testanleitung](docs/TEST_DIPOL_V0.9b.md).
+
+### V0.9b.1 – Position der Resultierenden
+
+Nach praktischer Abnahme mit sieben bestandenen Prüfpunkten: grüner Modellvektor in der letzten Stufe seitlich parallel versetzt, ohne Änderung von Länge oder Richtung. CO₂ unverändert. Sichtkontrolle der Pfeilspitze noch offen; main bleibt unverändert.

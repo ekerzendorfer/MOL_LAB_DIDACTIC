@@ -128,7 +128,19 @@ for cid,smiles in (("h2o","O"),("co2","O=C=O")):
         assert close(ns["_dip_vsub"](points[i+1],points[i]),ns["_dip_vscale"](xyz(b["direction"]),.86))
     assert close(ns["_dip_vsub"](xyz(payload["result_end"]),xyz(payload["result_start"])),ns["_dip_vsub"](points[-1],points[0]))
     assert payload["zero"]==(cid=="co2")
-    if cid=="h2o": assert 1.0<payload["sum_norm"]<1.4
+    if cid=="h2o":
+        assert 1.0<payload["sum_norm"]<1.4
+        start,end=xyz(payload["result_start"]),xyz(payload["result_end"])
+        u=ns["_dip_unit"](ns["_dip_vsub"](end,start))
+        conf=m.GetConformer()
+        for atom in m.GetAtoms():
+            pos=tuple(conf.GetAtomPosition(atom.GetIdx()))
+            radial=ns["_dip_vsub"](pos,start)
+            transverse=ns["_dip_vsub"](radial,ns["_dip_vscale"](u,ns["_dip_dot"](radial,u)))
+            assert math.sqrt(ns["_dip_dot"](transverse,transverse))>=.60-1e-8
+        # The drawn vector stays parallel and equal to the construction.
+        # Only the last stage's position changes, not the first three steps.
+        assert not close(start,points[0])
     else:
         assert payload["idealized"] and payload["sum_norm"]==0
         assert close(points[0],points[-1])
